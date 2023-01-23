@@ -55,7 +55,7 @@
       params:
         volume: -4
     id: DiseaseOutbreak
-    weight: 5
+    weight: 0
     endAfter: 1
     earliestStart: 15
 
