@@ -41,7 +41,7 @@
 - type: entity
   id: SpawnPointQuartermaster
   parent: SpawnPointJobBase
-  name: quartermaster
+  name: chief miner
   components:
   - type: SpawnPoint
     job_id: Quartermaster

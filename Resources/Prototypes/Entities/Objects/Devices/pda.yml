@@ -101,7 +101,7 @@
 - type: entity
   parent: BasePDA
   id: PassengerPDA
-  name: passenger PDA
+  name: Laborer PDA
   description: Why isn't it gray?
   components:
   - type: PDA
@@ -291,7 +291,7 @@
     state: pda-chaplain
 
 - type: entity
-  name: Quartermaster PDA
+  name: Chief miner PDA
   parent: BasePDA
   id: QuartermasterPDA
   description: PDA for the guy that orders the guns.
@@ -323,7 +323,7 @@
 - type: entity
   parent: BasePDA
   id: SalvagePDA
-  name: salvage PDA
+  name: miner PDA
   description: Smells like ash.
   components:
   - type: PDA
