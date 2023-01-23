@@ -2,7 +2,7 @@
   id: Outpost
   mapName: 'Outpost-233'
   mapPath: /Maps/outpost-233.yml
-  minPlayers: 35
+  minPlayers: 0
   stations:
     Outpost-233:
       mapNameTemplate: '{0} Outpost-233 {1}'

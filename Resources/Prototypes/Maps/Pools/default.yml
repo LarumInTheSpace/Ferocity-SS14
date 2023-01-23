@@ -1,12 +1,5 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Bagel
   - Box
-  - Cluster
-  - Kettle
-  - Marathon
-  - Omega
-  - Moose
-  - Origin
-  - Meta
+  #Add here our Outpost when it's done, and delete box.

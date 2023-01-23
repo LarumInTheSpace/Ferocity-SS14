@@ -1,7 +1,7 @@
 meta:
   format: 3
-  name: DemoStation
-  author: Space-Wizards
+  name: Outpost-233
+  author: iller_saver, Larum, BoB
   postmapinit: false
 tilemap:
   0: Space
