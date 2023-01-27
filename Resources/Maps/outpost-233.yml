@@ -138,7 +138,7 @@ entities:
     type: Fixtures
   - type: OccluderTree
   - type: Shuttle
-  - nextUpdate: -73.8860635
+  - nextUpdate: -49.2831929
     type: GridPathfinding
   - gravityShakeSound: !type:SoundPathSpecifier
       path: /Audio/Effects/alert.ogg
@@ -640,31 +640,31 @@ entities:
           id: MiniTileSteelLineW
           coordinates: -1,-13
       0,-2:
-        132:
+        123:
           color: '#FFFFFFFF'
           id: Basalt2
           coordinates: 4,-37
-        133:
+        124:
           color: '#FFFFFFFF'
           id: Basalt8
           coordinates: 4,-37
-        134:
+        125:
           color: '#FFFFFFFF'
           id: Basalt8
           coordinates: 7,-39
-        135:
+        126:
           color: '#FFFFFFFF'
           id: Basalt6
           coordinates: 6,-39
-        136:
+        127:
           color: '#FFFFFFFF'
           id: Basalt7
           coordinates: 3,-39
-        137:
+        128:
           color: '#FFFFFFFF'
           id: Basalt5
           coordinates: 3,-39
-        138:
+        129:
           color: '#FFFFFFFF'
           id: Basalt5
           coordinates: 6,-39
@@ -1228,9 +1228,9 @@ entities:
       -14,-27: 0
       -14,-24: 0
       -15,-27: 13
-      -15,-26: 13
-      -15,-23: 14
-      -15,-22: 15
+      -15,-26: 14
+      -15,-23: 15
+      -15,-22: 16
       -15,-21: 0
       -15,-20: 0
       -14,-20: 0
@@ -1264,6 +1264,7 @@ entities:
       -15,-36: 3
       -16,-36: 3
       -16,-35: 3
+      -5,-16: 3
     uniqueMixes:
     - volume: 2500
       immutable: True
@@ -1463,7 +1464,22 @@ entities:
     - volume: 2500
       temperature: 293.15
       moles:
-      - 3935.0942
+      - 3947.9001
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.15
+      moles:
+      - 3947.9
       - 0
       - 0
       - 0
@@ -1479,7 +1495,7 @@ entities:
       temperature: 293.15
       moles:
       - 0
-      - 3921.406
+      - 3912.2908
       - 0
       - 0
       - 0
@@ -1494,7 +1510,7 @@ entities:
       temperature: 293.15
       moles:
       - 0
-      - 3921.4062
+      - 3912.291
       - 0
       - 0
       - 0
@@ -1712,6 +1728,11 @@ entities:
   - pos: 0.5,-4.5
     parent: 0
     type: Transform
+  - loadingNetworkDemand: 5015.6445
+    currentReceiving: 5010.02
+    currentSupply: 5015.6445
+    supplyRampPosition: 5.6245117
+    type: PowerNetworkBattery
   - containers:
       machine_board: !type:Container
         ents:
@@ -3055,7 +3076,7 @@ entities:
 - uid: 204
   type: LockerHeadOfPersonnelFilled
   components:
-  - pos: -2.5,-14.5
+  - pos: -2.499998,-14.5
     parent: 0
     type: Transform
   - containers:
@@ -3977,7 +3998,7 @@ entities:
 - uid: 279
   type: LockerCaptainFilled
   components:
-  - pos: 5.500002,-13.5
+  - pos: 5.500004,-13.5
     parent: 0
     type: Transform
   - containers:
@@ -5119,7 +5140,7 @@ entities:
 - uid: 404
   type: ChairWood
   components:
-  - pos: 4.500002,-13.5
+  - pos: 4.500004,-13.5
     parent: 0
     type: Transform
 - uid: 405
@@ -6370,7 +6391,7 @@ entities:
 - uid: 543
   type: ChairWood
   components:
-  - pos: -4.4999876,-14.500012
+  - pos: -4.499975,-14.500025
     parent: 0
     type: Transform
 - uid: 544
@@ -7424,14 +7445,18 @@ entities:
 - uid: 680
   type: GravityGenerator
   components:
+  - name: broken gravity generator
+    type: MetaData
   - pos: -7.5,-14.5
     parent: 0
     type: Transform
-  - charge: 0
-    type: GravityGenerator
   - radius: 0.75
     enabled: False
     type: PointLight
+  missingComponents:
+  - ApcPowerReceiver
+  - ExtensionCableReceiver
+  - GravityGenerator
 - uid: 681
   type: GasPressurePump
   components:
@@ -7479,6 +7504,11 @@ entities:
   - pos: -11.5,-17.5
     parent: 0
     type: Transform
+  - loadingNetworkDemand: 19155.076
+    currentReceiving: 9570.038
+    currentSupply: 9577.538
+    supplyRampPosition: 7.5
+    type: PowerNetworkBattery
   - containers:
       machine_board: !type:Container
         ents:
@@ -7555,6 +7585,11 @@ entities:
   - pos: -11.5,-19.5
     parent: 0
     type: Transform
+  - loadingNetworkDemand: 19155.076
+    currentReceiving: 9570.038
+    currentSupply: 9577.538
+    supplyRampPosition: 7.5
+    type: PowerNetworkBattery
   - containers:
       machine_board: !type:Container
         ents:
@@ -7631,6 +7666,12 @@ entities:
   - pos: -11.5,-18.5
     parent: 0
     type: Transform
+  - startingCharge: 6569354
+    type: Battery
+  - loadingNetworkDemand: 24150.096
+    currentSupply: 24150.096
+    supplyRampPosition: 24150.096
+    type: PowerNetworkBattery
   - containers:
       machine_board: !type:Container
         ents:
@@ -7877,7 +7918,7 @@ entities:
   - pos: -9.482873,-19.256872
     parent: 0
     type: Transform
-  - nextAttack: -3688.2653326
+  - nextAttack: -4619.9267819
     type: MeleeWeapon
   - containers:
       storagebase: !type:Container
@@ -8043,7 +8084,7 @@ entities:
 - uid: 742
   type: Stool
   components:
-  - pos: -3.5,-21.500025
+  - pos: -3.5,-21.50005
     parent: 0
     type: Transform
 - uid: 743
@@ -8141,41 +8182,41 @@ entities:
   type: Stool
   components:
   - rot: -1.5707963267948966 rad
-    pos: -1.5,-23.500025
+    pos: -1.5,-23.50005
     parent: 0
     type: Transform
 - uid: 757
   type: Stool
   components:
   - rot: 1.5707963267948966 rad
-    pos: -4.4999876,-22.5
+    pos: -4.499975,-22.5
     parent: 0
     type: Transform
 - uid: 758
   type: Stool
   components:
   - rot: 1.5707963267948966 rad
-    pos: -4.4999876,-23.5
+    pos: -4.499975,-23.5
     parent: 0
     type: Transform
 - uid: 759
   type: Stool
   components:
   - rot: -1.5707963267948966 rad
-    pos: -1.5,-22.500025
+    pos: -1.5,-22.50005
     parent: 0
     type: Transform
 - uid: 760
   type: Stool
   components:
-  - pos: -2.5,-21.500025
+  - pos: -2.5,-21.50005
     parent: 0
     type: Transform
 - uid: 761
   type: Stool
   components:
   - rot: -3.141592351598195 rad
-    pos: -2.5,-24.500025
+    pos: -2.5,-24.50005
     parent: 0
     type: Transform
 - uid: 762
@@ -9368,7 +9409,7 @@ entities:
     type: MetaData
   - parent: 884
     type: Transform
-  - nextAttack: -7566.4695504
+  - nextAttack: -8498.1309997
     type: MeleeWeapon
   - canCollide: False
     type: Physics
@@ -9379,7 +9420,7 @@ entities:
     type: MetaData
   - parent: 884
     type: Transform
-  - nextAttack: -7565.4862224
+  - nextAttack: -8497.1476717
     type: MeleeWeapon
   - canCollide: False
     type: Physics
@@ -9390,7 +9431,7 @@ entities:
     type: MetaData
   - parent: 884
     type: Transform
-  - nextAttack: -7564.1862262
+  - nextAttack: -8495.8476755
     type: MeleeWeapon
   - canCollide: False
     type: Physics
@@ -9418,6 +9459,9 @@ entities:
         - 894
         - 895
     type: ContainerContainer
+  - nextInjectionTime: 0.7666091
+    type: CryoPod
+  - type: ActiveCryoPod
 - uid: 889
   type: CryoPodMachineCircuitboard
   components:
@@ -9491,7 +9535,7 @@ entities:
       enum.DamageStateVisualLayers.Base:
         shard3: null
     type: RandomSprite
-  - nextAttack: -3151.4508146
+  - nextAttack: -4083.1122639
     type: MeleeWeapon
 - uid: 897
   type: ComputerBroken
@@ -9524,6 +9568,9 @@ entities:
         - 904
         - 905
     type: ContainerContainer
+  - nextInjectionTime: 0.7666091
+    type: CryoPod
+  - type: ActiveCryoPod
 - uid: 899
   type: CryoPodMachineCircuitboard
   components:
@@ -9622,6 +9669,9 @@ entities:
         - 913
         - 914
     type: ContainerContainer
+  - nextInjectionTime: 0.7666091
+    type: CryoPod
+  - type: ActiveCryoPod
 - uid: 908
   type: CryoPodMachineCircuitboard
   components:
@@ -9700,7 +9750,7 @@ entities:
   type: ShardGlass
   components:
   - rot: -3.141592351598195 rad
-    pos: 6.4002953,-38.275963
+    pos: 6.40032,-38.275963
     parent: 0
     type: Transform
   - selected:
@@ -9731,6 +9781,9 @@ entities:
         - 923
         - 924
     type: ContainerContainer
+  - nextInjectionTime: 0.7666091
+    type: CryoPod
+  - type: ActiveCryoPod
 - uid: 918
   type: CryoPodMachineCircuitboard
   components:
@@ -9815,7 +9868,7 @@ entities:
       enum.DamageStateVisualLayers.Base:
         shard1: null
     type: RandomSprite
-  - nextAttack: -3153.267474
+  - nextAttack: -4084.9289233
     type: MeleeWeapon
 - uid: 927
   type: ShardGlass
@@ -9852,6 +9905,9 @@ entities:
         - 934
         - 935
     type: ContainerContainer
+  - nextInjectionTime: 0.7666091
+    type: CryoPod
+  - type: ActiveCryoPod
 - uid: 929
   type: CryoPodMachineCircuitboard
   components:
@@ -9939,6 +9995,9 @@ entities:
         - 942
         - 943
     type: ContainerContainer
+  - nextInjectionTime: 0.7666091
+    type: CryoPod
+  - type: ActiveCryoPod
 - uid: 937
   type: CryoPodMachineCircuitboard
   components:
@@ -10016,15 +10075,15 @@ entities:
 - uid: 945
   type: ShardGlass
   components:
-  - rot: 0.0001663345901761204 rad
-    pos: 4.604332,-36.214386
+  - rot: 1.7124322766903788E-05 rad
+    pos: 4.604332,-36.21495
     parent: 0
     type: Transform
   - selected:
       enum.DamageStateVisualLayers.Base:
         shard3: null
     type: RandomSprite
-  - nextAttack: -3156.5341276
+  - nextAttack: -4088.1955769
     type: MeleeWeapon
 - uid: 946
   type: ClosetFireFilled
@@ -10102,7 +10161,7 @@ entities:
 - uid: 953
   type: WaterTankFull
   components:
-  - pos: -5.4999876,-43.5
+  - pos: -5.499975,-43.5
     parent: 0
     type: Transform
 - uid: 954
@@ -10114,7 +10173,7 @@ entities:
 - uid: 955
   type: WeldingFuelTankFull
   components:
-  - pos: -6.4999876,-43.5
+  - pos: -6.499975,-43.5
     parent: 0
     type: Transform
 - uid: 956
@@ -10165,6 +10224,8 @@ entities:
   - pos: -10.5,-41.5
     parent: 0
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
 - uid: 964
   type: GrilleBroken
   components:
@@ -10205,7 +10266,7 @@ entities:
   - pos: -4.2454386,-38.558228
     parent: 0
     type: Transform
-  - nextAttack: -1697.2899646
+  - nextAttack: -2628.9514139
     type: MeleeWeapon
   - canCollide: False
     type: Physics
@@ -10282,7 +10343,7 @@ entities:
 - uid: 980
   type: TrashBananaPeel
   components:
-  - pos: -11.464523,-39.443115
+  - pos: -11.464511,-39.443115
     parent: 0
     type: Transform
 - uid: 981
@@ -10717,7 +10778,7 @@ entities:
   - pos: -4.397971,-35.618736
     parent: 0
     type: Transform
-  - nextAttack: -1543.2405794
+  - nextAttack: -2474.9020286
     type: MeleeWeapon
   - canCollide: False
     type: Physics
@@ -10985,7 +11046,7 @@ entities:
 - uid: 1060
   type: TrashBananaPeel
   components:
-  - pos: -0.5591717,-34.427345
+  - pos: -0.5591469,-34.427345
     parent: 0
     type: Transform
 - uid: 1061
@@ -11083,7 +11144,7 @@ entities:
 - uid: 1071
   type: TubaInstrument
   components:
-  - pos: 0.5419884,-39.899902
+  - pos: 0.54201317,-39.899902
     parent: 0
     type: Transform
 - uid: 1072
@@ -11221,7 +11282,7 @@ entities:
   - pos: -11.477819,-30.106205
     parent: 0
     type: Transform
-  - nextAttack: -655.1274652
+  - nextAttack: -1586.7889145
     type: MeleeWeapon
   - containers:
       storagebase: !type:Container
@@ -11435,7 +11496,7 @@ entities:
 - uid: 1113
   type: WaterTankFull
   components:
-  - pos: -0.49534225,-29.477829
+  - pos: -0.49534225,-29.477854
     parent: 0
     type: Transform
 - uid: 1114
@@ -11483,6 +11544,8 @@ entities:
   - pos: -0.5,-30.5
     parent: 0
     type: Transform
+  - powerLoad: 0
+    type: ApcPowerReceiver
 - uid: 1120
   type: FoodFrozenSnowconeTrash
   components:
@@ -11513,4 +11576,2064 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
+- uid: 1123
+  type: APCHyperCapacity
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -4.5,-4.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 2905
+    currentReceiving: 2905.324
+    currentSupply: 2905
+    type: PowerNetworkBattery
+- uid: 1124
+  type: APCSuperCapacity
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -5.5,-11.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 1620
+    currentReceiving: 1620.0065
+    currentSupply: 1620
+    type: PowerNetworkBattery
+- uid: 1125
+  type: APCSuperCapacity
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: 6.5,-11.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 220
+    currentReceiving: 220.31337
+    currentSupply: 220
+    type: PowerNetworkBattery
+- uid: 1126
+  type: APCHighCapacity
+  components:
+  - pos: -9.5,-20.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 35
+    currentReceiving: 35.15639
+    currentSupply: 35
+    type: PowerNetworkBattery
+- uid: 1127
+  type: APCHighCapacity
+  components:
+  - pos: -10.5,-16.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 20
+    currentReceiving: 20.15633
+    currentSupply: 20
+    type: PowerNetworkBattery
+- uid: 1128
+  type: APCBasic
+  components:
+  - pos: 3.5,-15.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 270
+    currentReceiving: 270.00107
+    currentSupply: 270
+    type: PowerNetworkBattery
+- uid: 1129
+  type: APCBasic
+  components:
+  - pos: 2.5,-20.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 80
+    currentReceiving: 79.922195
+    currentSupply: 80
+    supplyRampPosition: 0.077812195
+    type: PowerNetworkBattery
+- uid: 1130
+  type: APCBasic
+  components:
+  - pos: -1.5,-20.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 400
+    currentReceiving: 400.0797
+    currentSupply: 400
+    type: PowerNetworkBattery
+- uid: 1131
+  type: APCBasic
+  components:
+  - pos: 1.5,-27.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 240
+    currentReceiving: 240.00095
+    currentSupply: 240
+    supplyRampPosition: -0.0009460449
+    type: PowerNetworkBattery
+- uid: 1132
+  type: APCBasic
+  components:
+  - pos: 0.5,-31.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 18160
+    currentReceiving: 18159.916
+    currentSupply: 18160
+    supplyRampPosition: 0.083984375
+    type: PowerNetworkBattery
+- uid: 1133
+  type: CableApcExtension
+  components:
+  - pos: -7.5,-34.5
+    parent: 0
+    type: Transform
+- uid: 1134
+  type: APCBasic
+  components:
+  - pos: -4.5,-39.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 140
+    currentReceiving: 139.92242
+    currentSupply: 140
+    supplyRampPosition: 0.07757568
+    type: PowerNetworkBattery
+- uid: 1135
+  type: CableApcExtension
+  components:
+  - pos: -4.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1136
+  type: CableApcExtension
+  components:
+  - pos: -4.5,-40.5
+    parent: 0
+    type: Transform
+- uid: 1137
+  type: CableApcExtension
+  components:
+  - pos: -5.5,-40.5
+    parent: 0
+    type: Transform
+- uid: 1138
+  type: CableApcExtension
+  components:
+  - pos: -6.5,-40.5
+    parent: 0
+    type: Transform
+- uid: 1139
+  type: CableApcExtension
+  components:
+  - pos: -6.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1140
+  type: CableApcExtension
+  components:
+  - pos: -7.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1141
+  type: CableApcExtension
+  components:
+  - pos: -8.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1142
+  type: CableApcExtension
+  components:
+  - pos: -9.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1143
+  type: CableApcExtension
+  components:
+  - pos: -10.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1144
+  type: CableApcExtension
+  components:
+  - pos: -11.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1145
+  type: CableApcExtension
+  components:
+  - pos: -3.5,-40.5
+    parent: 0
+    type: Transform
+- uid: 1146
+  type: CableApcExtension
+  components:
+  - pos: -3.5,-41.5
+    parent: 0
+    type: Transform
+- uid: 1147
+  type: CableApcExtension
+  components:
+  - pos: -3.5,-42.5
+    parent: 0
+    type: Transform
+- uid: 1148
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-42.5
+    parent: 0
+    type: Transform
+- uid: 1149
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-42.5
+    parent: 0
+    type: Transform
+- uid: 1150
+  type: CableApcExtension
+  components:
+  - pos: -0.5,-42.5
+    parent: 0
+    type: Transform
+- uid: 1151
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-42.5
+    parent: 0
+    type: Transform
+- uid: 1152
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-43.5
+    parent: 0
+    type: Transform
+- uid: 1153
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-44.5
+    parent: 0
+    type: Transform
+- uid: 1154
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-45.5
+    parent: 0
+    type: Transform
+- uid: 1155
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-46.5
+    parent: 0
+    type: Transform
+- uid: 1156
+  type: APCBasic
+  components:
+  - pos: -7.5,-32.5
+    parent: 0
+    type: Transform
+  - loadingNetworkDemand: 80
+    currentReceiving: 79.922195
+    currentSupply: 80
+    supplyRampPosition: 0.077812195
+    type: PowerNetworkBattery
+- uid: 1157
+  type: CableApcExtension
+  components:
+  - pos: -7.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1158
+  type: CableApcExtension
+  components:
+  - pos: -10.5,-16.5
+    parent: 0
+    type: Transform
+- uid: 1159
+  type: CableApcExtension
+  components:
+  - pos: -7.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1160
+  type: CableApcExtension
+  components:
+  - pos: -7.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1161
+  type: CableApcExtension
+  components:
+  - pos: -9.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1162
+  type: CableApcExtension
+  components:
+  - pos: -8.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1163
+  type: CableApcExtension
+  components:
+  - pos: -10.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1164
+  type: CableApcExtension
+  components:
+  - pos: -11.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1165
+  type: CableApcExtension
+  components:
+  - pos: -12.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1166
+  type: CableApcExtension
+  components:
+  - pos: -13.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1167
+  type: CableApcExtension
+  components:
+  - pos: -14.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1168
+  type: CableApcExtension
+  components:
+  - pos: -15.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1169
+  type: CableApcExtension
+  components:
+  - pos: -15.5,-34.5
+    parent: 0
+    type: Transform
+- uid: 1170
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1171
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1172
+  type: CableApcExtension
+  components:
+  - pos: 1.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1173
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1174
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1175
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-34.5
+    parent: 0
+    type: Transform
+- uid: 1176
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1177
+  type: CableApcExtension
+  components:
+  - pos: 4.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1178
+  type: CableApcExtension
+  components:
+  - pos: 5.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1179
+  type: CableApcExtension
+  components:
+  - pos: -0.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1180
+  type: CableApcExtension
+  components:
+  - pos: -0.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1181
+  type: CableApcExtension
+  components:
+  - pos: -0.5,-34.5
+    parent: 0
+    type: Transform
+- uid: 1182
+  type: CableApcExtension
+  components:
+  - pos: -0.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1183
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1184
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1185
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1186
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-30.5
+    parent: 0
+    type: Transform
+- uid: 1187
+  type: CableApcExtension
+  components:
+  - pos: -3.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1188
+  type: CableApcExtension
+  components:
+  - pos: -4.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1189
+  type: CableApcExtension
+  components:
+  - pos: -4.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1190
+  type: CableApcExtension
+  components:
+  - pos: -4.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1191
+  type: CableApcExtension
+  components:
+  - pos: -4.5,-34.5
+    parent: 0
+    type: Transform
+- uid: 1192
+  type: CableApcExtension
+  components:
+  - pos: -4.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1193
+  type: CableApcExtension
+  components:
+  - pos: -5.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1194
+  type: CableApcExtension
+  components:
+  - pos: -6.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1195
+  type: CableApcExtension
+  components:
+  - pos: -6.5,-30.5
+    parent: 0
+    type: Transform
+- uid: 1196
+  type: CableApcExtension
+  components:
+  - pos: -6.5,-29.5
+    parent: 0
+    type: Transform
+- uid: 1197
+  type: CableApcExtension
+  components:
+  - pos: -6.5,-28.5
+    parent: 0
+    type: Transform
+- uid: 1198
+  type: CableApcExtension
+  components:
+  - pos: -7.5,-28.5
+    parent: 0
+    type: Transform
+- uid: 1199
+  type: CableApcExtension
+  components:
+  - pos: -8.5,-28.5
+    parent: 0
+    type: Transform
+- uid: 1200
+  type: CableApcExtension
+  components:
+  - pos: -10.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1201
+  type: CableApcExtension
+  components:
+  - pos: -9.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1202
+  type: CableApcExtension
+  components:
+  - pos: -8.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1203
+  type: CableApcExtension
+  components:
+  - pos: -7.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1204
+  type: CableApcExtension
+  components:
+  - pos: -7.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1205
+  type: CableApcExtension
+  components:
+  - pos: -9.5,-21.5
+    parent: 0
+    type: Transform
+- uid: 1206
+  type: CableApcExtension
+  components:
+  - pos: -9.5,-20.5
+    parent: 0
+    type: Transform
+- uid: 1207
+  type: CableApcExtension
+  components:
+  - pos: -9.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1208
+  type: CableApcExtension
+  components:
+  - pos: -9.5,-23.5
+    parent: 0
+    type: Transform
+- uid: 1209
+  type: CableApcExtension
+  components:
+  - pos: -9.5,-24.5
+    parent: 0
+    type: Transform
+- uid: 1210
+  type: CableApcExtension
+  components:
+  - pos: -10.5,-24.5
+    parent: 0
+    type: Transform
+- uid: 1211
+  type: CableApcExtension
+  components:
+  - pos: -11.5,-24.5
+    parent: 0
+    type: Transform
+- uid: 1212
+  type: CableApcExtension
+  components:
+  - pos: -12.5,-24.5
+    parent: 0
+    type: Transform
+- uid: 1213
+  type: CableApcExtension
+  components:
+  - pos: -12.5,-23.5
+    parent: 0
+    type: Transform
+- uid: 1214
+  type: CableApcExtension
+  components:
+  - pos: -12.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1215
+  type: CableApcExtension
+  components:
+  - pos: -12.5,-21.5
+    parent: 0
+    type: Transform
+- uid: 1216
+  type: CableApcExtension
+  components:
+  - pos: -12.5,-25.5
+    parent: 0
+    type: Transform
+- uid: 1217
+  type: CableApcExtension
+  components:
+  - pos: -12.5,-26.5
+    parent: 0
+    type: Transform
+- uid: 1218
+  type: CableApcExtension
+  components:
+  - pos: 1.5,-27.5
+    parent: 0
+    type: Transform
+- uid: 1219
+  type: CableApcExtension
+  components:
+  - pos: 1.5,-28.5
+    parent: 0
+    type: Transform
+- uid: 1220
+  type: CableApcExtension
+  components:
+  - pos: 1.5,-29.5
+    parent: 0
+    type: Transform
+- uid: 1221
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-29.5
+    parent: 0
+    type: Transform
+- uid: 1222
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-29.5
+    parent: 0
+    type: Transform
+- uid: 1223
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-20.5
+    parent: 0
+    type: Transform
+- uid: 1224
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-21.5
+    parent: 0
+    type: Transform
+- uid: 1225
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1226
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-23.5
+    parent: 0
+    type: Transform
+- uid: 1227
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-24.5
+    parent: 0
+    type: Transform
+- uid: 1228
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-25.5
+    parent: 0
+    type: Transform
+- uid: 1229
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-25.5
+    parent: 0
+    type: Transform
+- uid: 1230
+  type: CableApcExtension
+  components:
+  - pos: -3.5,-25.5
+    parent: 0
+    type: Transform
+- uid: 1231
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-20.5
+    parent: 0
+    type: Transform
+- uid: 1232
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-21.5
+    parent: 0
+    type: Transform
+- uid: 1233
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1234
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-23.5
+    parent: 0
+    type: Transform
+- uid: 1235
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-24.5
+    parent: 0
+    type: Transform
+- uid: 1236
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-24.5
+    parent: 0
+    type: Transform
+- uid: 1237
+  type: CableApcExtension
+  components:
+  - pos: 4.5,-24.5
+    parent: 0
+    type: Transform
+- uid: 1238
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-15.5
+    parent: 0
+    type: Transform
+- uid: 1239
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-16.5
+    parent: 0
+    type: Transform
+- uid: 1240
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1241
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1242
+  type: CableApcExtension
+  components:
+  - pos: 1.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1243
+  type: CableApcExtension
+  components:
+  - pos: -0.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1244
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1245
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1246
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1247
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-16.5
+    parent: 0
+    type: Transform
+- uid: 1248
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-15.5
+    parent: 0
+    type: Transform
+- uid: 1249
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-14.5
+    parent: 0
+    type: Transform
+- uid: 1250
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-13.5
+    parent: 0
+    type: Transform
+- uid: 1251
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-12.5
+    parent: 0
+    type: Transform
+- uid: 1252
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1253
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-10.5
+    parent: 0
+    type: Transform
+- uid: 1254
+  type: CableApcExtension
+  components:
+  - pos: 0.5,0.5
+    parent: 0
+    type: Transform
+- uid: 1255
+  type: CableApcExtension
+  components:
+  - pos: -5.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1256
+  type: CableApcExtension
+  components:
+  - pos: -4.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1257
+  type: CableApcExtension
+  components:
+  - pos: -3.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1258
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1259
+  type: CableApcExtension
+  components:
+  - pos: 6.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1260
+  type: CableApcExtension
+  components:
+  - pos: 5.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1261
+  type: CableApcExtension
+  components:
+  - pos: 4.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1262
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1263
+  type: CableApcExtension
+  components:
+  - pos: 4.5,-12.5
+    parent: 0
+    type: Transform
+- uid: 1264
+  type: CableApcExtension
+  components:
+  - pos: -3.5,-12.5
+    parent: 0
+    type: Transform
+- uid: 1265
+  type: CableApcExtension
+  components:
+  - pos: -4.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1266
+  type: CableApcExtension
+  components:
+  - pos: -3.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1267
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1268
+  type: CableApcExtension
+  components:
+  - pos: -1.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1269
+  type: CableApcExtension
+  components:
+  - pos: -0.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1270
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1271
+  type: CableApcExtension
+  components:
+  - pos: 1.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1272
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1273
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1274
+  type: CableApcExtension
+  components:
+  - pos: 4.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1275
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-3.5
+    parent: 0
+    type: Transform
+- uid: 1276
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-2.5
+    parent: 0
+    type: Transform
+- uid: 1277
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 1278
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 1279
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 1280
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-6.5
+    parent: 0
+    type: Transform
+- uid: 1281
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-7.5
+    parent: 0
+    type: Transform
+- uid: 1282
+  type: CableApcExtension
+  components:
+  - pos: 0.5,-8.5
+    parent: 0
+    type: Transform
+- uid: 1283
+  type: CableApcExtension
+  components:
+  - pos: -0.5,-8.5
+    parent: 0
+    type: Transform
+- uid: 1284
+  type: CableApcExtension
+  components:
+  - pos: 1.5,-8.5
+    parent: 0
+    type: Transform
+- uid: 1285
+  type: CableApcExtension
+  components:
+  - pos: 0.5,1.5
+    parent: 0
+    type: Transform
+- uid: 1286
+  type: CableApcExtension
+  components:
+  - pos: 1.5,1.5
+    parent: 0
+    type: Transform
+- uid: 1287
+  type: CableApcExtension
+  components:
+  - pos: 2.5,1.5
+    parent: 0
+    type: Transform
+- uid: 1288
+  type: CableApcExtension
+  components:
+  - pos: 2.5,0.5
+    parent: 0
+    type: Transform
+- uid: 1289
+  type: CableApcExtension
+  components:
+  - pos: 3.5,0.5
+    parent: 0
+    type: Transform
+- uid: 1290
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 1291
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 1292
+  type: CableApcExtension
+  components:
+  - pos: -0.5,1.5
+    parent: 0
+    type: Transform
+- uid: 1293
+  type: CableApcExtension
+  components:
+  - pos: -1.5,1.5
+    parent: 0
+    type: Transform
+- uid: 1294
+  type: CableApcExtension
+  components:
+  - pos: -1.5,0.5
+    parent: 0
+    type: Transform
+- uid: 1295
+  type: CableApcExtension
+  components:
+  - pos: -2.5,0.5
+    parent: 0
+    type: Transform
+- uid: 1296
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-0.5
+    parent: 0
+    type: Transform
+- uid: 1297
+  type: CableApcExtension
+  components:
+  - pos: -2.5,-1.5
+    parent: 0
+    type: Transform
+- uid: 1298
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1299
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-36.5
+    parent: 0
+    type: Transform
+- uid: 1300
+  type: CableApcExtension
+  components:
+  - pos: 2.5,-37.5
+    parent: 0
+    type: Transform
+- uid: 1301
+  type: CableApcExtension
+  components:
+  - pos: 3.5,-37.5
+    parent: 0
+    type: Transform
+- uid: 1302
+  type: CableApcExtension
+  components:
+  - pos: 5.5,-37.5
+    parent: 0
+    type: Transform
+- uid: 1303
+  type: CableApcExtension
+  components:
+  - pos: 4.5,-37.5
+    parent: 0
+    type: Transform
+- uid: 1304
+  type: CableHV
+  components:
+  - pos: -11.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1305
+  type: CableHV
+  components:
+  - pos: -11.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1306
+  type: CableHV
+  components:
+  - pos: -11.5,-19.5
+    parent: 0
+    type: Transform
+- uid: 1307
+  type: CableHV
+  components:
+  - pos: -10.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1308
+  type: CableHV
+  components:
+  - pos: -9.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1309
+  type: CableHV
+  components:
+  - pos: -8.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1310
+  type: CableHV
+  components:
+  - pos: -7.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1311
+  type: CableHV
+  components:
+  - pos: -6.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1312
+  type: CableHV
+  components:
+  - pos: -5.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1313
+  type: CableHV
+  components:
+  - pos: -4.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1314
+  type: CableHV
+  components:
+  - pos: -3.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1315
+  type: CableHV
+  components:
+  - pos: -2.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1316
+  type: CableHV
+  components:
+  - pos: -1.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1317
+  type: CableHV
+  components:
+  - pos: 0.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1318
+  type: CableHV
+  components:
+  - pos: -0.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1319
+  type: CableHV
+  components:
+  - pos: 0.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1320
+  type: CableHV
+  components:
+  - pos: 0.5,-16.5
+    parent: 0
+    type: Transform
+- uid: 1321
+  type: CableHV
+  components:
+  - pos: 0.5,-15.5
+    parent: 0
+    type: Transform
+- uid: 1322
+  type: CableHV
+  components:
+  - pos: 0.5,-13.5
+    parent: 0
+    type: Transform
+- uid: 1323
+  type: CableHV
+  components:
+  - pos: 0.5,-14.5
+    parent: 0
+    type: Transform
+- uid: 1324
+  type: CableHV
+  components:
+  - pos: 0.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1325
+  type: CableHV
+  components:
+  - pos: 0.5,-12.5
+    parent: 0
+    type: Transform
+- uid: 1326
+  type: CableHV
+  components:
+  - pos: 0.5,-9.5
+    parent: 0
+    type: Transform
+- uid: 1327
+  type: CableHV
+  components:
+  - pos: 0.5,-10.5
+    parent: 0
+    type: Transform
+- uid: 1328
+  type: CableHV
+  components:
+  - pos: 0.5,-8.5
+    parent: 0
+    type: Transform
+- uid: 1329
+  type: CableHV
+  components:
+  - pos: 0.5,-7.5
+    parent: 0
+    type: Transform
+- uid: 1330
+  type: CableHV
+  components:
+  - pos: 0.5,-6.5
+    parent: 0
+    type: Transform
+- uid: 1331
+  type: CableHV
+  components:
+  - pos: 0.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 1332
+  type: CableHV
+  components:
+  - pos: 0.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1333
+  type: CableMV
+  components:
+  - pos: -0.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1334
+  type: CableMV
+  components:
+  - pos: 0.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1335
+  type: CableMV
+  components:
+  - pos: -1.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1336
+  type: CableMV
+  components:
+  - pos: -2.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1337
+  type: CableMV
+  components:
+  - pos: -3.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1338
+  type: CableMV
+  components:
+  - pos: -4.5,-4.5
+    parent: 0
+    type: Transform
+- uid: 1339
+  type: CableMV
+  components:
+  - pos: 0.5,-5.5
+    parent: 0
+    type: Transform
+- uid: 1340
+  type: CableMV
+  components:
+  - pos: 0.5,-6.5
+    parent: 0
+    type: Transform
+- uid: 1341
+  type: CableMV
+  components:
+  - pos: 0.5,-7.5
+    parent: 0
+    type: Transform
+- uid: 1342
+  type: CableMV
+  components:
+  - pos: 0.5,-8.5
+    parent: 0
+    type: Transform
+- uid: 1343
+  type: CableMV
+  components:
+  - pos: 0.5,-9.5
+    parent: 0
+    type: Transform
+- uid: 1344
+  type: CableMV
+  components:
+  - pos: 0.5,-10.5
+    parent: 0
+    type: Transform
+- uid: 1345
+  type: CableMV
+  components:
+  - pos: 0.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1346
+  type: CableMV
+  components:
+  - pos: -0.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1347
+  type: CableMV
+  components:
+  - pos: 1.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1348
+  type: CableMV
+  components:
+  - pos: -1.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1349
+  type: CableMV
+  components:
+  - pos: -2.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1350
+  type: CableMV
+  components:
+  - pos: -3.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1351
+  type: CableMV
+  components:
+  - pos: -4.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1352
+  type: CableMV
+  components:
+  - pos: -5.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1353
+  type: CableMV
+  components:
+  - pos: 2.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1354
+  type: CableMV
+  components:
+  - pos: 3.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1355
+  type: CableMV
+  components:
+  - pos: 4.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1356
+  type: CableMV
+  components:
+  - pos: 5.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1357
+  type: CableMV
+  components:
+  - pos: 6.5,-11.5
+    parent: 0
+    type: Transform
+- uid: 1358
+  type: CableMV
+  components:
+  - pos: 0.5,-12.5
+    parent: 0
+    type: Transform
+- uid: 1359
+  type: CableMV
+  components:
+  - pos: 0.5,-13.5
+    parent: 0
+    type: Transform
+- uid: 1360
+  type: CableMV
+  components:
+  - pos: 0.5,-14.5
+    parent: 0
+    type: Transform
+- uid: 1361
+  type: CableMV
+  components:
+  - pos: 0.5,-15.5
+    parent: 0
+    type: Transform
+- uid: 1362
+  type: CableMV
+  components:
+  - pos: 0.5,-16.5
+    parent: 0
+    type: Transform
+- uid: 1363
+  type: CableMV
+  components:
+  - pos: 2.5,-16.5
+    parent: 0
+    type: Transform
+- uid: 1364
+  type: CableMV
+  components:
+  - pos: 1.5,-16.5
+    parent: 0
+    type: Transform
+- uid: 1365
+  type: CableMV
+  components:
+  - pos: 3.5,-16.5
+    parent: 0
+    type: Transform
+- uid: 1366
+  type: CableMV
+  components:
+  - pos: 3.5,-15.5
+    parent: 0
+    type: Transform
+- uid: 1367
+  type: CableMV
+  components:
+  - pos: -10.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1368
+  type: CableMV
+  components:
+  - pos: -10.5,-19.5
+    parent: 0
+    type: Transform
+- uid: 1369
+  type: CableMV
+  components:
+  - pos: -11.5,-19.5
+    parent: 0
+    type: Transform
+- uid: 1370
+  type: CableMV
+  components:
+  - pos: -11.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1371
+  type: CableMV
+  components:
+  - pos: -9.5,-17.5
+    parent: 0
+    type: Transform
+- uid: 1372
+  type: CableMV
+  components:
+  - pos: -10.5,-16.5
+    parent: 0
+    type: Transform
+- uid: 1373
+  type: CableMV
+  components:
+  - pos: -9.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1374
+  type: CableMV
+  components:
+  - pos: -9.5,-19.5
+    parent: 0
+    type: Transform
+- uid: 1375
+  type: CableMV
+  components:
+  - pos: -8.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1376
+  type: CableMV
+  components:
+  - pos: -7.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1377
+  type: CableMV
+  components:
+  - pos: -5.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1378
+  type: CableMV
+  components:
+  - pos: -6.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1379
+  type: CableMV
+  components:
+  - pos: -4.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1380
+  type: CableMV
+  components:
+  - pos: -3.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1381
+  type: CableMV
+  components:
+  - pos: -2.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1382
+  type: CableMV
+  components:
+  - pos: -9.5,-20.5
+    parent: 0
+    type: Transform
+- uid: 1383
+  type: CableMV
+  components:
+  - pos: -1.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1384
+  type: CableMV
+  components:
+  - pos: -0.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1385
+  type: CableMV
+  components:
+  - pos: 0.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1386
+  type: CableMV
+  components:
+  - pos: 1.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1387
+  type: CableMV
+  components:
+  - pos: 2.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1388
+  type: CableMV
+  components:
+  - pos: 3.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1389
+  type: CableMV
+  components:
+  - pos: 2.5,-19.5
+    parent: 0
+    type: Transform
+- uid: 1390
+  type: CableMV
+  components:
+  - pos: 2.5,-20.5
+    parent: 0
+    type: Transform
+- uid: 1391
+  type: CableMV
+  components:
+  - pos: 3.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1392
+  type: CableMV
+  components:
+  - pos: 4.5,-18.5
+    parent: 0
+    type: Transform
+- uid: 1393
+  type: CableMV
+  components:
+  - pos: 4.5,-19.5
+    parent: 0
+    type: Transform
+- uid: 1394
+  type: CableMV
+  components:
+  - pos: 4.5,-20.5
+    parent: 0
+    type: Transform
+- uid: 1395
+  type: CableMV
+  components:
+  - pos: 4.5,-21.5
+    parent: 0
+    type: Transform
+- uid: 1396
+  type: CableMV
+  components:
+  - pos: 4.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1397
+  type: CableMV
+  components:
+  - pos: 3.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1398
+  type: CableMV
+  components:
+  - pos: 2.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1399
+  type: CableMV
+  components:
+  - pos: 1.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1400
+  type: CableMV
+  components:
+  - pos: 0.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1401
+  type: CableMV
+  components:
+  - pos: -0.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1402
+  type: CableMV
+  components:
+  - pos: -1.5,-22.5
+    parent: 0
+    type: Transform
+- uid: 1403
+  type: CableMV
+  components:
+  - pos: -1.5,-21.5
+    parent: 0
+    type: Transform
+- uid: 1404
+  type: CableMV
+  components:
+  - pos: -1.5,-20.5
+    parent: 0
+    type: Transform
+- uid: 1405
+  type: CableMV
+  components:
+  - pos: 2.5,-23.5
+    parent: 0
+    type: Transform
+- uid: 1406
+  type: CableMV
+  components:
+  - pos: 2.5,-24.5
+    parent: 0
+    type: Transform
+- uid: 1407
+  type: CableMV
+  components:
+  - pos: 2.5,-25.5
+    parent: 0
+    type: Transform
+- uid: 1408
+  type: CableMV
+  components:
+  - pos: 2.5,-26.5
+    parent: 0
+    type: Transform
+- uid: 1409
+  type: CableMV
+  components:
+  - pos: 2.5,-27.5
+    parent: 0
+    type: Transform
+- uid: 1410
+  type: CableMV
+  components:
+  - pos: 1.5,-27.5
+    parent: 0
+    type: Transform
+- uid: 1411
+  type: CableMV
+  components:
+  - pos: 2.5,-28.5
+    parent: 0
+    type: Transform
+- uid: 1412
+  type: CableMV
+  components:
+  - pos: 2.5,-29.5
+    parent: 0
+    type: Transform
+- uid: 1413
+  type: CableMV
+  components:
+  - pos: 2.5,-30.5
+    parent: 0
+    type: Transform
+- uid: 1414
+  type: CableMV
+  components:
+  - pos: 3.5,-30.5
+    parent: 0
+    type: Transform
+- uid: 1415
+  type: CableMV
+  components:
+  - pos: 4.5,-30.5
+    parent: 0
+    type: Transform
+- uid: 1416
+  type: CableMV
+  components:
+  - pos: 5.5,-30.5
+    parent: 0
+    type: Transform
+- uid: 1417
+  type: CableMV
+  components:
+  - pos: 5.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1418
+  type: CableMV
+  components:
+  - pos: 5.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1419
+  type: CableMV
+  components:
+  - pos: 5.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1420
+  type: CableMV
+  components:
+  - pos: 4.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1421
+  type: CableMV
+  components:
+  - pos: 3.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1422
+  type: CableMV
+  components:
+  - pos: 2.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1423
+  type: CableMV
+  components:
+  - pos: 2.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1424
+  type: CableMV
+  components:
+  - pos: 1.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1425
+  type: CableMV
+  components:
+  - pos: 0.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1426
+  type: CableMV
+  components:
+  - pos: 0.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1427
+  type: CableMV
+  components:
+  - pos: -0.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1428
+  type: CableMV
+  components:
+  - pos: -1.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1429
+  type: CableMV
+  components:
+  - pos: -3.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1430
+  type: CableMV
+  components:
+  - pos: -2.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1431
+  type: CableMV
+  components:
+  - pos: -4.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1432
+  type: CableMV
+  components:
+  - pos: -4.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1433
+  type: CableMV
+  components:
+  - pos: -5.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1434
+  type: CableMV
+  components:
+  - pos: -6.5,-31.5
+    parent: 0
+    type: Transform
+- uid: 1435
+  type: CableMV
+  components:
+  - pos: -6.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1436
+  type: CableMV
+  components:
+  - pos: -7.5,-32.5
+    parent: 0
+    type: Transform
+- uid: 1437
+  type: CableMV
+  components:
+  - pos: -7.5,-33.5
+    parent: 0
+    type: Transform
+- uid: 1438
+  type: CableMV
+  components:
+  - pos: -7.5,-34.5
+    parent: 0
+    type: Transform
+- uid: 1439
+  type: CableMV
+  components:
+  - pos: -7.5,-35.5
+    parent: 0
+    type: Transform
+- uid: 1440
+  type: CableMV
+  components:
+  - pos: -7.5,-36.5
+    parent: 0
+    type: Transform
+- uid: 1441
+  type: CableMV
+  components:
+  - pos: -8.5,-36.5
+    parent: 0
+    type: Transform
+- uid: 1442
+  type: CableMV
+  components:
+  - pos: -9.5,-36.5
+    parent: 0
+    type: Transform
+- uid: 1443
+  type: CableMV
+  components:
+  - pos: -10.5,-36.5
+    parent: 0
+    type: Transform
+- uid: 1444
+  type: CableMV
+  components:
+  - pos: -11.5,-36.5
+    parent: 0
+    type: Transform
+- uid: 1445
+  type: CableMV
+  components:
+  - pos: -11.5,-37.5
+    parent: 0
+    type: Transform
+- uid: 1446
+  type: CableMV
+  components:
+  - pos: -11.5,-38.5
+    parent: 0
+    type: Transform
+- uid: 1447
+  type: CableMV
+  components:
+  - pos: -11.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1448
+  type: CableMV
+  components:
+  - pos: -10.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1449
+  type: CableMV
+  components:
+  - pos: -9.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1450
+  type: CableMV
+  components:
+  - pos: -8.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1451
+  type: CableMV
+  components:
+  - pos: -7.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1452
+  type: CableMV
+  components:
+  - pos: -6.5,-39.5
+    parent: 0
+    type: Transform
+- uid: 1453
+  type: CableMV
+  components:
+  - pos: -6.5,-40.5
+    parent: 0
+    type: Transform
+- uid: 1454
+  type: CableMV
+  components:
+  - pos: -5.5,-40.5
+    parent: 0
+    type: Transform
+- uid: 1455
+  type: CableMV
+  components:
+  - pos: -4.5,-40.5
+    parent: 0
+    type: Transform
+- uid: 1456
+  type: CableMV
+  components:
+  - pos: -4.5,-39.5
+    parent: 0
+    type: Transform
 ...
