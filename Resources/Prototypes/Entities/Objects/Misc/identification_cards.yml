@@ -231,7 +231,7 @@
 - type: entity
   parent: IDCardStandard
   id: ChaplainIDCard
-  name: chaplain ID card
+  name: preacher ID card
   components:
     - type: Sprite
       layers:

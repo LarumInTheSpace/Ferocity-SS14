@@ -274,7 +274,7 @@
     state: pda-mime
 
 - type: entity
-  name: Chaplain PDA
+  name: Preacher PDA
   parent: BasePDA
   id: ChaplainPDA
   description: God's chosen PDA.
