@@ -2,7 +2,7 @@ meta:
   format: 3
   name: DemoStation
   author: Space-Wizards
-  postmapinit: true
+  postmapinit: false
 tilemap:
   0: Space
   1: FloorArcadeBlue
@@ -137,7 +137,7 @@ entities:
     type: Fixtures
   - type: OccluderTree
   - type: Shuttle
-  - nextUpdate: -370.6159505
+  - nextUpdate: 233.4747519
     type: GridPathfinding
   - gravityShakeSound: !type:SoundPathSpecifier
       path: /Audio/Effects/alert.ogg
@@ -816,10 +816,10 @@ entities:
       2,-17: 50
       3,-17: 49
       4,-17: 49
-      5,-17: 49
+      5,-17: 51
       5,-19: 49
       5,-18: 49
-      5,-20: 49
+      5,-20: 51
       4,-20: 49
       4,-19: 49
       4,-18: 49
@@ -828,14 +828,14 @@ entities:
       3,-18: 49
       2,-20: 49
       2,-19: 49
-      2,-18: 51
+      2,-18: 52
       1,-20: 49
       1,-19: 49
       1,-18: 49
       0,-18: 5
       0,-19: 49
       0,-20: 49
-      -1,-20: 52
+      -1,-20: 53
       -1,-19: 10
       -1,-18: 42
       -1,-17: 42
@@ -843,356 +843,356 @@ entities:
       -2,-19: 10
       -2,-18: 2
       -2,-17: 10
-      -3,-20: 53
-      -3,-19: 54
+      -3,-20: 54
+      -3,-19: 55
       -3,-18: 46
       -3,-17: 6
       -4,-20: 10
       -4,-19: 3
       -4,-18: 42
       -4,-17: 5
-      -5,-20: 2
+      -5,-20: 56
       -5,-19: 6
-      -5,-18: 52
-      -5,-17: 55
-      -6,-19: 56
-      4,-21: 57
-      -7,-20: 58
-      -8,-20: 59
-      -9,-20: 60
-      -10,-20: 61
-      -11,-20: 60
-      -12,-20: 59
-      -7,-19: 62
-      -8,-19: 59
-      -9,-19: 60
-      -10,-19: 61
-      -11,-19: 60
-      -12,-19: 59
-      -7,-18: 59
-      -8,-18: 60
-      -9,-18: 63
-      -10,-18: 61
-      -11,-18: 58
-      -12,-18: 64
-      -7,-17: 61
-      -7,-16: 60
-      -7,-15: 61
-      -8,-17: 60
-      -8,-16: 60
-      -8,-15: 60
-      -9,-17: 59
-      -9,-16: 59
-      -9,-15: 59
-      -8,-21: 65
-      -8,-22: 66
-      -8,-23: 67
-      -8,-24: 68
-      -7,-22: 67
-      -7,-23: 67
-      -7,-24: 67
-      -8,-25: 67
-      -7,-25: 67
-      -8,-26: 68
-      -7,-26: 67
-      -7,-27: 67
-      -8,-27: 67
-      -12,-24: 67
-      -12,-25: 67
-      -12,-26: 67
-      -12,-27: 67
-      -9,-22: 67
-      -9,-23: 67
-      -9,-24: 67
-      -9,-25: 67
-      -9,-26: 67
-      -9,-27: 67
-      -10,-22: 68
-      -10,-23: 68
-      -10,-24: 68
-      -10,-25: 68
-      -10,-26: 68
-      -10,-27: 68
-      -11,-22: 67
-      -11,-23: 67
-      -11,-24: 67
-      -11,-25: 67
-      -11,-26: 67
-      -11,-27: 67
-      -12,-22: 67
-      -12,-23: 67
+      -5,-18: 53
+      -5,-17: 57
+      -6,-19: 58
+      4,-21: 59
+      -7,-20: 60
+      -8,-20: 61
+      -9,-20: 62
+      -10,-20: 63
+      -11,-20: 62
+      -12,-20: 61
+      -7,-19: 64
+      -8,-19: 61
+      -9,-19: 62
+      -10,-19: 63
+      -11,-19: 62
+      -12,-19: 61
+      -7,-18: 61
+      -8,-18: 62
+      -9,-18: 65
+      -10,-18: 63
+      -11,-18: 66
+      -12,-18: 67
+      -7,-17: 63
+      -7,-16: 62
+      -7,-15: 63
+      -8,-17: 62
+      -8,-16: 62
+      -8,-15: 62
+      -9,-17: 61
+      -9,-16: 61
+      -9,-15: 61
+      -8,-21: 68
+      -8,-22: 69
+      -8,-23: 70
+      -8,-24: 71
+      -7,-22: 70
+      -7,-23: 70
+      -7,-24: 70
+      -8,-25: 70
+      -7,-25: 70
+      -8,-26: 71
+      -7,-26: 70
+      -7,-27: 70
+      -8,-27: 70
+      -12,-24: 70
+      -12,-25: 70
+      -12,-26: 70
+      -12,-27: 70
+      -9,-22: 70
+      -9,-23: 70
+      -9,-24: 70
+      -9,-25: 70
+      -9,-26: 70
+      -9,-27: 70
+      -10,-22: 71
+      -10,-23: 71
+      -10,-24: 71
+      -10,-25: 71
+      -10,-26: 71
+      -10,-27: 71
+      -11,-22: 70
+      -11,-23: 70
+      -11,-24: 70
+      -11,-25: 70
+      -11,-26: 70
+      -11,-27: 70
+      -12,-22: 70
+      -12,-23: 70
       6,-8: 0
       5,-8: 0
       6,-7: 0
       -5,-8: 0
       -6,-7: 0
       -6,-8: 0
-      -12,-29: 69
-      -12,-30: 69
-      -12,-31: 70
-      -11,-29: 69
-      -11,-30: 69
-      -11,-31: 69
-      -10,-29: 69
-      -10,-30: 69
-      -10,-31: 69
-      -9,-29: 69
-      -9,-30: 69
-      -9,-31: 69
-      -8,-29: 71
-      -7,-29: 72
-      -7,-30: 73
-      -7,-31: 74
-      -7,-32: 75
-      -6,-32: 76
-      -5,-32: 77
-      -5,-33: 78
-      -4,-33: 79
-      -5,-28: 80
-      -5,-29: 81
-      -3,-29: 82
-      -3,-30: 82
-      -3,-31: 82
-      1,-26: 83
-      1,-27: 83
-      2,-22: 84
-      2,-23: 83
-      2,-24: 83
-      2,-25: 83
-      2,-26: 83
-      2,-27: 83
-      3,-22: 85
-      3,-23: 86
-      3,-24: 83
-      3,-25: 83
-      3,-26: 83
-      3,-27: 83
-      -5,-22: 87
-      -5,-23: 87
-      -5,-24: 87
-      -5,-25: 87
-      -5,-26: 87
-      -5,-27: 87
-      -4,-22: 87
-      -4,-23: 87
-      -4,-24: 87
-      -4,-25: 87
-      -4,-26: 87
-      -4,-27: 87
-      -3,-22: 87
-      -3,-23: 87
-      -3,-24: 87
-      -3,-25: 88
-      -3,-26: 87
-      -3,-27: 89
-      -2,-22: 90
-      -2,-23: 87
-      -2,-24: 91
-      -2,-25: 87
-      -2,-26: 87
-      -2,-27: 87
-      -1,-22: 87
-      -1,-23: 87
-      -1,-24: 87
-      -1,-25: 87
-      -1,-26: 87
-      -1,-27: 87
-      0,-23: 92
-      1,-22: 83
-      1,-23: 83
-      1,-24: 83
-      1,-25: 83
-      -2,-29: 93
-      -2,-30: 94
-      -2,-31: 82
-      -1,-28: 95
-      -1,-29: 96
-      -1,-30: 82
-      -1,-31: 82
-      1,-29: 97
-      1,-30: 97
-      1,-31: 98
-      2,-28: 99
-      2,-29: 100
-      2,-30: 100
-      2,-31: 101
-      3,-29: 102
-      3,-30: 102
-      3,-31: 103
-      2,-33: 79
-      1,-33: 79
-      0,-33: 79
-      -1,-33: 104
-      -2,-33: 104
-      -3,-32: 105
-      -3,-33: 79
-      -8,-34: 106
-      -7,-34: 107
-      -1,-34: 108
-      2,-34: 79
-      3,-34: 109
-      -8,-35: 106
-      -8,-36: 106
-      -7,-35: 110
-      -7,-36: 111
-      -5,-35: 112
-      -5,-36: 113
-      -4,-35: 114
-      -4,-36: 115
-      -2,-35: 116
-      -2,-36: 117
-      -1,-35: 118
-      -1,-36: 119
-      0,-35: 120
-      0,-36: 121
-      2,-35: 122
-      2,-36: 123
-      6,-24: 124
+      -12,-29: 72
+      -12,-30: 72
+      -12,-31: 73
+      -11,-29: 72
+      -11,-30: 72
+      -11,-31: 72
+      -10,-29: 72
+      -10,-30: 72
+      -10,-31: 72
+      -9,-29: 72
+      -9,-30: 72
+      -9,-31: 72
+      -8,-29: 74
+      -7,-29: 75
+      -7,-30: 76
+      -7,-31: 77
+      -7,-32: 78
+      -6,-32: 79
+      -5,-32: 80
+      -5,-33: 81
+      -4,-33: 82
+      -5,-28: 83
+      -5,-29: 84
+      -3,-29: 85
+      -3,-30: 85
+      -3,-31: 85
+      1,-26: 86
+      1,-27: 86
+      2,-22: 87
+      2,-23: 86
+      2,-24: 86
+      2,-25: 86
+      2,-26: 86
+      2,-27: 86
+      3,-22: 88
+      3,-23: 89
+      3,-24: 86
+      3,-25: 86
+      3,-26: 86
+      3,-27: 86
+      -5,-22: 90
+      -5,-23: 90
+      -5,-24: 90
+      -5,-25: 90
+      -5,-26: 90
+      -5,-27: 90
+      -4,-22: 90
+      -4,-23: 90
+      -4,-24: 90
+      -4,-25: 90
+      -4,-26: 90
+      -4,-27: 90
+      -3,-22: 90
+      -3,-23: 90
+      -3,-24: 90
+      -3,-25: 91
+      -3,-26: 90
+      -3,-27: 92
+      -2,-22: 93
+      -2,-23: 90
+      -2,-24: 94
+      -2,-25: 90
+      -2,-26: 90
+      -2,-27: 90
+      -1,-22: 90
+      -1,-23: 90
+      -1,-24: 90
+      -1,-25: 90
+      -1,-26: 90
+      -1,-27: 90
+      0,-23: 95
+      1,-22: 86
+      1,-23: 86
+      1,-24: 86
+      1,-25: 86
+      -2,-29: 96
+      -2,-30: 97
+      -2,-31: 85
+      -1,-28: 98
+      -1,-29: 99
+      -1,-30: 85
+      -1,-31: 85
+      1,-29: 100
+      1,-30: 100
+      1,-31: 101
+      2,-28: 102
+      2,-29: 103
+      2,-30: 103
+      2,-31: 104
+      3,-29: 105
+      3,-30: 105
+      3,-31: 106
+      2,-33: 82
+      1,-33: 82
+      0,-33: 82
+      -1,-33: 107
+      -2,-33: 107
+      -3,-32: 108
+      -3,-33: 82
+      -8,-34: 109
+      -7,-34: 110
+      -1,-34: 111
+      2,-34: 82
+      3,-34: 112
+      -8,-35: 113
+      -8,-36: 109
+      -7,-35: 114
+      -7,-36: 115
+      -5,-35: 116
+      -5,-36: 117
+      -4,-35: 118
+      -4,-36: 119
+      -2,-35: 120
+      -2,-36: 121
+      -1,-35: 122
+      -1,-36: 123
+      0,-35: 124
+      0,-36: 125
+      2,-35: 126
+      2,-36: 127
+      6,-24: 128
       6,-25: 14
-      5,-22: 83
-      5,-23: 83
-      5,-24: 83
-      5,-25: 83
-      5,-26: 83
-      5,-27: 83
-      4,-22: 86
-      4,-23: 83
-      4,-24: 83
-      4,-25: 83
-      4,-26: 83
-      4,-27: 83
-      4,-29: 103
-      4,-30: 100
-      4,-31: 97
-      4,-33: 125
-      4,-34: 125
-      5,-29: 101
-      5,-30: 100
-      5,-31: 97
-      5,-32: 126
-      5,-33: 127
-      5,-34: 127
-      6,-33: 125
-      6,-34: 125
-      6,-35: 125
-      5,-35: 127
-      5,-37: 128
-      5,-38: 129
-      4,-35: 130
-      4,-37: 131
-      4,-38: 132
-      3,-37: 133
-      3,-38: 134
-      2,-37: 135
-      2,-38: 135
-      7,-37: 136
-      7,-38: 137
-      7,-39: 135
-      5,-39: 138
-      4,-39: 139
-      3,-39: 140
-      2,-39: 135
-      0,-39: 141
-      0,-40: 141
-      -1,-39: 141
-      -1,-40: 142
-      0,-37: 69
-      -1,-37: 69
-      -2,-37: 69
-      -2,-39: 141
-      -2,-40: 141
-      -4,-38: 143
-      -4,-39: 143
-      -4,-40: 143
-      -9,-40: 144
-      -8,-37: 145
-      -8,-38: 146
-      -8,-40: 147
-      -7,-37: 148
-      -7,-38: 149
-      -7,-40: 150
-      -5,-38: 143
-      -5,-39: 143
-      -13,-35: 151
+      5,-22: 86
+      5,-23: 86
+      5,-24: 86
+      5,-25: 86
+      5,-26: 86
+      5,-27: 129
+      4,-22: 89
+      4,-23: 86
+      4,-24: 86
+      4,-25: 86
+      4,-26: 86
+      4,-27: 86
+      4,-29: 106
+      4,-30: 103
+      4,-31: 100
+      4,-33: 130
+      4,-34: 130
+      5,-29: 104
+      5,-30: 131
+      5,-31: 100
+      5,-32: 132
+      5,-33: 133
+      5,-34: 133
+      6,-33: 130
+      6,-34: 130
+      6,-35: 130
+      5,-35: 133
+      5,-37: 134
+      5,-38: 135
+      4,-35: 136
+      4,-37: 137
+      4,-38: 138
+      3,-37: 139
+      3,-38: 140
+      2,-37: 141
+      2,-38: 141
+      7,-37: 142
+      7,-38: 143
+      7,-39: 141
+      5,-39: 144
+      4,-39: 145
+      3,-39: 146
+      2,-39: 141
+      0,-39: 147
+      0,-40: 147
+      -1,-39: 147
+      -1,-40: 148
+      0,-37: 72
+      -1,-37: 72
+      -2,-37: 72
+      -2,-39: 147
+      -2,-40: 147
+      -4,-38: 149
+      -4,-39: 149
+      -4,-40: 149
+      -9,-40: 150
+      -8,-37: 151
+      -8,-38: 152
+      -8,-40: 153
+      -7,-37: 154
+      -7,-38: 155
+      -7,-40: 156
+      -5,-38: 149
+      -5,-39: 149
+      -13,-35: 157
       -13,-36: 14
-      -12,-33: 106
-      -12,-34: 106
-      -12,-35: 106
-      -12,-36: 106
-      -12,-37: 106
-      -12,-38: 106
-      -12,-39: 152
-      -12,-40: 153
-      -11,-33: 106
-      -11,-34: 106
-      -11,-35: 106
-      -11,-36: 106
-      -11,-37: 106
-      -11,-38: 154
-      -11,-40: 155
-      -10,-33: 106
-      -10,-34: 106
-      -10,-35: 106
-      -10,-36: 106
-      -10,-37: 106
-      -10,-38: 106
-      -10,-40: 150
-      -9,-33: 106
-      -9,-34: 106
-      -9,-35: 106
-      -9,-36: 106
-      -9,-37: 106
-      -9,-38: 106
-      -9,-41: 156
-      -7,-41: 157
-      -6,-41: 150
-      -5,-41: 157
-      -4,-41: 150
-      -2,-41: 141
-      -1,-41: 158
-      0,-41: 141
-      2,-41: 159
-      3,-41: 159
-      4,-41: 159
-      -10,-42: 160
-      -7,-42: 161
-      -9,-42: 162
-      -11,-42: 163
-      -11,-43: 163
-      -10,-43: 163
-      -9,-43: 164
-      -11,-44: 163
-      -10,-44: 163
-      -9,-44: 163
-      -4,-42: 157
-      -1,-42: 165
-      2,-42: 166
-      3,-42: 159
-      4,-42: 159
+      -12,-33: 109
+      -12,-34: 113
+      -12,-35: 113
+      -12,-36: 109
+      -12,-37: 113
+      -12,-38: 113
+      -12,-39: 158
+      -12,-40: 159
+      -11,-33: 109
+      -11,-34: 109
+      -11,-35: 113
+      -11,-36: 113
+      -11,-37: 113
+      -11,-38: 160
+      -11,-40: 161
+      -10,-33: 109
+      -10,-34: 113
+      -10,-35: 113
+      -10,-36: 113
+      -10,-37: 109
+      -10,-38: 113
+      -10,-40: 156
+      -9,-33: 109
+      -9,-34: 113
+      -9,-35: 113
+      -9,-36: 113
+      -9,-37: 113
+      -9,-38: 109
+      -9,-41: 162
+      -7,-41: 163
+      -6,-41: 156
+      -5,-41: 163
+      -4,-41: 156
+      -2,-41: 147
+      -1,-41: 164
+      0,-41: 147
+      2,-41: 165
+      3,-41: 165
+      4,-41: 165
+      -10,-42: 166
+      -7,-42: 167
+      -9,-42: 168
+      -11,-42: 169
+      -11,-43: 169
+      -10,-43: 169
+      -9,-43: 170
+      -11,-44: 169
+      -10,-44: 169
+      -9,-44: 169
+      -4,-42: 163
+      -1,-42: 171
+      2,-42: 172
+      3,-42: 165
+      4,-42: 165
       6,-41: 0
       6,-42: 0
       6,-44: 0
       6,-45: 0
-      -7,-43: 161
-      -7,-44: 161
-      -6,-43: 161
-      -6,-44: 161
-      -4,-43: 150
-      -4,-45: 167
-      -3,-43: 157
-      -3,-45: 168
-      -2,-43: 147
-      -2,-45: 169
-      -1,-43: 150
-      0,-43: 157
-      0,-44: 150
-      0,-45: 157
-      1,-43: 170
-      2,-43: 171
+      -7,-43: 167
+      -7,-44: 167
+      -6,-43: 167
+      -6,-44: 167
+      -4,-43: 156
+      -4,-45: 173
+      -3,-43: 163
+      -3,-45: 174
+      -2,-43: 153
+      -2,-45: 175
+      -1,-43: 156
+      0,-43: 163
+      0,-44: 156
+      0,-45: 163
+      1,-43: 176
+      2,-43: 177
       2,-45: 0
-      3,-43: 172
+      3,-43: 178
       3,-45: 0
-      4,-43: 159
+      4,-43: 165
       4,-45: 0
       5,-45: 0
       6,-43: 0
@@ -1202,21 +1202,21 @@ entities:
       -7,-47: 0
       -8,-47: 0
       -6,-47: 0
-      -4,-46: 173
-      -4,-47: 174
-      -3,-46: 175
-      -3,-47: 176
-      -2,-46: 175
-      -2,-47: 175
+      -4,-46: 179
+      -4,-47: 180
+      -3,-46: 181
+      -3,-47: 182
+      -2,-46: 181
+      -2,-47: 181
       2,-46: 0
       2,-47: 0
       3,-46: 0
       3,-47: 0
       4,-46: 0
       4,-47: 0
-      -1,-47: 177
-      0,-46: 178
-      0,-47: 179
+      -1,-47: 183
+      0,-46: 184
+      0,-47: 185
       -1,-49: 0
       0,-49: 0
       1,-49: 0
@@ -1226,10 +1226,10 @@ entities:
       -14,-26: 0
       -14,-27: 0
       -14,-24: 0
-      -15,-27: 180
-      -15,-26: 181
-      -15,-23: 182
-      -15,-22: 183
+      -15,-27: 186
+      -15,-26: 187
+      -15,-23: 188
+      -15,-22: 189
       -15,-21: 0
       -15,-20: 0
       -14,-20: 0
@@ -1251,30 +1251,340 @@ entities:
       -19,-24: 0
       -19,-25: 0
       -20,-25: 0
-      -6,-31: 184
-      -5,-31: 185
-      -5,-34: 186
-      6,-39: 187
-      6,-38: 188
-      6,-37: 189
-      -14,-36: 190
-      -14,-35: 190
-      -15,-35: 190
-      -15,-36: 190
+      -6,-31: 190
+      -5,-31: 191
+      -5,-34: 192
+      6,-39: 193
+      6,-38: 194
+      6,-37: 195
+      -14,-36: 196
+      -14,-35: 196
+      -15,-35: 196
+      -15,-36: 196
       -16,-36: 14
       -16,-35: 14
-      7,-24: 191
-      7,-25: 191
-      7,-26: 191
-      8,-26: 191
-      8,-25: 191
-      8,-24: 191
-      7,-23: 192
-      8,-23: 192
-      9,-23: 192
-      9,-24: 192
-      9,-25: 192
-      9,-26: 192
+      7,-24: 197
+      7,-25: 197
+      7,-26: 197
+      8,-26: 197
+      8,-25: 197
+      8,-24: 197
+      7,-23: 198
+      8,-23: 198
+      9,-23: 198
+      9,-24: 198
+      9,-25: 198
+      9,-26: 198
+      1,-9: 198
+      2,-16: 198
+      2,-15: 198
+      2,-14: 198
+      2,-13: 198
+      2,-11: 198
+      2,-10: 198
+      2,-9: 198
+      3,-16: 198
+      3,-9: 198
+      3,-2: 198
+      3,-1: 198
+      4,-16: 198
+      4,-9: 198
+      4,-8: 198
+      4,-7: 198
+      4,-2: 198
+      5,-16: 198
+      5,-9: 198
+      5,-7: 198
+      5,-6: 198
+      5,-5: 198
+      5,-4: 198
+      5,-3: 198
+      5,-2: 198
+      6,-16: 198
+      6,-15: 198
+      6,-14: 198
+      6,-13: 198
+      6,-12: 198
+      6,-11: 198
+      6,-10: 198
+      6,-9: 198
+      -10,-16: 198
+      -10,-15: 198
+      -10,-14: 198
+      -9,-14: 198
+      -8,-14: 198
+      -7,-14: 198
+      -6,-16: 198
+      -6,-15: 198
+      -6,-14: 198
+      -6,-13: 198
+      -6,-12: 198
+      -6,-11: 198
+      -6,-10: 198
+      -6,-9: 198
+      -5,-16: 198
+      -5,-9: 198
+      -5,-7: 198
+      -5,-6: 198
+      -5,-5: 198
+      -5,-4: 198
+      -5,-3: 198
+      -5,-2: 198
+      -4,-16: 198
+      -4,-9: 198
+      -4,-8: 198
+      -4,-7: 198
+      -4,-2: 198
+      -3,-16: 198
+      -3,-9: 198
+      -3,-2: 198
+      -3,-1: 198
+      -2,-16: 198
+      -2,-15: 198
+      -2,-14: 198
+      -2,-13: 198
+      -2,-11: 198
+      -2,-10: 198
+      -2,-9: 198
+      -1,-9: 198
+      -3,0: 198
+      -2,0: 198
+      -2,1: 198
+      -1,1: 198
+      0,1: 198
+      1,1: 198
+      2,0: 198
+      2,1: 198
+      3,0: 198
+      0,-32: 198
+      0,-31: 198
+      0,-30: 198
+      0,-29: 198
+      0,-28: 198
+      0,-27: 198
+      0,-26: 198
+      0,-25: 198
+      0,-24: 198
+      0,-22: 198
+      0,-21: 198
+      1,-32: 198
+      1,-28: 198
+      1,-21: 198
+      2,-32: 198
+      2,-21: 198
+      3,-32: 198
+      3,-28: 198
+      3,-21: 198
+      4,-32: 198
+      4,-28: 198
+      5,-28: 198
+      5,-21: 198
+      6,-32: 198
+      6,-31: 198
+      6,-30: 198
+      6,-29: 198
+      6,-28: 198
+      6,-27: 198
+      6,-26: 198
+      6,-23: 198
+      6,-22: 198
+      6,-21: 198
+      6,-20: 198
+      6,-19: 198
+      6,-18: 198
+      6,-17: 198
+      7,-32: 198
+      -13,-32: 198
+      -13,-31: 198
+      -13,-30: 198
+      -13,-29: 198
+      -13,-28: 198
+      -13,-27: 198
+      -13,-26: 198
+      -13,-25: 198
+      -13,-24: 198
+      -13,-23: 198
+      -13,-22: 198
+      -13,-21: 198
+      -13,-20: 198
+      -13,-19: 198
+      -13,-18: 198
+      -13,-17: 198
+      -12,-32: 198
+      -12,-28: 198
+      -12,-21: 198
+      -12,-17: 198
+      -11,-32: 198
+      -11,-28: 198
+      -11,-21: 198
+      -11,-17: 198
+      -10,-32: 198
+      -10,-28: 198
+      -10,-21: 198
+      -10,-17: 198
+      -9,-32: 198
+      -9,-28: 198
+      -9,-21: 198
+      -8,-32: 198
+      -8,-31: 198
+      -8,-30: 198
+      -8,-28: 198
+      -7,-28: 198
+      -7,-21: 198
+      -6,-30: 198
+      -6,-29: 198
+      -6,-28: 198
+      -6,-27: 198
+      -6,-26: 198
+      -6,-25: 198
+      -6,-24: 198
+      -6,-23: 198
+      -6,-22: 198
+      -6,-21: 198
+      -6,-20: 198
+      -6,-18: 198
+      -6,-17: 198
+      -5,-30: 198
+      -5,-21: 198
+      -4,-32: 198
+      -4,-31: 198
+      -4,-30: 198
+      -4,-29: 198
+      -4,-28: 198
+      -4,-21: 198
+      -3,-28: 198
+      -3,-21: 198
+      -2,-32: 198
+      -2,-28: 198
+      -2,-21: 198
+      -1,-32: 198
+      -1,-21: 198
+      -16,-37: 198
+      -16,-34: 198
+      -15,-37: 198
+      -15,-34: 198
+      -14,-37: 198
+      -14,-34: 198
+      -13,-41: 198
+      -13,-40: 198
+      -13,-39: 198
+      -13,-38: 198
+      -13,-37: 198
+      -13,-34: 198
+      -13,-33: 198
+      -12,-45: 198
+      -12,-44: 198
+      -12,-43: 198
+      -12,-42: 198
+      -12,-41: 198
+      -11,-45: 198
+      -11,-41: 198
+      -11,-39: 198
+      -10,-45: 198
+      -10,-41: 198
+      -10,-39: 198
+      -9,-45: 198
+      -9,-39: 198
+      -8,-45: 198
+      -8,-44: 198
+      -8,-43: 198
+      -8,-42: 198
+      -8,-41: 198
+      -8,-39: 198
+      -8,-33: 198
+      -7,-45: 198
+      -7,-39: 198
+      -7,-33: 198
+      -6,-45: 198
+      -6,-42: 198
+      -6,-40: 198
+      -6,-39: 198
+      -6,-38: 198
+      -6,-37: 198
+      -6,-36: 198
+      -6,-35: 198
+      -6,-34: 198
+      -6,-33: 198
+      -5,-48: 198
+      -5,-47: 198
+      -5,-46: 198
+      -5,-45: 198
+      -5,-44: 198
+      -5,-43: 198
+      -5,-42: 198
+      -5,-40: 198
+      -5,-37: 198
+      -4,-48: 198
+      -4,-44: 198
+      -4,-37: 198
+      -4,-34: 198
+      -3,-48: 198
+      -3,-44: 198
+      -3,-42: 198
+      -3,-41: 198
+      -3,-40: 198
+      -3,-39: 198
+      -3,-38: 198
+      -3,-37: 198
+      -3,-36: 198
+      -3,-35: 198
+      -3,-34: 198
+      -2,-48: 198
+      -2,-44: 198
+      -2,-42: 198
+      -2,-38: 198
+      -2,-34: 198
+      -1,-48: 198
+      -1,-46: 198
+      -1,-45: 198
+      -1,-44: 198
+      -1,-38: 198
+      0,-48: 198
+      0,-42: 198
+      0,-38: 198
+      0,-34: 198
+      1,-48: 198
+      1,-47: 198
+      1,-46: 198
+      1,-45: 198
+      1,-44: 198
+      1,-42: 198
+      1,-41: 198
+      1,-40: 198
+      1,-39: 198
+      1,-38: 198
+      1,-37: 198
+      1,-36: 198
+      1,-35: 198
+      1,-34: 198
+      2,-44: 198
+      2,-40: 198
+      3,-44: 198
+      3,-40: 198
+      3,-36: 198
+      3,-35: 198
+      3,-33: 198
+      4,-44: 198
+      4,-40: 198
+      4,-36: 198
+      5,-44: 198
+      5,-43: 198
+      5,-42: 198
+      5,-41: 198
+      5,-40: 198
+      5,-36: 198
+      6,-40: 198
+      6,-36: 198
+      7,-40: 198
+      7,-36: 198
+      7,-35: 198
+      7,-34: 198
+      7,-33: 198
+      8,-40: 198
+      8,-39: 198
+      8,-38: 198
+      8,-37: 198
+      8,-36: 198
     uniqueMixes:
     - volume: 2500
       immutable: True
@@ -1699,9 +2009,9 @@ entities:
     - volume: 2500
       temperature: 293.14966
       moles:
-      - 95.32612
-      - 39.240555
-      - 0.001527032
+      - 92.65699
+      - 38.14182
+      - 0.0014842751
       - 0
       - 0
       - 0
@@ -1834,8 +2144,8 @@ entities:
     - volume: 2500
       temperature: 293.14978
       moles:
-      - 83.71671
-      - 52.50695
+      - 81.37264
+      - 51.036755
       - 0
       - 0
       - 0
@@ -2044,6 +2354,21 @@ entities:
     - volume: 2500
       temperature: 293.14944
       moles:
+      - 92.58691
+      - 28.267994
+      - 2.709525E-06
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.14944
+      moles:
       - 95.25402
       - 29.082298
       - 0
@@ -2104,6 +2429,21 @@ entities:
     - volume: 2500
       temperature: 293.14957
       moles:
+      - 92.49461
+      - 28.36025
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.14957
+      moles:
       - 95.159065
       - 29.17721
       - 0
@@ -2149,8 +2489,8 @@ entities:
     - volume: 2500
       temperature: 293.14975
       moles:
-      - 81.73704
-      - 49.138885
+      - 79.4484
+      - 47.762997
       - 0
       - 0
       - 0
@@ -2226,6 +2566,21 @@ entities:
       moles:
       - 81.73703
       - 49.138878
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.14975
+      moles:
+      - 81.73704
+      - 49.138885
       - 0
       - 0
       - 0
@@ -2869,8 +3224,8 @@ entities:
     - volume: 2500
       temperature: 293.14746
       moles:
-      - 97.00905
-      - 4.876716
+      - 94.29279
+      - 4.740168
       - 0
       - 0
       - 0
@@ -2927,10 +3282,10 @@ entities:
       - 0
       - 0
     - volume: 2500
-      temperature: 293.1476
+      temperature: 293.14746
       moles:
-      - 96.90775
-      - 4.978042
+      - 97.00905
+      - 4.876716
       - 0
       - 0
       - 0
@@ -2944,8 +3299,23 @@ entities:
     - volume: 2500
       temperature: 293.1476
       moles:
-      - 96.90775
-      - 4.9780436
+      - 94.194336
+      - 4.838657
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 293.1476
+      moles:
+      - 94.194336
+      - 4.8386583
       - 0
       - 0
       - 0
@@ -3152,10 +3522,40 @@ entities:
       - 0
       - 0
     - volume: 2500
+      temperature: 292.02756
+      moles:
+      - 107.72044
+      - 13.129507
+      - 0.004674412
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
       temperature: 290.26004
       moles:
       - 120.47883
       - 1.3510369
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - volume: 2500
+      temperature: 286.95645
+      moles:
+      - 113.90938
+      - 4.2144628
       - 0
       - 0
       - 0
@@ -3454,8 +3854,8 @@ entities:
     - volume: 2500
       temperature: 293.1476
       moles:
-      - 96.90775
-      - 4.97804
+      - 94.194336
+      - 4.838655
       - 0
       - 0
       - 0
@@ -3514,8 +3914,8 @@ entities:
     - volume: 2500
       temperature: 293.14813
       moles:
-      - 96.99193
-      - 4.893864
+      - 94.27615
+      - 4.756836
       - 0
       - 0
       - 0
@@ -3589,8 +3989,8 @@ entities:
     - volume: 2500
       temperature: 293.14813
       moles:
-      - 96.98269
-      - 4.903103
+      - 94.26717
+      - 4.765816
       - 0
       - 0
       - 0
@@ -3784,7 +4184,7 @@ entities:
     - volume: 2500
       temperature: 248.91306
       moles:
-      - 101.24985
+      - 98.41485
       - 0
       - 0
       - 0
@@ -3919,9 +4319,9 @@ entities:
     - volume: 2500
       temperature: 249.73177
       moles:
-      - 101.23004
+      - 98.3956
       - 0
-      - 0.01980535
+      - 0.019250799
       - 0
       - 0
       - 0
@@ -4377,7 +4777,7 @@ entities:
   - pos: 0.5,-4.5
     parent: 0
     type: Transform
-  - startingCharge: 1001998.06
+  - startingCharge: 998662.6
     type: Battery
   - loadingNetworkDemand: 5493.537
     currentSupply: 5493.537
@@ -7260,7 +7660,7 @@ entities:
   type: ChairWood
   components:
   - rot: 3.141592653589793 rad
-    pos: -3.4999995,-10.499988
+    pos: -3.499999,-10.499975
     parent: 0
     type: Transform
 - uid: 395
@@ -9038,11 +9438,11 @@ entities:
   - pos: -11.5,-17.5
     parent: 0
     type: Transform
-  - startingCharge: 1393676
+  - startingCharge: 1168521
     type: Battery
-  - loadingNetworkDemand: 16594.518
-    currentSupply: 8297.259
-    supplyRampPosition: 8297.259
+  - loadingNetworkDemand: 16594.752
+    currentSupply: 8297.376
+    supplyRampPosition: 8297.376
     type: PowerNetworkBattery
   - containers:
       machine_board: !type:Container
@@ -9120,11 +9520,11 @@ entities:
   - pos: -11.5,-19.5
     parent: 0
     type: Transform
-  - startingCharge: 1393676
+  - startingCharge: 1168521
     type: Battery
-  - loadingNetworkDemand: 16594.518
-    currentSupply: 8297.259
-    supplyRampPosition: 8297.259
+  - loadingNetworkDemand: 16594.752
+    currentSupply: 8297.376
+    supplyRampPosition: 8297.376
     type: PowerNetworkBattery
   - containers:
       machine_board: !type:Container
@@ -9614,7 +10014,7 @@ entities:
 - uid: 661
   type: Stool
   components:
-  - pos: -3.5,-21.500074
+  - pos: -3.499999,-21.50005
     parent: 0
     type: Transform
 - uid: 662
@@ -9751,20 +10151,20 @@ entities:
   type: Stool
   components:
   - rot: 4.71238915523025 rad
-    pos: -1.4999992,-22.500074
+    pos: -1.4999981,-22.50005
     parent: 0
     type: Transform
 - uid: 680
   type: Stool
   components:
-  - pos: -2.500003,-21.5001
+  - pos: -2.5000033,-21.5001
     parent: 0
     type: Transform
 - uid: 681
   type: Stool
   components:
-  - rot: 3.1415932198339185 rad
-    pos: -2.4999986,-24.500074
+  - rot: 3.141593249636241 rad
+    pos: -2.4999971,-24.50005
     parent: 0
     type: Transform
 - uid: 682
@@ -10147,7 +10547,7 @@ entities:
 - uid: 725
   type: CrateEmergencyO2Kit
   components:
-  - pos: -10.5,-33.50005
+  - pos: -10.5,-33.500065
     parent: 0
     type: Transform
   - containers:
@@ -11070,7 +11470,7 @@ entities:
         - 820
         - 821
     type: ContainerContainer
-  - nextInjectionTime: 0.6862628
+  - nextInjectionTime: 383.1241555
     type: CryoPod
   - type: ActiveCryoPod
 - uid: 815
@@ -11203,7 +11603,7 @@ entities:
         - 832
         - 833
     type: ContainerContainer
-  - nextInjectionTime: 0.6862628
+  - nextInjectionTime: 383.1241555
     type: CryoPod
   - type: ActiveCryoPod
 - uid: 827
@@ -11273,7 +11673,7 @@ entities:
   type: ShardGlass
   components:
   - rot: 3.141592653589793 rad
-    pos: 6.2908983,-38.51029
+    pos: 6.2909036,-38.51024
     parent: 0
     type: Transform
   - selected:
@@ -11316,7 +11716,7 @@ entities:
         - 842
         - 843
     type: ContainerContainer
-  - nextInjectionTime: 0.6862628
+  - nextInjectionTime: 383.1241555
     type: CryoPod
   - type: ActiveCryoPod
 - uid: 837
@@ -11440,7 +11840,7 @@ entities:
         - 853
         - 854
     type: ContainerContainer
-  - nextInjectionTime: 0.6862628
+  - nextInjectionTime: 383.1241555
     type: CryoPod
   - type: ActiveCryoPod
 - uid: 848
@@ -11530,7 +11930,7 @@ entities:
         - 861
         - 862
     type: ContainerContainer
-  - nextInjectionTime: 0.6862628
+  - nextInjectionTime: 383.1241555
     type: CryoPod
   - type: ActiveCryoPod
 - uid: 856
@@ -11600,7 +12000,7 @@ entities:
   type: ShardGlass
   components:
   - rot: 3.141592653589793 rad
-    pos: 7.353391,-38.619663
+    pos: 7.353388,-38.61962
     parent: 0
     type: Transform
   - selected:
@@ -11966,7 +12366,7 @@ entities:
 - uid: 897
   type: WaterTankFull
   components:
-  - pos: 2.4529161,-40.414986
+  - pos: 2.4529161,-40.414993
     parent: 0
     type: Transform
 - uid: 898
@@ -12058,7 +12458,7 @@ entities:
     pos: -4.7369204,-37.562614
     parent: 0
     type: Transform
-  - nextAttack: -6664.4917768
+  - nextAttack: -6664.4917767
     type: MeleeWeapon
   - canCollide: False
     type: Physics
@@ -12091,7 +12491,7 @@ entities:
 - uid: 916
   type: CrateMaterialSteel
   components:
-  - pos: -7.5,-35.49995
+  - pos: -7.5,-35.4999
     parent: 0
     type: Transform
   - containers:
@@ -12159,7 +12559,7 @@ entities:
 - uid: 923
   type: TrashBananaPeel
   components:
-  - pos: -5.5611086,-31.554235
+  - pos: -5.5611086,-31.55421
     parent: 0
     type: Transform
 - uid: 924
@@ -12318,7 +12718,7 @@ entities:
 - uid: 940
   type: WaterTankFull
   components:
-  - pos: -5.611274,-42.41499
+  - pos: -5.611268,-42.414997
     parent: 0
     type: Transform
 - uid: 941
@@ -13384,10 +13784,9 @@ entities:
   - pos: -1.5,-20.5
     parent: 0
     type: Transform
-  - loadingNetworkDemand: 466
-    currentReceiving: 465.93936
-    currentSupply: 465.99997
-    supplyRampPosition: 0.06060791
+  - loadingNetworkDemand: 471
+    currentReceiving: 471.0956
+    currentSupply: 471
     type: PowerNetworkBattery
 - uid: 1066
   type: APCBasic
@@ -13395,10 +13794,10 @@ entities:
   - pos: 1.5,-27.5
     parent: 0
     type: Transform
-  - loadingNetworkDemand: 279
-    currentReceiving: 278.90735
-    currentSupply: 279
-    supplyRampPosition: 0.09265137
+  - loadingNetworkDemand: 274
+    currentReceiving: 273.98547
+    currentSupply: 274
+    supplyRampPosition: 0.014526367
     type: PowerNetworkBattery
 - uid: 1067
   type: APCBasic
@@ -15618,7 +16017,7 @@ entities:
     receiveFrequency: 1621
     type: DeviceNetwork
   - devices:
-    - 1877
+    - 1883
     type: DeviceList
 - uid: 1420
   type: GasPipeStraight
@@ -16546,7 +16945,7 @@ entities:
 - uid: 1521
   type: ClosetFireFilled
   components:
-  - pos: -8.26498,-32.494995
+  - pos: -8.264999,-32.495
     parent: 0
     type: Transform
   - containers:
@@ -17461,7 +17860,7 @@ entities:
     receiveFrequency: 1621
     type: DeviceNetwork
   - devices:
-    - 1779
+    - 1785
     type: DeviceList
 - uid: 1619
   type: Table
@@ -17496,7 +17895,7 @@ entities:
 - uid: 1623
   type: WeldingFuelTankFull
   components:
-  - pos: -2.5171547,-30.59501
+  - pos: -2.5171545,-30.595003
     parent: 0
     type: Transform
 - uid: 1624
@@ -17514,7 +17913,7 @@ entities:
     - 1601
     - 1511
     - 669
-    - 1810
+    - 1816
     type: DeviceList
 - uid: 1625
   type: SpawnMobMouse
@@ -17742,7 +18141,7 @@ entities:
 - uid: 1648
   type: CrateMedicalSurgery
   components:
-  - pos: 5.5849752,-29.279982
+  - pos: 5.5849657,-29.27996
     parent: 0
     type: Transform
   - containers:
@@ -18018,51 +18417,57 @@ entities:
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1697
-        - 1696
-        - 1695
-        - 1694
-        - 1693
-        - 1692
-        - 1691
-        - 1689
-        - 1688
-        - 1687
-        - 1686
-        - 1684
-        - 1683
-        - 1682
-        - 1681
-        - 1680
-        - 1679
-        - 1678
-        - 1677
-        - 1676
-        - 1675
         - 1674
+        - 1676
+        - 1677
+        - 1678
+        - 1679
+        - 1680
+        - 1681
+        - 1682
+        - 1683
+        - 1684
+        - 1686
+        - 1687
+        - 1688
+        - 1689
+        - 1691
+        - 1692
+        - 1693
+        - 1694
+        - 1695
+        - 1696
+        - 1697
+        - 1698
+        - 1699
+        - 1700
     type: ContainerContainer
 - uid: 1674
-  type: SpaceCash1000
+  type: WeaponPistolMk58
   components:
   - flags: InContainer
     type: MetaData
   - parent: 1673
     type: Transform
+  - containers:
+      gun_magazine: !type:ContainerSlot
+        ent: 1675
+      gun_chamber: !type:ContainerSlot {}
+    type: ContainerContainer
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1675
-  type: JetpackCaptainFilled
+  type: MagazinePistolRubber
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1673
+  - parent: 1674
     type: Transform
   - canCollide: False
     type: Physics
-  - type: InsideEntityStorage
 - uid: 1676
-  type: WeaponAntiqueLaser
+  type: MagazinePistolRubber
   components:
   - flags: InContainer
     type: MetaData
@@ -18072,7 +18477,7 @@ entities:
     type: Physics
   - type: InsideEntityStorage
 - uid: 1677
-  type: RubberStampCaptain
+  type: ClothingOuterArmorCaptainCarapace
   components:
   - flags: InContainer
     type: MetaData
@@ -18082,17 +18487,20 @@ entities:
     type: Physics
   - type: InsideEntityStorage
 - uid: 1678
-  type: ClothingNeckGoldmedal
+  type: NukeDisk
   components:
   - flags: InContainer
     type: MetaData
   - parent: 1673
     type: Transform
+  - stationMap:
+      invalid: 0
+    type: SpecialRespawn
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1679
-  type: ClothingNeckBronzeheart
+  type: PinpointerNuclear
   components:
   - flags: InContainer
     type: MetaData
@@ -18102,170 +18510,6 @@ entities:
     type: Physics
   - type: InsideEntityStorage
 - uid: 1680
-  type: ClothingUniformJumpskirtCapFormalDress
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - mode: SensorVitals
-    type: SuitSensor
-  - address: 763910e7
-    transmitFrequency: 1262
-    type: DeviceNetwork
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1681
-  type: ClothingUniformJumpsuitCapFormal
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - mode: SensorCords
-    type: SuitSensor
-  - address: 32a8812f
-    transmitFrequency: 1262
-    type: DeviceNetwork
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1682
-  type: ClothingNeckCloakCapFormal
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1683
-  type: DoorRemoteCommand
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - tags:
-    - Command
-    - Captain
-    - HeadOfPersonnel
-    type: Access
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1684
-  type: ClothingBeltSheathFilled
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
-        - 1685
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1685
-  type: CaptainSabre
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1684
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1686
-  type: ClothingHeadsetAltCommand
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1687
-  type: CommsComputerCircuitboard
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1688
-  type: ClothingMaskGasCaptain
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1689
-  type: ClothingOuterHardsuitCap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - clothingUid: 1690
-    type: ToggleableClothing
-  - containers:
-      toggleable-clothing: !type:ContainerSlot
-        ent: 1690
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1690
-  type: ClothingHeadHelmetHardsuitCap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1689
-    type: Transform
-  - AttachedUid: 1689
-    type: AttachedClothing
-- uid: 1691
-  type: ClothingHandsGlovesCaptain
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1692
-  type: ClothingNeckCloakCap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1693
-  type: ClothingHeadHatCaptain
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1673
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1694
   type: CaptainIDCard
   components:
   - flags: InContainer
@@ -18308,8 +18552,172 @@ entities:
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
+- uid: 1681
+  type: ClothingHeadHatCaptain
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1682
+  type: ClothingNeckCloakCap
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1683
+  type: ClothingHandsGlovesCaptain
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1684
+  type: ClothingOuterHardsuitCap
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - clothingUid: 1685
+    type: ToggleableClothing
+  - containers:
+      toggleable-clothing: !type:ContainerSlot
+        ent: 1685
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1685
+  type: ClothingHeadHelmetHardsuitCap
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1684
+    type: Transform
+  - AttachedUid: 1684
+    type: AttachedClothing
+- uid: 1686
+  type: ClothingMaskGasCaptain
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1687
+  type: CommsComputerCircuitboard
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1688
+  type: ClothingHeadsetAltCommand
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1689
+  type: ClothingBeltSheathFilled
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - containers:
+      storagebase: !type:Container
+        ents:
+        - 1690
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1690
+  type: CaptainSabre
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1689
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1691
+  type: DoorRemoteCommand
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - tags:
+    - Command
+    - Captain
+    - HeadOfPersonnel
+    type: Access
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1692
+  type: ClothingNeckCloakCapFormal
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1693
+  type: ClothingUniformJumpsuitCapFormal
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - mode: SensorCords
+    type: SuitSensor
+  - address: 32a8812f
+    transmitFrequency: 1262
+    type: DeviceNetwork
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1694
+  type: ClothingUniformJumpskirtCapFormalDress
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - mode: SensorVitals
+    type: SuitSensor
+  - address: 763910e7
+    transmitFrequency: 1262
+    type: DeviceNetwork
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
 - uid: 1695
-  type: PinpointerNuclear
+  type: ClothingNeckBronzeheart
   components:
   - flags: InContainer
     type: MetaData
@@ -18319,20 +18727,17 @@ entities:
     type: Physics
   - type: InsideEntityStorage
 - uid: 1696
-  type: NukeDisk
+  type: ClothingNeckGoldmedal
   components:
   - flags: InContainer
     type: MetaData
   - parent: 1673
     type: Transform
-  - stationMap:
-      invalid: 0
-    type: SpecialRespawn
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1697
-  type: ClothingOuterArmorCaptainCarapace
+  type: RubberStampCaptain
   components:
   - flags: InContainer
     type: MetaData
@@ -18342,6 +18747,36 @@ entities:
     type: Physics
   - type: InsideEntityStorage
 - uid: 1698
+  type: WeaponAntiqueLaser
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1699
+  type: JetpackCaptainFilled
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1700
+  type: SpaceCash1000
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1673
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1701
   type: ClosetFireFilled
   components:
   - pos: -6.753581,-19.28455
@@ -18350,311 +18785,311 @@ entities:
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1703
+        - 1706
+        - 1705
+        - 1704
         - 1702
-        - 1701
-        - 1699
     type: ContainerContainer
-- uid: 1699
+- uid: 1702
   type: ClothingHeadHelmetFire
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1698
+  - parent: 1701
     type: Transform
   - containers:
       cell_slot: !type:ContainerSlot
-        ent: 1700
+        ent: 1703
     type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1700
-  type: PowerCellMedium
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1699
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1701
-  type: YellowOxygenTankFilled
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1698
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1702
-  type: ClothingMaskGas
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1698
-    type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1703
-  type: ClothingOuterSuitFire
+  type: PowerCellMedium
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1698
+  - parent: 1702
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1704
+  type: YellowOxygenTankFilled
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1701
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1704
-  type: CrateFunArtSupplies
-  components:
-  - pos: -2.804258,-46.515663
-    parent: 0
-    type: Transform
-  - containers:
-      entity_storage: !type:Container
-        ents:
-        - 1713
-        - 1705
-        - 1714
-      paper_label: !type:ContainerSlot {}
-    type: ContainerContainer
 - uid: 1705
-  type: CrayonBox
+  type: ClothingMaskGas
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1704
+  - parent: 1701
     type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
-        - 1706
-        - 1707
-        - 1708
-        - 1709
-        - 1710
-        - 1711
-        - 1712
-    type: ContainerContainer
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1706
-  type: CrayonRed
+  type: ClothingOuterSuitFire
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1705
+  - parent: 1701
     type: Transform
   - canCollide: False
     type: Physics
+  - type: InsideEntityStorage
 - uid: 1707
-  type: CrayonOrange
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1705
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1708
-  type: CrayonYellow
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1705
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1709
-  type: CrayonGreen
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1705
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1710
-  type: CrayonBlue
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1705
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1711
-  type: CrayonPurple
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1705
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1712
-  type: CrayonBlack
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1705
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1713
-  type: CrayonWhite
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1704
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1714
-  type: Cigarette
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1704
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1715
-  type: WeldingFuelTankFull
-  components:
-  - pos: -6.414993,-43.58501
-    parent: 0
-    type: Transform
-- uid: 1716
   type: CrateFunArtSupplies
   components:
-  - pos: -3.1946905,-44.304996
+  - pos: -2.804255,-46.515663
     parent: 0
     type: Transform
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1725
+        - 1716
+        - 1708
         - 1717
-        - 1726
       paper_label: !type:ContainerSlot {}
     type: ContainerContainer
-- uid: 1717
+- uid: 1708
   type: CrayonBox
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1716
+  - parent: 1707
     type: Transform
   - containers:
       storagebase: !type:Container
         ents:
-        - 1718
-        - 1719
-        - 1720
-        - 1721
-        - 1722
-        - 1723
-        - 1724
+        - 1709
+        - 1710
+        - 1711
+        - 1712
+        - 1713
+        - 1714
+        - 1715
     type: ContainerContainer
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1718
+- uid: 1709
   type: CrayonRed
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1717
+  - parent: 1708
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1719
+- uid: 1710
   type: CrayonOrange
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1717
+  - parent: 1708
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1720
+- uid: 1711
   type: CrayonYellow
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1717
+  - parent: 1708
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1721
+- uid: 1712
   type: CrayonGreen
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1717
+  - parent: 1708
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1722
+- uid: 1713
   type: CrayonBlue
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1717
+  - parent: 1708
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1723
+- uid: 1714
   type: CrayonPurple
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1717
+  - parent: 1708
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1724
+- uid: 1715
   type: CrayonBlack
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1717
+  - parent: 1708
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1725
+- uid: 1716
   type: CrayonWhite
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1716
+  - parent: 1707
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1726
+- uid: 1717
   type: Cigarette
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1716
+  - parent: 1707
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
+- uid: 1718
+  type: WeldingFuelTankFull
+  components:
+  - pos: -6.414999,-43.585007
+    parent: 0
+    type: Transform
+- uid: 1719
+  type: CrateFunArtSupplies
+  components:
+  - pos: -3.194684,-44.305
+    parent: 0
+    type: Transform
+  - containers:
+      entity_storage: !type:Container
+        ents:
+        - 1728
+        - 1720
+        - 1729
+      paper_label: !type:ContainerSlot {}
+    type: ContainerContainer
+- uid: 1720
+  type: CrayonBox
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1719
+    type: Transform
+  - containers:
+      storagebase: !type:Container
+        ents:
+        - 1721
+        - 1722
+        - 1723
+        - 1724
+        - 1725
+        - 1726
+        - 1727
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1721
+  type: CrayonRed
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1720
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1722
+  type: CrayonOrange
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1720
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1723
+  type: CrayonYellow
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1720
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1724
+  type: CrayonGreen
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1720
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1725
+  type: CrayonBlue
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1720
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1726
+  type: CrayonPurple
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1720
+    type: Transform
+  - canCollide: False
+    type: Physics
 - uid: 1727
+  type: CrayonBlack
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1720
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1728
+  type: CrayonWhite
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1719
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1729
+  type: Cigarette
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1719
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1730
   type: ShardGlass
   components:
-  - rot: 0.00022148643620312214 rad
-    pos: 3.5878973,-40.214287
+  - rot: 2.4552689865231514E-05 rad
+    pos: 3.5878983,-40.21492
     parent: 0
     type: Transform
   - selected:
@@ -18663,7 +19098,7 @@ entities:
     type: RandomSprite
   - nextAttack: -10619.6416056
     type: MeleeWeapon
-- uid: 1728
+- uid: 1731
   type: AirAlarm
   components:
   - pos: 2.5,-15.5
@@ -18677,18 +19112,18 @@ entities:
     - 1429
     - 1428
     - invalid
-    - 1820
-    - 1879
-    - 1877
-    - 1779
+    - 1826
+    - 1885
+    - 1883
+    - 1785
     type: DeviceList
-- uid: 1729
+- uid: 1732
   type: WaterTankFull
   components:
   - pos: -0.41517162,-29.633413
     parent: 0
     type: Transform
-- uid: 1730
+- uid: 1733
   type: AirAlarm
   components:
   - rot: 1.5707963267948966 rad
@@ -18702,86 +19137,636 @@ entities:
   - devices:
     - 1477
     - 1476
-    - 1877
+    - 1883
     type: DeviceList
-- uid: 1731
+- uid: 1734
   type: LockerHeadOfPersonnelFilled
   components:
-  - pos: -2.292243,-14.444982
+  - pos: -2.292243,-14.444998
     parent: 0
     type: Transform
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1732
-        - 1733
-        - 1734
+        - 1781
+        - 1780
+        - 1779
+        - 1778
+        - 1777
+        - 1776
+        - 1775
+        - 1774
+        - 1749
+        - 1742
         - 1735
+        - 1783
+        - 1784
+    type: ContainerContainer
+- uid: 1735
+  type: BoxHeadset
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1734
+    type: Transform
+  - containers:
+      storagebase: !type:Container
+        ents:
         - 1736
         - 1737
         - 1738
-        - 1763
-        - 1770
-        - 1777
-        - 1778
+        - 1739
+        - 1740
+        - 1741
     type: ContainerContainer
-- uid: 1732
-  type: RubberStampHop
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1731
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1733
-  type: DoorRemoteService
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1731
-    type: Transform
-  - tags:
-    - HeadOfPersonnel
-    - Bar
-    - Kitchen
-    - Hydroponics
-    - Service
-    - Janitor
-    - Theatre
-    - Chapel
-    type: Access
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1734
-  type: ClothingNeckCloakHop
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1731
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1735
-  type: ClothingHeadHatHopcap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1731
-    type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1736
+  type: ClothingHeadsetGrey
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1735
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1737
+  type: ClothingHeadsetGrey
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1735
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1738
+  type: ClothingHeadsetGrey
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1735
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1739
+  type: ClothingHeadsetGrey
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1735
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1740
+  type: ClothingHeadsetGrey
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1735
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1741
+  type: ClothingHeadsetGrey
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1735
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1742
+  type: BoxID
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1734
+    type: Transform
+  - containers:
+      storagebase: !type:Container
+        ents:
+        - 1743
+        - 1744
+        - 1745
+        - 1746
+        - 1747
+        - 1748
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1743
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1742
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1744
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1742
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1745
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1742
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1746
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1742
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1747
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1742
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1748
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1742
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1749
+  type: BoxPDA
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1734
+    type: Transform
+  - containers:
+      storagebase: !type:Container
+        ents:
+        - 1750
+        - 1754
+        - 1758
+        - 1762
+        - 1766
+        - 1770
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1750
+  type: PassengerPDA
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1749
+    type: Transform
+  - containers:
+      PDA-id: !type:ContainerSlot
+        ent: 1751
+      PDA-pen: !type:ContainerSlot
+        ent: 1752
+      Cartridge-Slot: !type:ContainerSlot {}
+      program-container: !type:Container
+        ents:
+        - 1753
+    type: ContainerContainer
+  - ringtone:
+    - A
+    - D
+    - A
+    - G
+    type: Ringer
+  - address: Cls-742c0837
+    receiveFrequency: 2202
+    type: DeviceNetwork
+  - installedCartridges:
+    - 1753
+    type: CartridgeLoader
+  - canCollide: False
+    type: Physics
+- uid: 1751
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1750
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1752
+  type: Pen
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1750
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1753
+  type: NotekeeperCartridge
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1750
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1754
+  type: PassengerPDA
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1749
+    type: Transform
+  - containers:
+      PDA-id: !type:ContainerSlot
+        ent: 1755
+      PDA-pen: !type:ContainerSlot
+        ent: 1756
+      Cartridge-Slot: !type:ContainerSlot {}
+      program-container: !type:Container
+        ents:
+        - 1757
+    type: ContainerContainer
+  - ringtone:
+    - G
+    - A
+    - A
+    - C
+    type: Ringer
+  - address: Cls-544b0639
+    receiveFrequency: 2202
+    type: DeviceNetwork
+  - installedCartridges:
+    - 1757
+    type: CartridgeLoader
+  - canCollide: False
+    type: Physics
+- uid: 1755
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1754
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1756
+  type: Pen
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1754
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1757
+  type: NotekeeperCartridge
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1754
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1758
+  type: PassengerPDA
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1749
+    type: Transform
+  - containers:
+      PDA-id: !type:ContainerSlot
+        ent: 1759
+      PDA-pen: !type:ContainerSlot
+        ent: 1760
+      Cartridge-Slot: !type:ContainerSlot {}
+      program-container: !type:Container
+        ents:
+        - 1761
+    type: ContainerContainer
+  - ringtone:
+    - E
+    - A
+    - D
+    - D
+    type: Ringer
+  - address: Cls-76158e7a
+    receiveFrequency: 2202
+    type: DeviceNetwork
+  - installedCartridges:
+    - 1761
+    type: CartridgeLoader
+  - canCollide: False
+    type: Physics
+- uid: 1759
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1758
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1760
+  type: Pen
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1758
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1761
+  type: NotekeeperCartridge
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1758
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1762
+  type: PassengerPDA
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1749
+    type: Transform
+  - containers:
+      PDA-id: !type:ContainerSlot
+        ent: 1763
+      PDA-pen: !type:ContainerSlot
+        ent: 1764
+      Cartridge-Slot: !type:ContainerSlot {}
+      program-container: !type:Container
+        ents:
+        - 1765
+    type: ContainerContainer
+  - ringtone:
+    - A
+    - D
+    - D
+    - D
+    type: Ringer
+  - address: Cls-41454b3
+    receiveFrequency: 2202
+    type: DeviceNetwork
+  - installedCartridges:
+    - 1765
+    type: CartridgeLoader
+  - canCollide: False
+    type: Physics
+- uid: 1763
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1762
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1764
+  type: Pen
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1762
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1765
+  type: NotekeeperCartridge
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1762
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1766
+  type: PassengerPDA
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1749
+    type: Transform
+  - containers:
+      PDA-id: !type:ContainerSlot
+        ent: 1767
+      PDA-pen: !type:ContainerSlot
+        ent: 1768
+      Cartridge-Slot: !type:ContainerSlot {}
+      program-container: !type:Container
+        ents:
+        - 1769
+    type: ContainerContainer
+  - ringtone:
+    - C
+    - E
+    - E
+    - E
+    type: Ringer
+  - address: Cls-704d197e
+    receiveFrequency: 2202
+    type: DeviceNetwork
+  - installedCartridges:
+    - 1769
+    type: CartridgeLoader
+  - canCollide: False
+    type: Physics
+- uid: 1767
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1766
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1768
+  type: Pen
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1766
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1769
+  type: NotekeeperCartridge
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1766
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1770
+  type: PassengerPDA
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1749
+    type: Transform
+  - containers:
+      PDA-id: !type:ContainerSlot
+        ent: 1771
+      PDA-pen: !type:ContainerSlot
+        ent: 1772
+      Cartridge-Slot: !type:ContainerSlot {}
+      program-container: !type:Container
+        ents:
+        - 1773
+    type: ContainerContainer
+  - ringtone:
+    - G
+    - G
+    - E
+    - G
+    type: Ringer
+  - address: Cls-5590e6b1
+    receiveFrequency: 2202
+    type: DeviceNetwork
+  - installedCartridges:
+    - 1773
+    type: CartridgeLoader
+  - canCollide: False
+    type: Physics
+- uid: 1771
+  type: PassengerIDCard
+  components:
+  - flags: InContainer
+    name: ID card (laborer)
+    type: MetaData
+  - parent: 1770
+    type: Transform
+  - tags:
+    - Maintenance
+    type: Access
+  - jobTitle: laborer
+    type: IdCard
+  - canCollide: False
+    type: Physics
+- uid: 1772
+  type: Pen
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1770
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1773
+  type: NotekeeperCartridge
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1770
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1774
+  type: ClothingHeadsetCommand
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1734
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1775
   type: HoPIDCard
   components:
   - flags: InContainer
     name: ID card (head of personnel)
     type: MetaData
-  - parent: 1731
+  - parent: 1734
     type: Transform
   - tags:
     - Command
@@ -18801,625 +19786,111 @@ entities:
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1737
-  type: ClothingHeadsetCommand
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1731
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1738
-  type: BoxPDA
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1731
-    type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
-        - 1739
-        - 1743
-        - 1747
-        - 1751
-        - 1755
-        - 1759
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1739
-  type: PassengerPDA
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1738
-    type: Transform
-  - containers:
-      PDA-id: !type:ContainerSlot
-        ent: 1740
-      PDA-pen: !type:ContainerSlot
-        ent: 1741
-      Cartridge-Slot: !type:ContainerSlot {}
-      program-container: !type:Container
-        ents:
-        - 1742
-    type: ContainerContainer
-  - ringtone:
-    - A
-    - D
-    - A
-    - G
-    type: Ringer
-  - address: Cls-742c0837
-    receiveFrequency: 2202
-    type: DeviceNetwork
-  - installedCartridges:
-    - 1742
-    type: CartridgeLoader
-  - canCollide: False
-    type: Physics
-- uid: 1740
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1739
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1741
-  type: Pen
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1739
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1742
-  type: NotekeeperCartridge
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1739
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1743
-  type: PassengerPDA
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1738
-    type: Transform
-  - containers:
-      PDA-id: !type:ContainerSlot
-        ent: 1744
-      PDA-pen: !type:ContainerSlot
-        ent: 1745
-      Cartridge-Slot: !type:ContainerSlot {}
-      program-container: !type:Container
-        ents:
-        - 1746
-    type: ContainerContainer
-  - ringtone:
-    - G
-    - A
-    - A
-    - C
-    type: Ringer
-  - address: Cls-544b0639
-    receiveFrequency: 2202
-    type: DeviceNetwork
-  - installedCartridges:
-    - 1746
-    type: CartridgeLoader
-  - canCollide: False
-    type: Physics
-- uid: 1744
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1743
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1745
-  type: Pen
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1743
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1746
-  type: NotekeeperCartridge
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1743
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1747
-  type: PassengerPDA
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1738
-    type: Transform
-  - containers:
-      PDA-id: !type:ContainerSlot
-        ent: 1748
-      PDA-pen: !type:ContainerSlot
-        ent: 1749
-      Cartridge-Slot: !type:ContainerSlot {}
-      program-container: !type:Container
-        ents:
-        - 1750
-    type: ContainerContainer
-  - ringtone:
-    - E
-    - A
-    - D
-    - D
-    type: Ringer
-  - address: Cls-76158e7a
-    receiveFrequency: 2202
-    type: DeviceNetwork
-  - installedCartridges:
-    - 1750
-    type: CartridgeLoader
-  - canCollide: False
-    type: Physics
-- uid: 1748
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1747
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1749
-  type: Pen
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1747
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1750
-  type: NotekeeperCartridge
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1747
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1751
-  type: PassengerPDA
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1738
-    type: Transform
-  - containers:
-      PDA-id: !type:ContainerSlot
-        ent: 1752
-      PDA-pen: !type:ContainerSlot
-        ent: 1753
-      Cartridge-Slot: !type:ContainerSlot {}
-      program-container: !type:Container
-        ents:
-        - 1754
-    type: ContainerContainer
-  - ringtone:
-    - A
-    - D
-    - D
-    - D
-    type: Ringer
-  - address: Cls-41454b3
-    receiveFrequency: 2202
-    type: DeviceNetwork
-  - installedCartridges:
-    - 1754
-    type: CartridgeLoader
-  - canCollide: False
-    type: Physics
-- uid: 1752
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1751
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1753
-  type: Pen
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1751
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1754
-  type: NotekeeperCartridge
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1751
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1755
-  type: PassengerPDA
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1738
-    type: Transform
-  - containers:
-      PDA-id: !type:ContainerSlot
-        ent: 1756
-      PDA-pen: !type:ContainerSlot
-        ent: 1757
-      Cartridge-Slot: !type:ContainerSlot {}
-      program-container: !type:Container
-        ents:
-        - 1758
-    type: ContainerContainer
-  - ringtone:
-    - C
-    - E
-    - E
-    - E
-    type: Ringer
-  - address: Cls-704d197e
-    receiveFrequency: 2202
-    type: DeviceNetwork
-  - installedCartridges:
-    - 1758
-    type: CartridgeLoader
-  - canCollide: False
-    type: Physics
-- uid: 1756
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1755
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1757
-  type: Pen
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1755
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1758
-  type: NotekeeperCartridge
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1755
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1759
-  type: PassengerPDA
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1738
-    type: Transform
-  - containers:
-      PDA-id: !type:ContainerSlot
-        ent: 1760
-      PDA-pen: !type:ContainerSlot
-        ent: 1761
-      Cartridge-Slot: !type:ContainerSlot {}
-      program-container: !type:Container
-        ents:
-        - 1762
-    type: ContainerContainer
-  - ringtone:
-    - G
-    - G
-    - E
-    - G
-    type: Ringer
-  - address: Cls-5590e6b1
-    receiveFrequency: 2202
-    type: DeviceNetwork
-  - installedCartridges:
-    - 1762
-    type: CartridgeLoader
-  - canCollide: False
-    type: Physics
-- uid: 1760
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1759
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1761
-  type: Pen
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1759
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1762
-  type: NotekeeperCartridge
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1759
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1763
-  type: BoxID
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1731
-    type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
-        - 1764
-        - 1765
-        - 1766
-        - 1767
-        - 1768
-        - 1769
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1764
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1763
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1765
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1763
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1766
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1763
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1767
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1763
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1768
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1763
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1769
-  type: PassengerIDCard
-  components:
-  - flags: InContainer
-    name: ID card (laborer)
-    type: MetaData
-  - parent: 1763
-    type: Transform
-  - tags:
-    - Maintenance
-    type: Access
-  - jobTitle: laborer
-    type: IdCard
-  - canCollide: False
-    type: Physics
-- uid: 1770
-  type: BoxHeadset
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1731
-    type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
-        - 1771
-        - 1772
-        - 1773
-        - 1774
-        - 1775
-        - 1776
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1771
-  type: ClothingHeadsetGrey
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1770
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1772
-  type: ClothingHeadsetGrey
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1770
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1773
-  type: ClothingHeadsetGrey
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1770
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1774
-  type: ClothingHeadsetGrey
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1770
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1775
-  type: ClothingHeadsetGrey
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1770
-    type: Transform
-  - canCollide: False
-    type: Physics
 - uid: 1776
-  type: ClothingHeadsetGrey
+  type: ClothingHeadHatHopcap
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1770
+  - parent: 1734
     type: Transform
   - canCollide: False
     type: Physics
+  - type: InsideEntityStorage
 - uid: 1777
-  type: IDComputerCircuitboard
+  type: ClothingNeckCloakHop
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1731
+  - parent: 1734
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1778
-  type: ClothingNeckGoldmedal
+  type: DoorRemoteService
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1731
+  - parent: 1734
     type: Transform
+  - tags:
+    - HeadOfPersonnel
+    - Bar
+    - Kitchen
+    - Hydroponics
+    - Service
+    - Janitor
+    - Theatre
+    - Chapel
+    type: Access
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1779
+  type: RubberStampHop
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1734
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1780
+  type: MagazinePistolRubber
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1734
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1781
+  type: WeaponPistolMk58
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1734
+    type: Transform
+  - containers:
+      gun_magazine: !type:ContainerSlot
+        ent: 1782
+      gun_chamber: !type:ContainerSlot {}
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1782
+  type: MagazinePistolRubber
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1781
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1783
+  type: IDComputerCircuitboard
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1734
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1784
+  type: ClothingNeckGoldmedal
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1734
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1785
   type: Firelock
   components:
   - rot: 3.141592653589793 rad
@@ -19429,21 +19900,21 @@ entities:
   - containers:
       board: !type:Container
         ents:
-        - 1780
+        - 1786
     type: ContainerContainer
   - address: 51e22e12
     receiveFrequency: 1621
     type: DeviceNetwork
-- uid: 1780
+- uid: 1786
   type: FirelockElectronics
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1779
+  - parent: 1785
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1781
+- uid: 1787
   type: ShardGlass
   components:
   - rot: 0.022374062798917294 rad
@@ -19456,7 +19927,7 @@ entities:
     type: RandomSprite
   - nextAttack: -10621.458265
     type: MeleeWeapon
-- uid: 1782
+- uid: 1788
   type: AirAlarm
   components:
   - pos: -3.5,-8.5
@@ -19467,175 +19938,175 @@ entities:
     receiveFrequency: 1621
     type: DeviceNetwork
   - devices:
-    - 1779
+    - 1785
     - 1463
     - 1464
     type: DeviceList
-- uid: 1783
+- uid: 1789
   type: ClosetEmergencyFilledRandom
   components:
-  - pos: 5.4701195,-26.430906
+  - pos: 5.4701223,-26.430882
     parent: 0
     type: Transform
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1784
+        - 1790
     type: ContainerContainer
-- uid: 1784
-  type: ToolboxEmergencyFilled
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1783
-    type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
-        - 1785
-        - 1786
-        - 1787
-        - 1788
-        - 1789
-        - 1791
-        - 1793
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1785
-  type: CrowbarRed
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1784
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1786
-  type: ClothingMaskBreath
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1784
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1787
-  type: ClothingMaskBreath
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1784
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1788
-  type: FoodSnackChocolate
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1784
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1789
-  type: FlashlightLantern
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1784
-    type: Transform
-  - containers:
-      cell_slot: !type:ContainerSlot
-        ent: 1790
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
 - uid: 1790
-  type: PowerCellMedium
+  type: ToolboxEmergencyFilled
   components:
   - flags: InContainer
     type: MetaData
   - parent: 1789
     type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1791
-  type: FlashlightLantern
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1784
-    type: Transform
   - containers:
-      cell_slot: !type:ContainerSlot
-        ent: 1792
+      storagebase: !type:Container
+        ents:
+        - 1791
+        - 1792
+        - 1793
+        - 1794
+        - 1795
+        - 1797
+        - 1799
     type: ContainerContainer
   - canCollide: False
     type: Physics
-- uid: 1792
-  type: PowerCellMedium
+  - type: InsideEntityStorage
+- uid: 1791
+  type: CrowbarRed
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1791
+  - parent: 1790
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1792
+  type: ClothingMaskBreath
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1790
     type: Transform
   - canCollide: False
     type: Physics
 - uid: 1793
-  type: FoodSnackChocolate
+  type: ClothingMaskBreath
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1784
+  - parent: 1790
     type: Transform
   - canCollide: False
     type: Physics
 - uid: 1794
+  type: FoodSnackChocolate
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1790
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1795
+  type: FlashlightLantern
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1790
+    type: Transform
+  - containers:
+      cell_slot: !type:ContainerSlot
+        ent: 1796
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+- uid: 1796
+  type: PowerCellMedium
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1795
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1797
+  type: FlashlightLantern
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1790
+    type: Transform
+  - containers:
+      cell_slot: !type:ContainerSlot
+        ent: 1798
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+- uid: 1798
+  type: PowerCellMedium
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1797
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1799
+  type: FoodSnackChocolate
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1790
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1800
   type: ClosetFireFilled
   components:
-  - pos: 5.5,-19.499975
+  - pos: 5.5,-19.49995
     parent: 0
     type: Transform
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1795
-        - 1796
-        - 1797
+        - 1801
+        - 1802
+        - 1803
     type: ContainerContainer
-- uid: 1795
+- uid: 1801
   type: YellowOxygenTankFilled
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1794
+  - parent: 1800
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1796
+- uid: 1802
   type: ClothingOuterSuitFire
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1794
+  - parent: 1800
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1797
+- uid: 1803
   type: ClothingMaskGas
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1794
+  - parent: 1800
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1798
+- uid: 1804
   type: Lamp
   components:
   - rot: 0.00041484832763671875 rad
@@ -19654,84 +20125,10 @@ entities:
     type: HandheldLight
   - containers:
       cell_slot: !type:ContainerSlot
-        ent: 1799
+        ent: 1805
     type: ContainerContainer
-- uid: 1799
-  type: PowerCellSmall
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1798
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1800
-  type: CrateFoodPizza
-  components:
-  - pos: -10.5,-32.500008
-    parent: 0
-    type: Transform
-  - containers:
-      entity_storage: !type:Container
-        ents:
-        - 1808
-        - 1806
-        - 1804
-        - 1802
-        - 1801
-      paper_label: !type:ContainerSlot {}
-    type: ContainerContainer
-- uid: 1801
-  type: KnifePlastic
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1800
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1802
-  type: FoodBoxPizzaFilled
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1800
-    type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
-        - 1803
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1803
-  type: FoodPizzaMeat
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1802
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1804
-  type: FoodBoxPizzaFilled
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1800
-    type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
-        - 1805
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
 - uid: 1805
-  type: FoodPizzaVegetable
+  type: PowerCellSmall
   components:
   - flags: InContainer
     type: MetaData
@@ -19740,22 +20137,23 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1806
-  type: FoodBoxPizzaFilled
+  type: CrateFoodPizza
   components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1800
+  - pos: -10.5,-32.500008
+    parent: 0
     type: Transform
   - containers:
-      storagebase: !type:Container
+      entity_storage: !type:Container
         ents:
+        - 1814
+        - 1812
+        - 1810
+        - 1808
         - 1807
+      paper_label: !type:ContainerSlot {}
     type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
 - uid: 1807
-  type: FoodPizzaMargherita
+  type: KnifePlastic
   components:
   - flags: InContainer
     type: MetaData
@@ -19763,12 +20161,13 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
+  - type: InsideEntityStorage
 - uid: 1808
   type: FoodBoxPizzaFilled
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1800
+  - parent: 1806
     type: Transform
   - containers:
       storagebase: !type:Container
@@ -19779,7 +20178,7 @@ entities:
     type: Physics
   - type: InsideEntityStorage
 - uid: 1809
-  type: FoodPizzaSassysage
+  type: FoodPizzaMeat
   components:
   - flags: InContainer
     type: MetaData
@@ -19788,6 +20187,78 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1810
+  type: FoodBoxPizzaFilled
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1806
+    type: Transform
+  - containers:
+      storagebase: !type:Container
+        ents:
+        - 1811
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1811
+  type: FoodPizzaVegetable
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1810
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1812
+  type: FoodBoxPizzaFilled
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1806
+    type: Transform
+  - containers:
+      storagebase: !type:Container
+        ents:
+        - 1813
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1813
+  type: FoodPizzaMargherita
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1812
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1814
+  type: FoodBoxPizzaFilled
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1806
+    type: Transform
+  - containers:
+      storagebase: !type:Container
+        ents:
+        - 1815
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1815
+  type: FoodPizzaSassysage
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1814
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1816
   type: Firelock
   components:
   - rot: 1.5707963267948966 rad
@@ -19797,21 +20268,21 @@ entities:
   - containers:
       board: !type:Container
         ents:
-        - 1811
+        - 1817
     type: ContainerContainer
   - address: 6f1edac6
     receiveFrequency: 1621
     type: DeviceNetwork
-- uid: 1811
+- uid: 1817
   type: FirelockElectronics
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1810
+  - parent: 1816
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1812
+- uid: 1818
   type: AirAlarm
   components:
   - pos: -9.5,-16.5
@@ -19824,10 +20295,10 @@ entities:
   - devices:
     - 1392
     - 1407
-    - 1818
-    - 1820
+    - 1824
+    - 1826
     type: DeviceList
-- uid: 1813
+- uid: 1819
   type: AirAlarm
   components:
   - pos: 3.5,-20.5
@@ -19841,12 +20312,10 @@ entities:
     - 1545
     - 1544
     - invalid
-    - invalid
-    - 1898
-    - 1900
-    - invalid
+    - 1904
+    - 1906
     type: DeviceList
-- uid: 1814
+- uid: 1820
   type: AirAlarm
   components:
   - pos: -2.5,-20.5
@@ -19860,10 +20329,10 @@ entities:
     - 1536
     - 1535
     - 233
-    - 1882
-    - 1900
+    - 1888
+    - 1906
     type: DeviceList
-- uid: 1815
+- uid: 1821
   type: AirAlarm
   components:
   - pos: 4.5,-8.5
@@ -19876,9 +20345,9 @@ entities:
   - devices:
     - 1465
     - 1462
-    - 1879
+    - 1885
     type: DeviceList
-- uid: 1816
+- uid: 1822
   type: ClothingHeadHatHardhatYellow
   components:
   - pos: -11.155661,-21.301407
@@ -19886,20 +20355,20 @@ entities:
     type: Transform
   - containers:
       cell_slot: !type:ContainerSlot
-        ent: 1817
+        ent: 1823
     type: ContainerContainer
   - canCollide: False
     type: Physics
-- uid: 1817
+- uid: 1823
   type: PowerCellMedium
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1816
+  - parent: 1822
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1818
+- uid: 1824
   type: Firelock
   components:
   - rot: -1.5707963267948966 rad
@@ -19909,21 +20378,21 @@ entities:
   - containers:
       board: !type:Container
         ents:
-        - 1819
+        - 1825
     type: ContainerContainer
   - address: 4648ebfc
     receiveFrequency: 1621
     type: DeviceNetwork
-- uid: 1819
+- uid: 1825
   type: FirelockElectronics
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1818
+  - parent: 1824
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1820
+- uid: 1826
   type: Firelock
   components:
   - rot: -1.5707963267948966 rad
@@ -19933,21 +20402,21 @@ entities:
   - containers:
       board: !type:Container
         ents:
-        - 1821
+        - 1827
     type: ContainerContainer
   - address: 2af26dc7
     receiveFrequency: 1621
     type: DeviceNetwork
-- uid: 1821
+- uid: 1827
   type: FirelockElectronics
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1820
+  - parent: 1826
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1822
+- uid: 1828
   type: ClosetEmergencyFilledRandom
   components:
   - pos: -4.5,-19.5
@@ -19956,60 +20425,66 @@ entities:
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1823
-        - 1824
-        - 1825
-        - 1826
+        - 1829
+        - 1830
+        - 1831
+        - 1832
     type: ContainerContainer
-- uid: 1823
+- uid: 1829
   type: ClothingMaskBreath
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1822
+  - parent: 1828
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1824
+- uid: 1830
   type: ClothingMaskBreath
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1822
+  - parent: 1828
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1825
+- uid: 1831
   type: EmergencyOxygenTankFilled
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1822
+  - parent: 1828
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1826
+- uid: 1832
   type: OxygenTankFilled
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1822
+  - parent: 1828
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1827
+- uid: 1833
   type: CrateFunParty
   components:
-  - pos: -7.5,-36.49995
+  - pos: -7.5,-36.4999
     parent: 0
     type: Transform
   - containers:
       entity_storage: !type:Container
         ents:
+        - 1849
+        - 1848
+        - 1847
+        - 1846
+        - 1845
+        - 1844
         - 1843
         - 1842
         - 1841
@@ -20020,181 +20495,175 @@ entities:
         - 1836
         - 1835
         - 1834
-        - 1833
-        - 1832
-        - 1831
-        - 1830
-        - 1829
-        - 1828
       paper_label: !type:ContainerSlot {}
     type: ContainerContainer
-- uid: 1828
+- uid: 1834
   type: KnifePlastic
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1829
-  type: DrinkLean
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1827
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1830
-  type: DrinkLean
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1827
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1831
-  type: DrinkLean
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1827
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1832
-  type: FoodCakeBirthday
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1827
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1833
-  type: GlowstickYellow
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1827
-    type: Transform
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1834
-  type: GlowstickYellow
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1835
-  type: GlowstickRed
+  type: DrinkLean
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1836
-  type: GlowstickRed
+  type: DrinkLean
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1837
-  type: GlowstickPurple
+  type: DrinkLean
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1838
-  type: GlowstickPurple
+  type: FoodCakeBirthday
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1839
-  type: GlowstickBlue
+  type: GlowstickYellow
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1840
-  type: GlowstickBlue
+  type: GlowstickYellow
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1841
-  type: GlowstickBase
+  type: GlowstickRed
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1842
-  type: DrinkLean
+  type: GlowstickRed
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1843
-  type: GlowstickBase
+  type: GlowstickPurple
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1827
+  - parent: 1833
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
 - uid: 1844
+  type: GlowstickPurple
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1833
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1845
+  type: GlowstickBlue
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1833
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1846
+  type: GlowstickBlue
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1833
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1847
+  type: GlowstickBase
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1833
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1848
+  type: DrinkLean
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1833
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1849
+  type: GlowstickBase
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1833
+    type: Transform
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1850
   type: SpawnMobFoxRenault
   components:
   - pos: 5.5,-11.5
     parent: 0
     type: Transform
-- uid: 1845
+- uid: 1851
   type: CrateEngineeringToolbox
   components:
   - pos: -7.5,-33.5
@@ -20203,114 +20672,24 @@ entities:
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1869
-        - 1861
-        - 1854
-        - 1846
+        - 1875
+        - 1867
+        - 1860
+        - 1852
       paper_label: !type:ContainerSlot {}
     type: ContainerContainer
-- uid: 1846
+- uid: 1852
   type: ToolboxElectricalFilled
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1845
+  - parent: 1851
     type: Transform
   - containers:
       storagebase: !type:Container
         ents:
-        - 1847
-        - 1848
-        - 1849
-        - 1850
-        - 1851
-        - 1852
         - 1853
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1847
-  type: Screwdriver
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1846
-    type: Transform
-  - selected:
-      enum.DamageStateVisualLayers.Base:
-        screwdriver: '#1861D5FF'
-    type: RandomSprite
-  - canCollide: False
-    type: Physics
-- uid: 1848
-  type: Crowbar
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1846
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1849
-  type: Wirecutter
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1846
-    type: Transform
-  - selected:
-      enum.DamageStateVisualLayers.Base:
-        cutters: '#18A2D5FF'
-    type: RandomSprite
-  - canCollide: False
-    type: Physics
-- uid: 1850
-  type: CableApcStack
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1846
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1851
-  type: CableMVStack
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1846
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1852
-  type: trayScanner
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1846
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1853
-  type: CableHVStack
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1846
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1854
-  type: ToolboxMechanicalFilled
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1845
-    type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
+        - 1854
         - 1855
         - 1856
         - 1857
@@ -20320,108 +20699,120 @@ entities:
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1855
-  type: Crowbar
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1854
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1856
-  type: Wrench
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1854
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1857
-  type: Welder
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1854
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1858
-  type: Wirecutter
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1854
-    type: Transform
-  - selected:
-      enum.DamageStateVisualLayers.Base:
-        cutters: '#951710FF'
-    type: RandomSprite
-  - canCollide: False
-    type: Physics
-- uid: 1859
-  type: ClothingHeadHatHardhatBlue
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1854
-    type: Transform
-  - containers:
-      cell_slot: !type:ContainerSlot
-        ent: 1860
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-- uid: 1860
-  type: PowerCellMedium
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1859
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1861
-  type: ToolboxElectricalFilled
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1845
-    type: Transform
-  - containers:
-      storagebase: !type:Container
-        ents:
-        - 1862
-        - 1863
-        - 1864
-        - 1865
-        - 1866
-        - 1867
-        - 1868
-    type: ContainerContainer
-  - canCollide: False
-    type: Physics
-  - type: InsideEntityStorage
-- uid: 1862
+- uid: 1853
   type: Screwdriver
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1861
+  - parent: 1852
     type: Transform
   - selected:
       enum.DamageStateVisualLayers.Base:
-        screwdriver: '#D5188DFF'
+        screwdriver: '#1861D5FF'
     type: RandomSprite
   - canCollide: False
     type: Physics
-- uid: 1863
+- uid: 1854
   type: Crowbar
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1861
+  - parent: 1852
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1855
+  type: Wirecutter
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1852
+    type: Transform
+  - selected:
+      enum.DamageStateVisualLayers.Base:
+        cutters: '#18A2D5FF'
+    type: RandomSprite
+  - canCollide: False
+    type: Physics
+- uid: 1856
+  type: CableApcStack
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1852
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1857
+  type: CableMVStack
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1852
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1858
+  type: trayScanner
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1852
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1859
+  type: CableHVStack
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1852
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1860
+  type: ToolboxMechanicalFilled
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1851
+    type: Transform
+  - containers:
+      storagebase: !type:Container
+        ents:
+        - 1861
+        - 1862
+        - 1863
+        - 1864
+        - 1865
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+  - type: InsideEntityStorage
+- uid: 1861
+  type: Crowbar
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1860
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1862
+  type: Wrench
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1860
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1863
+  type: Welder
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1860
     type: Transform
   - canCollide: False
     type: Physics
@@ -20430,103 +20821,85 @@ entities:
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1861
+  - parent: 1860
     type: Transform
   - selected:
       enum.DamageStateVisualLayers.Base:
-        cutters: '#0E7F1BFF'
+        cutters: '#951710FF'
     type: RandomSprite
   - canCollide: False
     type: Physics
 - uid: 1865
-  type: CableApcStack
+  type: ClothingHeadHatHardhatBlue
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1861
+  - parent: 1860
     type: Transform
+  - containers:
+      cell_slot: !type:ContainerSlot
+        ent: 1866
+    type: ContainerContainer
   - canCollide: False
     type: Physics
 - uid: 1866
-  type: CableMVStack
+  type: PowerCellMedium
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1861
+  - parent: 1865
     type: Transform
   - canCollide: False
     type: Physics
 - uid: 1867
-  type: trayScanner
+  type: ToolboxElectricalFilled
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1861
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1868
-  type: CableHVStack
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1861
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1869
-  type: ToolboxMechanicalFilled
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1845
+  - parent: 1851
     type: Transform
   - containers:
       storagebase: !type:Container
         ents:
+        - 1868
+        - 1869
         - 1870
         - 1871
         - 1872
         - 1873
         - 1874
-        - 1875
     type: ContainerContainer
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1870
+- uid: 1868
+  type: Screwdriver
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1867
+    type: Transform
+  - selected:
+      enum.DamageStateVisualLayers.Base:
+        screwdriver: '#D5188DFF'
+    type: RandomSprite
+  - canCollide: False
+    type: Physics
+- uid: 1869
   type: Crowbar
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1869
+  - parent: 1867
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1871
-  type: Wrench
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1869
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1872
-  type: Welder
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1869
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1873
+- uid: 1870
   type: Wirecutter
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1869
+  - parent: 1867
     type: Transform
   - selected:
       enum.DamageStateVisualLayers.Base:
@@ -20534,34 +20907,64 @@ entities:
     type: RandomSprite
   - canCollide: False
     type: Physics
-- uid: 1874
-  type: Screwdriver
+- uid: 1871
+  type: CableApcStack
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1869
+  - parent: 1867
     type: Transform
-  - selected:
-      enum.DamageStateVisualLayers.Base:
-        screwdriver: '#18A2D5FF'
-    type: RandomSprite
+  - canCollide: False
+    type: Physics
+- uid: 1872
+  type: CableMVStack
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1867
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1873
+  type: trayScanner
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1867
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1874
+  type: CableHVStack
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1867
+    type: Transform
   - canCollide: False
     type: Physics
 - uid: 1875
-  type: FlashlightLantern
+  type: ToolboxMechanicalFilled
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1869
+  - parent: 1851
     type: Transform
   - containers:
-      cell_slot: !type:ContainerSlot
-        ent: 1876
+      storagebase: !type:Container
+        ents:
+        - 1876
+        - 1877
+        - 1878
+        - 1879
+        - 1880
+        - 1881
     type: ContainerContainer
   - canCollide: False
     type: Physics
+  - type: InsideEntityStorage
 - uid: 1876
-  type: PowerCellMedium
+  type: Crowbar
   components:
   - flags: InContainer
     type: MetaData
@@ -20570,6 +20973,72 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1877
+  type: Wrench
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1875
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1878
+  type: Welder
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1875
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1879
+  type: Wirecutter
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1875
+    type: Transform
+  - selected:
+      enum.DamageStateVisualLayers.Base:
+        cutters: '#0E7F1BFF'
+    type: RandomSprite
+  - canCollide: False
+    type: Physics
+- uid: 1880
+  type: Screwdriver
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1875
+    type: Transform
+  - selected:
+      enum.DamageStateVisualLayers.Base:
+        screwdriver: '#18A2D5FF'
+    type: RandomSprite
+  - canCollide: False
+    type: Physics
+- uid: 1881
+  type: FlashlightLantern
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1875
+    type: Transform
+  - containers:
+      cell_slot: !type:ContainerSlot
+        ent: 1882
+    type: ContainerContainer
+  - canCollide: False
+    type: Physics
+- uid: 1882
+  type: PowerCellMedium
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1881
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1883
   type: Firelock
   components:
   - rot: 3.141592653589793 rad
@@ -20579,21 +21048,21 @@ entities:
   - containers:
       board: !type:Container
         ents:
-        - 1878
+        - 1884
     type: ContainerContainer
   - address: 7261c6b4
     receiveFrequency: 1621
     type: DeviceNetwork
-- uid: 1878
+- uid: 1884
   type: FirelockElectronics
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1877
+  - parent: 1883
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1879
+- uid: 1885
   type: Firelock
   components:
   - rot: 3.141592653589793 rad
@@ -20603,21 +21072,21 @@ entities:
   - containers:
       board: !type:Container
         ents:
-        - 1880
+        - 1886
     type: ContainerContainer
   - address: 2bd16408
     receiveFrequency: 1621
     type: DeviceNetwork
-- uid: 1880
+- uid: 1886
   type: FirelockElectronics
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1879
+  - parent: 1885
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1881
+- uid: 1887
   type: FireAlarm
   components:
   - rot: 1.5707963267948966 rad
@@ -20629,9 +21098,9 @@ entities:
     receiveFrequency: 1621
     type: DeviceNetwork
   - devices:
-    - 1879
+    - 1885
     type: DeviceList
-- uid: 1882
+- uid: 1888
   type: Firelock
   components:
   - pos: -0.5,-27.5
@@ -20640,21 +21109,21 @@ entities:
   - containers:
       board: !type:Container
         ents:
-        - 1883
+        - 1889
     type: ContainerContainer
   - address: 6d678f1f
     receiveFrequency: 1621
     type: DeviceNetwork
-- uid: 1883
+- uid: 1889
   type: FirelockElectronics
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1882
+  - parent: 1888
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1884
+- uid: 1890
   type: CrateMousetrapBoxes
   components:
   - pos: -11.5,-35.5
@@ -20663,84 +21132,84 @@ entities:
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1885
+        - 1891
       paper_label: !type:ContainerSlot {}
     type: ContainerContainer
-- uid: 1885
+- uid: 1891
   type: BoxMousetrap
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1884
+  - parent: 1890
     type: Transform
   - containers:
       storagebase: !type:Container
         ents:
-        - 1886
-        - 1887
-        - 1888
-        - 1889
-        - 1890
-        - 1891
+        - 1892
+        - 1893
+        - 1894
+        - 1895
+        - 1896
+        - 1897
     type: ContainerContainer
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1886
-  type: Mousetrap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1885
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1887
-  type: Mousetrap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1885
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1888
-  type: Mousetrap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1885
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1889
-  type: Mousetrap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1885
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1890
-  type: Mousetrap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1885
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1891
-  type: Mousetrap
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1885
-    type: Transform
-  - canCollide: False
-    type: Physics
 - uid: 1892
+  type: Mousetrap
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1891
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1893
+  type: Mousetrap
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1891
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1894
+  type: Mousetrap
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1891
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1895
+  type: Mousetrap
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1891
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1896
+  type: Mousetrap
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1891
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1897
+  type: Mousetrap
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1891
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1898
   type: CrateVendingMachineRestockSnacksFilled
   components:
   - pos: -6.5,-35.5
@@ -20749,53 +21218,53 @@ entities:
   - containers:
       entity_storage: !type:Container
         ents:
-        - 1893
-        - 1894
-        - 1895
-        - 1896
+        - 1899
+        - 1900
+        - 1901
+        - 1902
       paper_label: !type:ContainerSlot {}
     type: ContainerContainer
-- uid: 1893
+- uid: 1899
   type: VendingMachineRestockChang
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1892
+  - parent: 1898
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1894
+- uid: 1900
   type: VendingMachineRestockDiscountDans
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1892
+  - parent: 1898
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1895
+- uid: 1901
   type: VendingMachineRestockDonut
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1892
+  - parent: 1898
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1896
+- uid: 1902
   type: VendingMachineRestockGetmoreChocolateCorp
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1892
+  - parent: 1898
     type: Transform
   - canCollide: False
     type: Physics
   - type: InsideEntityStorage
-- uid: 1897
+- uid: 1903
   type: FireAlarm
   components:
   - rot: -1.5707963267948966 rad
@@ -20807,10 +21276,10 @@ entities:
     receiveFrequency: 1621
     type: DeviceNetwork
   - devices:
-    - 1818
-    - 1820
+    - 1824
+    - 1826
     type: DeviceList
-- uid: 1898
+- uid: 1904
   type: Firelock
   components:
   - pos: 2.5,-27.5
@@ -20819,86 +21288,11 @@ entities:
   - containers:
       board: !type:Container
         ents:
-        - 1899
+        - 1905
     type: ContainerContainer
   - address: 7a973286
     receiveFrequency: 1621
     type: DeviceNetwork
-- uid: 1899
-  type: FirelockElectronics
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1898
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1900
-  type: Firelock
-  components:
-  - pos: 0.5,-22.5
-    parent: 0
-    type: Transform
-  - containers:
-      board: !type:Container
-        ents:
-        - 1901
-    type: ContainerContainer
-  - address: 2630835
-    receiveFrequency: 1621
-    type: DeviceNetwork
-- uid: 1901
-  type: FirelockElectronics
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1900
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1902
-  type: Firelock
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: 6.5,-24.5
-    parent: 0
-    type: Transform
-  - containers:
-      board: !type:Container
-        ents:
-        - 1903
-    type: ContainerContainer
-  - address: 1a4a021f
-    receiveFrequency: 1621
-    type: DeviceNetwork
-  - SecondsUntilStateChange: -1093.426
-    type: Door
-- uid: 1903
-  type: FirelockElectronics
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1902
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1904
-  type: Firelock
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: 6.5,-23.5
-    parent: 0
-    type: Transform
-  - containers:
-      board: !type:Container
-        ents:
-        - 1905
-    type: ContainerContainer
-  - address: 4d5391f9
-    receiveFrequency: 1621
-    type: DeviceNetwork
-  - SecondsUntilStateChange: -1093.426
-    type: Door
 - uid: 1905
   type: FirelockElectronics
   components:
@@ -20909,64 +21303,57 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1906
-  type: FireAlarm
+  type: Firelock
   components:
-  - pos: 5.5,-20.5
+  - pos: 0.5,-22.5
     parent: 0
     type: Transform
-  - address: Fir-5e212275
-    transmitFrequency: 1621
+  - containers:
+      board: !type:Container
+        ents:
+        - 1907
+    type: ContainerContainer
+  - address: 2630835
     receiveFrequency: 1621
     type: DeviceNetwork
-  - devices:
-    - 1904
-    - 1902
-    - 1898
-    - 1900
-    - 934
-    type: DeviceList
 - uid: 1907
-  type: FireAlarm
+  type: FirelockElectronics
   components:
-  - pos: 4.5,-15.5
-    parent: 0
+  - flags: InContainer
+    type: MetaData
+  - parent: 1906
     type: Transform
-  - address: Fir-62d5058
-    transmitFrequency: 1621
-    receiveFrequency: 1621
-    type: DeviceNetwork
-  - devices:
-    - invalid
-    - 1820
-    - 1879
-    - 1877
-    - 1779
-    type: DeviceList
+  - canCollide: False
+    type: Physics
 - uid: 1908
-  type: Table
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: -0.5,-19.5
-    parent: 0
-    type: Transform
-- uid: 1909
-  type: FireAlarm
+  type: Firelock
   components:
   - rot: -1.5707963267948966 rad
-    pos: -5.5,-21.5
+    pos: 6.5,-24.5
     parent: 0
     type: Transform
-  - address: Fir-5c158cc4
-    transmitFrequency: 1621
+  - containers:
+      board: !type:Container
+        ents:
+        - 1909
+    type: ContainerContainer
+  - address: 1a4a021f
     receiveFrequency: 1621
     type: DeviceNetwork
-  - devices:
-    - 1818
-    type: DeviceList
+- uid: 1909
+  type: FirelockElectronics
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1908
+    type: Transform
+  - canCollide: False
+    type: Physics
 - uid: 1910
   type: Firelock
   components:
-  - pos: 5.5,-31.5
+  - rot: -1.5707963267948966 rad
+    pos: 6.5,-23.5
     parent: 0
     type: Transform
   - containers:
@@ -20974,7 +21361,7 @@ entities:
         ents:
         - 1911
     type: ContainerContainer
-  - address: f781a8f
+  - address: 4d5391f9
     receiveFrequency: 1621
     type: DeviceNetwork
 - uid: 1911
@@ -20987,13 +21374,91 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1912
+  type: FireAlarm
+  components:
+  - pos: 5.5,-20.5
+    parent: 0
+    type: Transform
+  - address: Fir-5e212275
+    transmitFrequency: 1621
+    receiveFrequency: 1621
+    type: DeviceNetwork
+  - devices:
+    - 1910
+    - 1908
+    - 1904
+    - 1906
+    - 934
+    type: DeviceList
+- uid: 1913
+  type: FireAlarm
+  components:
+  - pos: 4.5,-15.5
+    parent: 0
+    type: Transform
+  - address: Fir-62d5058
+    transmitFrequency: 1621
+    receiveFrequency: 1621
+    type: DeviceNetwork
+  - devices:
+    - invalid
+    - 1826
+    - 1885
+    - 1883
+    - 1785
+    type: DeviceList
+- uid: 1914
+  type: Table
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -0.5,-19.5
+    parent: 0
+    type: Transform
+- uid: 1915
+  type: FireAlarm
+  components:
+  - rot: -1.5707963267948966 rad
+    pos: -5.5,-21.5
+    parent: 0
+    type: Transform
+  - address: Fir-5c158cc4
+    transmitFrequency: 1621
+    receiveFrequency: 1621
+    type: DeviceNetwork
+  - devices:
+    - 1824
+    type: DeviceList
+- uid: 1916
+  type: Firelock
+  components:
+  - pos: 5.5,-31.5
+    parent: 0
+    type: Transform
+  - containers:
+      board: !type:Container
+        ents:
+        - 1917
+    type: ContainerContainer
+  - address: f781a8f
+    receiveFrequency: 1621
+    type: DeviceNetwork
+- uid: 1917
+  type: FirelockElectronics
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1916
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1918
   type: AtmosDeviceFanTiny
   components:
   - rot: 1.5707963267948966 rad
     pos: 6.5,-23.5
     parent: 0
     type: Transform
-- uid: 1913
+- uid: 1919
   type: FireAlarm
   components:
   - rot: 1.5707963267948966 rad
@@ -21006,31 +21471,31 @@ entities:
     type: DeviceNetwork
   - devices:
     - 233
-    - 1882
-    - 1900
+    - 1888
+    - 1906
     type: DeviceList
-- uid: 1914
+- uid: 1920
   type: Chair
   components:
   - rot: -1.5707963267948966 rad
     pos: 1.5,-9.5
     parent: 0
     type: Transform
-- uid: 1915
+- uid: 1921
   type: Chair
   components:
   - rot: 1.5707963267948966 rad
     pos: -0.5,-10.5
     parent: 0
     type: Transform
-- uid: 1916
+- uid: 1922
   type: Chair
   components:
   - rot: 1.5707963267948966 rad
     pos: -0.5,-9.5
     parent: 0
     type: Transform
-- uid: 1917
+- uid: 1923
   type: FireAlarm
   components:
   - rot: -1.5707963267948966 rad
@@ -21042,17 +21507,17 @@ entities:
     receiveFrequency: 1621
     type: DeviceNetwork
   - devices:
-    - 1910
-    - 1898
+    - 1916
+    - 1904
     type: DeviceList
-- uid: 1918
+- uid: 1924
   type: Chair
   components:
   - rot: -1.5707963267948966 rad
     pos: 1.5,-10.5
     parent: 0
     type: Transform
-- uid: 1919
+- uid: 1925
   type: PoweredlightLED
   components:
   - rot: -1.5707963267948966 rad
@@ -21065,23 +21530,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1920
+        ent: 1926
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 11126719
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1920
+- uid: 1926
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1919
+  - parent: 1925
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1921
+- uid: 1927
   type: FireAlarm
   components:
   - rot: 1.5707963267948966 rad
@@ -21095,9 +21560,9 @@ entities:
   - devices:
     - 1511
     - 669
-    - 1810
+    - 1816
     type: DeviceList
-- uid: 1922
+- uid: 1928
   type: Crowbar
   components:
   - pos: 1.6510324,-25.001577
@@ -21107,27 +21572,27 @@ entities:
     type: MeleeWeapon
   - canCollide: False
     type: Physics
-- uid: 1923
+- uid: 1929
   type: WaterCooler
   components:
   - pos: -2.5,-19.5
     parent: 0
     type: Transform
-- uid: 1924
+- uid: 1930
   type: Chair
   components:
   - rot: -1.5707963267948966 rad
     pos: 0.5,-19.5
     parent: 0
     type: Transform
-- uid: 1925
+- uid: 1931
   type: Chair
   components:
   - rot: 1.5707963267948966 rad
     pos: -1.5,-19.5
     parent: 0
     type: Transform
-- uid: 1926
+- uid: 1932
   type: PoweredlightLED
   components:
   - rot: 1.5707963267948966 rad
@@ -21140,23 +21605,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1927
+        ent: 1933
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 70cfbc96
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1927
+- uid: 1933
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1926
+  - parent: 1932
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1928
+- uid: 1934
   type: CheckerBoard
   components:
   - rot: 1.5707963267948966 rad
@@ -21165,7 +21630,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1929
+- uid: 1935
   type: PoweredlightLED
   components:
   - rot: 1.5707963267948966 rad
@@ -21178,23 +21643,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1930
+        ent: 1936
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 6dba1764
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1930
+- uid: 1936
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1929
+  - parent: 1935
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1931
+- uid: 1937
   type: PoweredlightLED
   components:
   - rot: -1.5707963267948966 rad
@@ -21207,30 +21672,30 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1932
+        ent: 1938
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 6f97cf68
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1932
+- uid: 1938
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1931
+  - parent: 1937
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1933
+- uid: 1939
   type: Table
   components:
   - rot: 1.5707963267948966 rad
     pos: -3.5,-19.5
     parent: 0
     type: Transform
-- uid: 1934
+- uid: 1940
   type: PoweredlightLED
   components:
   - rot: 1.5707963267948966 rad
@@ -21243,23 +21708,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1935
+        ent: 1941
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 4d573373
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1935
+- uid: 1941
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1934
+  - parent: 1940
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1936
+- uid: 1942
   type: PoweredlightLED
   components:
   - rot: -1.5707963267948966 rad
@@ -21272,72 +21737,11 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1937
-    type: ContainerContainer
-  - powerLoad: 12
-    type: ApcPowerReceiver
-  - address: 20cd806c
-    receiveFrequency: 1173
-    type: DeviceNetwork
-- uid: 1937
-  type: LedLightTube
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1936
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1938
-  type: DrinkTeacup
-  components:
-  - pos: -3.6500654,-19.355305
-    parent: 0
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1939
-  type: DrinkTeacup
-  components:
-  - pos: -3.5719395,-19.558403
-    parent: 0
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1940
-  type: DrinkTeacup
-  components:
-  - pos: -3.3063154,-19.402172
-    parent: 0
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1941
-  type: DrinkTeacup
-  components:
-  - pos: -3.3219404,-19.18343
-    parent: 0
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1942
-  type: PoweredlightLED
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: -4.5,-12.5
-    parent: 0
-    type: Transform
-  - radius: 15
-    softness: 0.9
-    color: '#EEEEFFFF'
-    type: PointLight
-  - containers:
-      light_bulb: !type:ContainerSlot
         ent: 1943
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 1195b1b7
+  - address: 20cd806c
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1943
@@ -21350,6 +21754,67 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1944
+  type: DrinkTeacup
+  components:
+  - pos: -3.6500654,-19.355305
+    parent: 0
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1945
+  type: DrinkTeacup
+  components:
+  - pos: -3.5719395,-19.558403
+    parent: 0
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1946
+  type: DrinkTeacup
+  components:
+  - pos: -3.3063154,-19.402172
+    parent: 0
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1947
+  type: DrinkTeacup
+  components:
+  - pos: -3.3219404,-19.18343
+    parent: 0
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1948
+  type: PoweredlightLED
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: -4.5,-12.5
+    parent: 0
+    type: Transform
+  - radius: 15
+    softness: 0.9
+    color: '#EEEEFFFF'
+    type: PointLight
+  - containers:
+      light_bulb: !type:ContainerSlot
+        ent: 1949
+    type: ContainerContainer
+  - powerLoad: 12
+    type: ApcPowerReceiver
+  - address: 1195b1b7
+    receiveFrequency: 1173
+    type: DeviceNetwork
+- uid: 1949
+  type: LedLightTube
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1948
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1950
   type: PoweredlightLED
   components:
   - rot: 1.5707963267948966 rad
@@ -21362,23 +21827,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1945
+        ent: 1951
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 61038456
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1945
+- uid: 1951
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1944
+  - parent: 1950
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1946
+- uid: 1952
   type: Paper
   components:
   - pos: 4.3371816,-9.589068
@@ -21386,7 +21851,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1947
+- uid: 1953
   type: Paper
   components:
   - rot: 0.00034117698669433594 rad
@@ -21395,7 +21860,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1948
+- uid: 1954
   type: Paper
   components:
   - pos: 4.3528132,-9.292193
@@ -21403,7 +21868,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1949
+- uid: 1955
   type: Paper
   components:
   - rot: 0.0003414154052734375 rad
@@ -21412,7 +21877,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1950
+- uid: 1956
   type: Paper
   components:
   - pos: 4.3996816,-9.307817
@@ -21420,7 +21885,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1951
+- uid: 1957
   type: PoweredlightLED
   components:
   - pos: 3.5,-16.5
@@ -21432,23 +21897,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1952
+        ent: 1958
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 65315bba
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1952
+- uid: 1958
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1951
+  - parent: 1957
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1953
+- uid: 1959
   type: PoweredlightLED
   components:
   - pos: -2.5,-16.5
@@ -21460,23 +21925,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1954
+        ent: 1960
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 13af4ce1
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1954
+- uid: 1960
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1953
+  - parent: 1959
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1955
+- uid: 1961
   type: FoodBoxDonut
   components:
   - pos: 3.3159738,-18.387423
@@ -21485,70 +21950,70 @@ entities:
   - containers:
       storagebase: !type:Container
         ents:
-        - 1956
-        - 1957
-        - 1958
-        - 1959
-        - 1960
-        - 1961
+        - 1962
+        - 1963
+        - 1964
+        - 1965
+        - 1966
+        - 1967
     type: ContainerContainer
   - canCollide: False
     type: Physics
-- uid: 1956
-  type: FoodDonutPink
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1955
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1957
-  type: FoodDonutPink
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1955
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1958
-  type: FoodDonutPink
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1955
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1959
-  type: FoodDonutPlain
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1955
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1960
-  type: FoodDonutPlain
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1955
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1961
-  type: FoodDonutPlain
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1955
-    type: Transform
-  - canCollide: False
-    type: Physics
 - uid: 1962
+  type: FoodDonutPink
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1961
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1963
+  type: FoodDonutPink
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1961
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1964
+  type: FoodDonutPink
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1961
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1965
+  type: FoodDonutPlain
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1961
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1966
+  type: FoodDonutPlain
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1961
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1967
+  type: FoodDonutPlain
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1961
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 1968
   type: PoweredlightLED
   components:
   - rot: 1.5707963267948966 rad
@@ -21561,23 +22026,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1963
+        ent: 1969
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 4ac0f4ea
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1963
+- uid: 1969
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1962
+  - parent: 1968
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1964
+- uid: 1970
   type: PoweredlightLED
   components:
   - rot: -1.5707963267948966 rad
@@ -21590,23 +22055,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1965
+        ent: 1971
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 109e8672
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 1965
+- uid: 1971
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1964
+  - parent: 1970
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1966
+- uid: 1972
   type: RevolverCapGun
   components:
   - pos: 2.585661,-18.411375
@@ -21614,7 +22079,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 1967
+- uid: 1973
   type: PoweredlightLED
   components:
   - rot: 3.141592653589793 rad
@@ -21627,97 +22092,11 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 1968
-    type: ContainerContainer
-  - powerLoad: 12
-    type: ApcPowerReceiver
-  - address: 52b8c7cc
-    receiveFrequency: 1173
-    type: DeviceNetwork
-- uid: 1968
-  type: LedLightTube
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1967
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1969
-  type: PoweredlightLED
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -6.5,-16.5
-    parent: 0
-    type: Transform
-  - radius: 15
-    softness: 0.9
-    color: '#EEEEFFFF'
-    type: PointLight
-  - containers:
-      light_bulb: !type:ContainerSlot
-        ent: 1970
-    type: ContainerContainer
-  - powerLoad: 12
-    type: ApcPowerReceiver
-  - address: 76b1ab1
-    receiveFrequency: 1173
-    type: DeviceNetwork
-- uid: 1970
-  type: LedLightTube
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1969
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1971
-  type: PoweredlightLED
-  components:
-  - rot: 3.141592653589793 rad
-    pos: -9.5,-19.5
-    parent: 0
-    type: Transform
-  - radius: 15
-    softness: 0.9
-    color: '#EEEEFFFF'
-    type: PointLight
-  - containers:
-      light_bulb: !type:ContainerSlot
-        ent: 1972
-    type: ContainerContainer
-  - powerLoad: 12
-    type: ApcPowerReceiver
-  - address: 2f57096e
-    receiveFrequency: 1173
-    type: DeviceNetwork
-- uid: 1972
-  type: LedLightTube
-  components:
-  - flags: InContainer
-    type: MetaData
-  - parent: 1971
-    type: Transform
-  - canCollide: False
-    type: Physics
-- uid: 1973
-  type: PoweredlightLED
-  components:
-  - pos: -11.5,-21.5
-    parent: 0
-    type: Transform
-  - radius: 15
-    softness: 0.9
-    color: '#EEEEFFFF'
-    type: PointLight
-  - containers:
-      light_bulb: !type:ContainerSlot
         ent: 1974
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 56a93982
+  - address: 52b8c7cc
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1974
@@ -21732,8 +22111,8 @@ entities:
 - uid: 1975
   type: PoweredlightLED
   components:
-  - rot: 3.141592653589793 rad
-    pos: -11.5,-26.5
+  - rot: -1.5707963267948966 rad
+    pos: -6.5,-16.5
     parent: 0
     type: Transform
   - radius: 15
@@ -21746,7 +22125,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 8a2ed38
+  - address: 76b1ab1
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1976
@@ -21761,7 +22140,8 @@ entities:
 - uid: 1977
   type: PoweredlightLED
   components:
-  - pos: -2.5,-21.5
+  - rot: 3.141592653589793 rad
+    pos: -9.5,-19.5
     parent: 0
     type: Transform
   - radius: 15
@@ -21774,7 +22154,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 62ceed3a
+  - address: 2f57096e
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1978
@@ -21789,8 +22169,7 @@ entities:
 - uid: 1979
   type: PoweredlightLED
   components:
-  - rot: 3.141592653589793 rad
-    pos: -2.5,-26.5
+  - pos: -11.5,-21.5
     parent: 0
     type: Transform
   - radius: 15
@@ -21803,7 +22182,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 20cccd58
+  - address: 56a93982
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1980
@@ -21818,7 +22197,8 @@ entities:
 - uid: 1981
   type: PoweredlightLED
   components:
-  - pos: 3.5,-21.5
+  - rot: 3.141592653589793 rad
+    pos: -11.5,-26.5
     parent: 0
     type: Transform
   - radius: 15
@@ -21831,7 +22211,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 74298499
+  - address: 8a2ed38
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1982
@@ -21846,8 +22226,7 @@ entities:
 - uid: 1983
   type: PoweredlightLED
   components:
-  - rot: 3.141592653589793 rad
-    pos: 3.5,-26.5
+  - pos: -2.5,-21.5
     parent: 0
     type: Transform
   - radius: 15
@@ -21860,7 +22239,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 5dd98706
+  - address: 62ceed3a
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1984
@@ -21876,7 +22255,7 @@ entities:
   type: PoweredlightLED
   components:
   - rot: 3.141592653589793 rad
-    pos: 3.5,-30.5
+    pos: -2.5,-26.5
     parent: 0
     type: Transform
   - radius: 15
@@ -21889,7 +22268,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 286ccf54
+  - address: 20cccd58
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1986
@@ -21904,7 +22283,7 @@ entities:
 - uid: 1987
   type: PoweredlightLED
   components:
-  - pos: 3.5,-28.5
+  - pos: 3.5,-21.5
     parent: 0
     type: Transform
   - radius: 15
@@ -21917,7 +22296,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 5fa26556
+  - address: 74298499
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1988
@@ -21930,24 +22309,27 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1989
-  type: Poweredlight
+  type: PoweredlightLED
   components:
-  - pos: -1.5,-28.5
+  - rot: 3.141592653589793 rad
+    pos: 3.5,-26.5
     parent: 0
     type: Transform
-  - color: '#FFE4CEFF'
+  - radius: 15
+    softness: 0.9
+    color: '#EEEEFFFF'
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
         ent: 1990
     type: ContainerContainer
-  - powerLoad: 25
+  - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 7056123e
+  - address: 5dd98706
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1990
-  type: LightTube
+  type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
@@ -21958,7 +22340,8 @@ entities:
 - uid: 1991
   type: PoweredlightLED
   components:
-  - pos: -9.5,-32.5
+  - rot: 3.141592653589793 rad
+    pos: 3.5,-30.5
     parent: 0
     type: Transform
   - radius: 15
@@ -21971,7 +22354,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: a4736bc
+  - address: 286ccf54
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1992
@@ -21986,8 +22369,7 @@ entities:
 - uid: 1993
   type: PoweredlightLED
   components:
-  - rot: 3.141592653589793 rad
-    pos: -9.5,-37.5
+  - pos: 3.5,-28.5
     parent: 0
     type: Transform
   - radius: 15
@@ -22000,7 +22382,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 55fd1d12
+  - address: 5fa26556
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1994
@@ -22015,8 +22397,7 @@ entities:
 - uid: 1995
   type: Poweredlight
   components:
-  - rot: 1.5707963267948966 rad
-    pos: 2.5,-37.5
+  - pos: -1.5,-28.5
     parent: 0
     type: Transform
   - color: '#FFE4CEFF'
@@ -22027,7 +22408,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 25
     type: ApcPowerReceiver
-  - address: 76535984
+  - address: 7056123e
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1996
@@ -22042,7 +22423,7 @@ entities:
 - uid: 1997
   type: PoweredlightLED
   components:
-  - pos: -6.5,-21.5
+  - pos: -9.5,-32.5
     parent: 0
     type: Transform
   - radius: 15
@@ -22055,7 +22436,7 @@ entities:
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
-  - address: 356aec23
+  - address: a4736bc
     receiveFrequency: 1173
     type: DeviceNetwork
 - uid: 1998
@@ -22068,6 +22449,90 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1999
+  type: PoweredlightLED
+  components:
+  - rot: 3.141592653589793 rad
+    pos: -9.5,-37.5
+    parent: 0
+    type: Transform
+  - radius: 15
+    softness: 0.9
+    color: '#EEEEFFFF'
+    type: PointLight
+  - containers:
+      light_bulb: !type:ContainerSlot
+        ent: 2000
+    type: ContainerContainer
+  - powerLoad: 12
+    type: ApcPowerReceiver
+  - address: 55fd1d12
+    receiveFrequency: 1173
+    type: DeviceNetwork
+- uid: 2000
+  type: LedLightTube
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 1999
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 2001
+  type: Poweredlight
+  components:
+  - rot: 1.5707963267948966 rad
+    pos: 2.5,-37.5
+    parent: 0
+    type: Transform
+  - color: '#FFE4CEFF'
+    type: PointLight
+  - containers:
+      light_bulb: !type:ContainerSlot
+        ent: 2002
+    type: ContainerContainer
+  - powerLoad: 25
+    type: ApcPowerReceiver
+  - address: 76535984
+    receiveFrequency: 1173
+    type: DeviceNetwork
+- uid: 2002
+  type: LightTube
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 2001
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 2003
+  type: PoweredlightLED
+  components:
+  - pos: -6.5,-21.5
+    parent: 0
+    type: Transform
+  - radius: 15
+    softness: 0.9
+    color: '#EEEEFFFF'
+    type: PointLight
+  - containers:
+      light_bulb: !type:ContainerSlot
+        ent: 2004
+    type: ContainerContainer
+  - powerLoad: 12
+    type: ApcPowerReceiver
+  - address: 356aec23
+    receiveFrequency: 1173
+    type: DeviceNetwork
+- uid: 2004
+  type: LedLightTube
+  components:
+  - flags: InContainer
+    type: MetaData
+  - parent: 2003
+    type: Transform
+  - canCollide: False
+    type: Physics
+- uid: 2005
   type: Poweredlight
   components:
   - rot: -1.5707963267948966 rad
@@ -22078,23 +22543,23 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 2000
+        ent: 2006
     type: ContainerContainer
   - powerLoad: 25
     type: ApcPowerReceiver
   - address: 332e4c96
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 2000
+- uid: 2006
   type: LightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 1999
+  - parent: 2005
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 2001
+- uid: 2007
   type: PoweredlightLED
   components:
   - rot: 3.141592653589793 rad
@@ -22107,77 +22572,77 @@ entities:
     type: PointLight
   - containers:
       light_bulb: !type:ContainerSlot
-        ent: 2002
+        ent: 2008
     type: ContainerContainer
   - powerLoad: 12
     type: ApcPowerReceiver
   - address: 7b53b6bc
     receiveFrequency: 1173
     type: DeviceNetwork
-- uid: 2002
+- uid: 2008
   type: LedLightTube
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 2001
+  - parent: 2007
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 2003
+- uid: 2009
   type: Table
   components:
   - pos: -11.5,-26.5
     parent: 0
     type: Transform
-- uid: 2004
+- uid: 2010
   type: Table
   components:
   - pos: -10.5,-26.5
     parent: 0
     type: Transform
-- uid: 2005
+- uid: 2011
   type: Table
   components:
   - pos: -10.5,-21.5
     parent: 0
     type: Transform
-- uid: 2006
+- uid: 2012
   type: Table
   components:
   - pos: -9.5,-21.5
     parent: 0
     type: Transform
-- uid: 2007
+- uid: 2013
   type: Table
   components:
   - pos: -6.5,-25.5
     parent: 0
     type: Transform
-- uid: 2008
+- uid: 2014
   type: Table
   components:
   - pos: -11.5,-21.5
     parent: 0
     type: Transform
-- uid: 2009
+- uid: 2015
   type: Table
   components:
   - pos: -6.5,-24.5
     parent: 0
     type: Transform
-- uid: 2010
+- uid: 2016
   type: Table
   components:
   - pos: -6.5,-23.5
     parent: 0
     type: Transform
-- uid: 2011
+- uid: 2017
   type: FireAxeCabinetOpen
   components:
   - pos: -10.5,-20.5
     parent: 0
     type: Transform
-- uid: 2012
+- uid: 2018
   type: ClothingHeadHatHardhatYellow
   components:
   - pos: -11.405661,-26.285782
@@ -22185,20 +22650,20 @@ entities:
     type: Transform
   - containers:
       cell_slot: !type:ContainerSlot
-        ent: 2013
+        ent: 2019
     type: ContainerContainer
   - canCollide: False
     type: Physics
-- uid: 2013
+- uid: 2019
   type: PowerCellMedium
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 2012
+  - parent: 2018
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 2014
+- uid: 2020
   type: ClothingHeadHatHardhatYellow
   components:
   - pos: -8.865454,-18.94936
@@ -22206,20 +22671,20 @@ entities:
     type: Transform
   - containers:
       cell_slot: !type:ContainerSlot
-        ent: 2015
+        ent: 2021
     type: ContainerContainer
   - canCollide: False
     type: Physics
-- uid: 2015
+- uid: 2021
   type: PowerCellMedium
   components:
   - flags: InContainer
     type: MetaData
-  - parent: 2014
+  - parent: 2020
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 2016
+- uid: 2022
   type: CableApcStack
   components:
   - pos: -6.519415,-23.577314
@@ -22227,7 +22692,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 2017
+- uid: 2023
   type: Multitool
   components:
   - pos: -6.454418,-24.857782
@@ -22235,7 +22700,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 2018
+- uid: 2024
   type: Lighter
   components:
   - pos: -9.632109,-21.43373
@@ -22247,7 +22712,7 @@ entities:
     type: RandomSprite
   - canCollide: False
     type: Physics
-- uid: 2019
+- uid: 2025
   type: Wrench
   components:
   - pos: -6.397499,-24.257605
@@ -22255,7 +22720,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 2020
+- uid: 2026
   type: SheetSteel
   components:
   - pos: -6.6995835,-25.362553
@@ -22263,7 +22728,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 2021
+- uid: 2027
   type: Screwdriver
   components:
   - pos: -10.803984,-21.33998
@@ -22275,7 +22740,7 @@ entities:
     type: RandomSprite
   - canCollide: False
     type: Physics
-- uid: 2022
+- uid: 2028
   type: ToolboxMechanical
   components:
   - pos: -10.261868,-21.278349
@@ -22283,7 +22748,7 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 2023
+- uid: 2029
   type: Screwdriver
   components:
   - pos: -10.647734,-26.308702
