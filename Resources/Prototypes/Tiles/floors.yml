@@ -1209,7 +1209,7 @@
   name: tiles-asteroid-floor
   sprite: /Textures/Tiles/Asteroid/asteroid_sand.png
   baseTurfs:
-  - Space
+  - FloorAsteroidSand
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1241,7 +1241,7 @@
   variants: 3
   placementVariants: [ 0, 1, 2 ]
   baseTurfs:
-  - Space
+  - FloorAsteroidCoarseSand0
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1264,7 +1264,7 @@
   name: tiles-asteroid-dug-coarse-sand
   sprite: /Textures/Tiles/Asteroid/asteroid_coarse_sand_dug.png
   baseTurfs:
-  - Space
+  - FloorAsteroidCoarseSandDug
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1279,7 +1279,7 @@
   name: tiles-asteroid-ironsand
   sprite: /Textures/Tiles/ironsand1.png
   baseTurfs:
-  - Space
+  - FloorAsteroidIronsand1
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1294,7 +1294,7 @@
   name: tiles-asteroid-ironsand-pebbles
   sprite: /Textures/Tiles/ironsand2.png
   baseTurfs:
-  - Space
+  - FloorAsteroidIronsand2
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1309,7 +1309,7 @@
   name: tiles-asteroid-ironsand-pebbles
   sprite: /Textures/Tiles/ironsand3.png
   baseTurfs:
-  - Space
+  - FloorAsteroidIronsand3
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1324,7 +1324,7 @@
   name: tiles-asteroid-ironsand-rock
   sprite: /Textures/Tiles/ironsand4.png
   baseTurfs:
-  - Space
+  - FloorAsteroidIronsand4
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
