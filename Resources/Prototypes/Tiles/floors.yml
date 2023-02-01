@@ -28,7 +28,7 @@
   footstepSounds:
     collection: FootstepFloor
   friction: 0.30
-  itemDrop: FloorTileItemSteel
+  itemDrop: FloorTileItemSteelAsteroid
   thermalConductivity: 0.04
   heatCapacity: 10000
 

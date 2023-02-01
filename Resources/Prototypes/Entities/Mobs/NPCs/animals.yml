@@ -1329,8 +1329,8 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 12
-        Poison: 4
+        Piercing: 5
+        Poison: 5
   - type: ReplacementAccent
     accent: xeno
   - type: InteractionPopup
