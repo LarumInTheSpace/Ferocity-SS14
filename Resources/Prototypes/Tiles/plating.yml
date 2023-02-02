@@ -16,7 +16,7 @@
   name: tiles-plating-asteroid
   sprite: /Textures/Tiles/plating.png
   baseTurfs:
-  - FloorAsteroidIronsand1
+  - FloorAsteroidIronsand2
   isSubfloor: true
   footstepSounds:
     collection: FootstepPlating
