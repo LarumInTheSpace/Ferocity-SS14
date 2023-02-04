@@ -145,11 +145,10 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitEngineeringWhite
 
-#The voidsuit and eva suit are not techically 'hardsuits' but this seems to be the place for all EVA-capable outer clothing. This may be worth reevaluating when we have a lot more items.
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: IHSVoidsuit
-  name: IHS voidsuit
+  name: IHS Hardsuit
   description: A special void suit that protects against hazardous, low pressure environments.
   components:
   - type: Sprite
@@ -458,7 +457,7 @@
 - type: entity
   parent: ClothingOuterEVASuitBase
   id: ClothingOuterHardsuitVoidParamed
-  name: Paramedic Void Suit
+  name: Paramedic Hardsuit
   description: A void suit made for paramedics.
   components:
   - type: Sprite
