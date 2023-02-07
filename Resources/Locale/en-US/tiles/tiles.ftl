@@ -84,6 +84,7 @@ tiles-plating-asteroid = Asteroid plating
 tiles-steel-floor-asteroid = Asteroid steel tile
 tiles-cave = cave
 tiles-cave-drought = cave drought
+tiles-flesh-floor = flesh floor
 tiles-techmaint3-floor = grated maintenance floor
 tiles-techmaint2-floor = steel maintenance floor
 tiles-wood2 = wood pattern floor
