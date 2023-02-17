@@ -14,6 +14,23 @@
   itemDrop: FloorTileItemSteel
   thermalConductivity: 0.04
   heatCapacity: 10000
+  
+- type: tile
+  id: FloorSteelAsteroid
+  name: tiles-steel-floor-asteroid
+  sprite: /Textures/Tiles/steel.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurfs:
+  - PlatingAsteroid
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepFloor
+  friction: 0.30
+  itemDrop: FloorTileItemSteelAsteroid
+  thermalConductivity: 0.04
+  heatCapacity: 10000
 
 - type: tile
   id: FloorSteelMini
@@ -1103,26 +1120,12 @@
   friction: 0.30
   thermalConductivity: 0.04
   heatCapacity: 10000
-
-- type: tile
-  id: FloorSnow
-  name: tiles-snow
-  sprite: /Textures/Tiles/snow.png
-  baseTurfs:
-  - FloorDirt
-  isSubfloor: true
-  canCrowbar: false
-  footstepSounds:
-    collection: FootstepSnow
-  friction: 0.20
-  itemDrop: FloorTileItemSnow
-  thermalConductivity: 0.04
-  heatCapacity: 10000
   weather: true
+
 
 - type: tile
   id: FloorGrass
-  name: tiles-grass-floor
+  name: tiles-planet-grass-floor
   sprite: /Textures/Tiles/grass.png
   baseTurfs:
   - FloorDirt
@@ -1209,7 +1212,7 @@
   name: tiles-asteroid-floor
   sprite: /Textures/Tiles/Asteroid/asteroid_sand.png
   baseTurfs:
-  - Space
+  - FloorAsteroidSand
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1241,7 +1244,7 @@
   variants: 3
   placementVariants: [ 0, 1, 2 ]
   baseTurfs:
-  - Space
+  - FloorAsteroidCoarseSand0
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1264,7 +1267,7 @@
   name: tiles-asteroid-dug-coarse-sand
   sprite: /Textures/Tiles/Asteroid/asteroid_coarse_sand_dug.png
   baseTurfs:
-  - Space
+  - FloorAsteroidCoarseSandDug
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1279,7 +1282,7 @@
   name: tiles-asteroid-ironsand
   sprite: /Textures/Tiles/ironsand1.png
   baseTurfs:
-  - Space
+  - FloorAsteroidIronsand1
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1294,7 +1297,7 @@
   name: tiles-asteroid-ironsand-pebbles
   sprite: /Textures/Tiles/ironsand2.png
   baseTurfs:
-  - Space
+  - FloorAsteroidIronsand2
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1309,7 +1312,7 @@
   name: tiles-asteroid-ironsand-pebbles
   sprite: /Textures/Tiles/ironsand3.png
   baseTurfs:
-  - Space
+  - FloorAsteroidIronsand3
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1324,7 +1327,7 @@
   name: tiles-asteroid-ironsand-rock
   sprite: /Textures/Tiles/ironsand4.png
   baseTurfs:
-  - Space
+  - FloorAsteroidIronsand4
   isSubfloor: true
   canCrowbar: false
   footstepSounds:
@@ -1364,6 +1367,22 @@
   footstepSounds:
     collection: FootstepAsteroid
   friction: 0.30
+  thermalConductivity: 0.04
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorFlesh
+  name: tiles-flesh-floor
+  sprite: /Textures/Tiles/meat.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurfs:
+  - Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: BarestepCarpet
+  friction: 0.20 #slippy
   thermalConductivity: 0.04
   heatCapacity: 10000
 
