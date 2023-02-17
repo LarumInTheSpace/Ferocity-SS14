@@ -10,8 +10,6 @@
     baseSprintSpeed : 5.00
   - type: InputMover
   - type: MobMover
-  - type: HTN
-    rootTask: SimpleHostileCompound
   - type: Reactive
     groups:
       Flammable: [Touch]
@@ -278,10 +276,9 @@
     - Plague
     - TongueTwister
   - type: Vocal
-    sounds:
-      Male: Mouse
-      Female: Mouse
-      Unsexed: Mouse
+    # mice are gender neutral who cares
+    maleScream: /Audio/Animals/mouse_squeak.ogg
+    femaleScream: /Audio/Animals/mouse_squeak.ogg
     wilhelmProbability: 0.001
   - type: GhostTakeoverAvailable
     makeSentient: true

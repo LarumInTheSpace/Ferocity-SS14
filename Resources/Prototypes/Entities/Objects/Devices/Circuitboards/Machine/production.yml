@@ -762,19 +762,3 @@
             Amount: 1
             DefaultPrototype: Beaker
             ExamineName: Glass Beaker
-
-- type: entity
-  id: DemolisherCircuitboard
-  parent: BaseMachineCircuitboard
-  name: demolisher machine board
-  components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: Demolisher
-      requirements:
-        Capacitor: 1
-        Laser: 3
-      materialRequirements:
-        CableHV: 5
-        Glass: 2

@@ -75,7 +75,7 @@ public sealed class SolutionSpikableSystem : EntitySystem
 
             sourceSolution.RemoveAllSolution();
 
-            _triggerSystem.Trigger(source, user);
+            _triggerSystem.Trigger(source);
         }
     }
 }

@@ -321,13 +321,14 @@
     - type: ProjectileBatteryAmmoProvider
       proto: BulletDisablerPractice
       fireCost: 100
-
+      
 - type: entity
   name: taser
   parent: BaseWeaponBatterySmall
   id: WeaponTaser
   description: A low-capacity, energy-based stun gun used by security teams to subdue targets at range.
-  suffix: Admin
+  # Use Disabler
+  suffix: Obsolete
   components:
   - type: Tag
     tags:
@@ -350,7 +351,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser.ogg
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletTaser
+    proto: BulletDisabler
     fireCost: 100
   - type: MagazineVisuals
     magState: mag

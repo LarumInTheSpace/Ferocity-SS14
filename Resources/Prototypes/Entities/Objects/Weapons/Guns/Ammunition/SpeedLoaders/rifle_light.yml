@@ -8,7 +8,6 @@
       - SpeedLoaderRifle
   - type: SpeedLoader
   - type: BallisticAmmoProvider
-    mayTransfer: true
     whitelist:
       tags:
         - CartridgeLightRifle

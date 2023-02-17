@@ -24,9 +24,6 @@ public sealed class ActiveZombieComponent : Component
     public float RandomGroanAttempt = 5;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    public string GroanEmoteId = "Scream";
-
-    [ViewVariables(VVAccess.ReadWrite)]
     public float LastDamageGroanCooldown = 0f;
 
     [ViewVariables(VVAccess.ReadWrite)]

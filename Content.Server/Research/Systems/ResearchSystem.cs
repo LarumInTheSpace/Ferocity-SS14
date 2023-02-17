@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared.Research.Components;
 using Content.Shared.Research.Systems;
@@ -29,22 +28,16 @@ namespace Content.Server.Research.Systems
         /// Gets a server based on it's unique numeric id.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="serverUid"></param>
-        /// <param name="serverComponent"></param>
         /// <returns></returns>
-        public bool TryGetServerById(int id, [NotNullWhen(true)] out EntityUid? serverUid, [NotNullWhen(true)] out ResearchServerComponent? serverComponent)
+        public ResearchServerComponent? GetServerById(int id)
         {
-            serverUid = null;
-            serverComponent = null;
             foreach (var server in EntityQuery<ResearchServerComponent>())
             {
-                if (server.Id != id)
-                    continue;
-                serverUid = server.Owner;
-                serverComponent = server;
-                return true;
+                if (server.Id == id)
+                    return server;
             }
-            return false;
+
+            return null;
         }
 
         /// <summary>

@@ -29,7 +29,6 @@
     - resetallents
     - cvar
     - fuckrules
-    - midipanic
 
 - Flags: DEBUG
   Commands:

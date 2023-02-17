@@ -205,11 +205,6 @@
       - HighPowerMicroLaserStockPart
       - NanoManipulatorStockPart
       - AdvancedScanningModuleStockPart
-      - SuperCapacitorStockPart
-      - SuperMatterBinStockPart
-      - UltraHighPowerMicroLaserStockPart
-      - PicoManipulatorStockPart
-      - PhasicScanningModuleStockPart
       - FirelockElectronics
       - DoorElectronics
       - APCElectronics
@@ -413,20 +408,12 @@
       - ShellShotgunFlare
       - ShellTranquilizer
       - CartridgeLightRifle
-      - CartridgeRifle
+      - CartridgeCaselessRifleRubber
       - CartridgeLightRifleRubber
       - CartridgeRifleRubber
       - TargetHuman
       - TargetSyndicate
       - TargetClown
-      - MagazineBoxPistol
-      - MagazineBoxPistolRubber
-      - MagazineBoxMagnum
-      - MagazineBoxMagnumRubber
-      - MagazineBoxRifle
-      - MagazineBoxRifleRubber
-      - MagazineBoxLightRifle
-      - MagazineBoxLightRifleRubber
   - type: MaterialStorage
     whitelist:
       tags:

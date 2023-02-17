@@ -22,7 +22,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 250
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -56,7 +56,7 @@
     state: on
   - type: PointLight
     radius: 10
-    energy: 1
+    energy: 0.8
     softness: 1
     offset: "0, -0.5"
 
@@ -91,9 +91,10 @@
     graph: LightFixture
     node: groundLight
   - type: Appearance
-  - type: PoweredLightVisuals
-    blinkingSound:
-      path: "/Audio/Machines/light_tube_on.ogg"
+    visuals:
+    - type: PoweredLightVisualizer
+      blinkingSound:
+        path: "/Audio/Machines/light_tube_on.ogg"
   - type: SignalReceiver
     inputs:
       On: []
@@ -112,7 +113,7 @@
     - state: off
       map: [ "enum.PoweredLightLayers.Base" ]
   - type: PoweredLight
-    hasLampOnSpawn: LedLightTube
+    hasLampOnSpawn: LightTube
     damage:
       types:
         Heat: 20

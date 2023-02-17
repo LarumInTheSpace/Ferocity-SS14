@@ -5,7 +5,6 @@ using Content.Server.Mind.Components;
 using Content.Shared.Examine;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
-using Content.Shared.Interaction.Events;
 using Robust.Shared.Map;
 using Robust.Shared.Timing;
 
@@ -24,7 +23,6 @@ public sealed class MindSystem : EntitySystem
 
         SubscribeLocalEvent<MindComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<MindComponent, ExaminedEvent>(OnExamined);
-        SubscribeLocalEvent<MindComponent, SuicideEvent>(OnSuicide);
     }
 
     public void SetGhostOnShutdown(EntityUid uid, bool value, MindComponent? mind = null)
@@ -109,7 +107,6 @@ public sealed class MindSystem : EntitySystem
                     {
                         // This should be an error, if it didn't cause tests to start erroring when they delete a player.
                         Logger.WarningS("mind", $"Entity \"{ToPrettyString(uid)}\" for {mind.Mind?.CharacterName} was deleted, and no applicable spawn location is available.");
-                        mind.Mind?.TransferTo(null);
                         return;
                     }
 
@@ -157,17 +154,6 @@ public sealed class MindSystem : EntitySystem
         else if (mind.Mind?.Session == null)
         {
             args.PushMarkup($"[color=yellow]{Loc.GetString("comp-mind-examined-ssd", ("ent", uid))}[/color]");
-        }
-    }
-
-    private void OnSuicide(EntityUid uid, MindComponent component, SuicideEvent args)
-    {
-        if (args.Handled)
-            return;
-
-        if (component.HasMind && component.Mind!.PreventSuicide)
-        {
-            args.BlockSuicideAttempt(true);
         }
     }
 }

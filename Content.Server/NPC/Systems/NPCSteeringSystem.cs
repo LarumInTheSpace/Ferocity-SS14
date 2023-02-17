@@ -12,7 +12,6 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Content.Shared.NPC;
 using Content.Shared.NPC.Events;
-using Content.Shared.Physics;
 using Content.Shared.Weapons.Melee;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
@@ -207,19 +206,16 @@ namespace Content.Server.NPC.Systems
 
             var npcs = EntityQuery<ActiveNPCComponent, NPCSteeringComponent, InputMoverComponent, TransformComponent>()
                 .ToArray();
-
-            // Dependency issues across threads.
             var options = new ParallelOptions
             {
-                MaxDegreeOfParallelism = 1,
+                MaxDegreeOfParallelism = _parallel.ParallelProcessCount,
             };
-            var curTime = _timing.CurTime;
 
             Parallel.For(0, npcs.Length, options, i =>
             {
                 var (_, steering, mover, xform) = npcs[i];
 
-                Steer(steering, mover, xform, modifierQuery, bodyQuery, xformQuery, frameTime, curTime);
+                Steer(steering, mover, xform, modifierQuery, bodyQuery, xformQuery, frameTime);
             });
 
 
@@ -266,8 +262,7 @@ namespace Content.Server.NPC.Systems
             EntityQuery<MovementSpeedModifierComponent> modifierQuery,
             EntityQuery<PhysicsComponent> bodyQuery,
             EntityQuery<TransformComponent> xformQuery,
-            float frameTime,
-            TimeSpan curTime)
+            float frameTime)
         {
             if (Deleted(steering.Coordinates.EntityId))
             {
@@ -360,19 +355,6 @@ namespace Content.Server.NPC.Systems
                 resultDirection = new Angle(desiredDirection * InterestRadians).ToVec();
             }
 
-            // Don't steer too frequently to avoid twitchiness.
-            // This should also implicitly solve tie situations.
-            // I think doing this after all the ops above is best?
-            // Originally I had it way above but sometimes mobs would overshoot their tile targets.
-
-            if (steering.NextSteer > curTime)
-            {
-                SetDirection(mover, steering, steering.LastSteerDirection, false);
-                return;
-            }
-
-            steering.NextSteer = curTime + TimeSpan.FromSeconds(1f / NPCSteeringComponent.SteeringFrequency);
-            steering.LastSteerDirection = resultDirection;
             DebugTools.Assert(!float.IsNaN(resultDirection.X));
             SetDirection(mover, steering, resultDirection, false);
         }
@@ -398,10 +380,7 @@ namespace Content.Server.NPC.Systems
             // Short-circuit with no path.
             var targetPoly = _pathfindingSystem.GetPoly(steering.Coordinates);
 
-            // If this still causes issues future sloth adjust the collision mask.
-            if (targetPoly != null &&
-                steering.Coordinates.Position.Equals(Vector2.Zero) &&
-                _interaction.InRangeUnobstructed(steering.Owner, steering.Coordinates.EntityId, range: 30f))
+            if (targetPoly != null && steering.Coordinates.Position.Equals(Vector2.Zero) && _interaction.InRangeUnobstructed(steering.Owner, steering.Coordinates.EntityId))
             {
                 steering.CurrentPath.Clear();
                 steering.CurrentPath.Enqueue(targetPoly);

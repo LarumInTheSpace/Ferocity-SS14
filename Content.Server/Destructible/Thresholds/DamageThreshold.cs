@@ -77,9 +77,7 @@ namespace Content.Server.Destructible.Thresholds
         ///     An instance of <see cref="DestructibleSystem"/> to get dependency and
         ///     system references from, if relevant.
         /// </param>
-        /// <param name="entityManager"></param>
-        /// <param name="cause"></param>
-        public void Execute(EntityUid owner, DestructibleSystem system, IEntityManager entityManager, EntityUid? cause)
+        public void Execute(EntityUid owner, DestructibleSystem system, IEntityManager entityManager)
         {
             Triggered = true;
 
@@ -89,7 +87,7 @@ namespace Content.Server.Destructible.Thresholds
                 if (!entityManager.EntityExists(owner))
                     return;
 
-                behavior.Execute(owner, system, cause);
+                behavior.Execute(owner, system);
             }
         }
     }

@@ -1,2 +1,2 @@
 action-name-scream = Scream
-action-description-scream = AAAAAAAAAAAAAAAAAAAAAAAAA
+scream-action-popup = Screams!

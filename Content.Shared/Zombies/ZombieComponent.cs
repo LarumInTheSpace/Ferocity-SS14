@@ -1,4 +1,3 @@
-using Content.Shared.Chat.Prototypes;
 using Content.Shared.Roles;
 using Content.Shared.Humanoid;
 using Robust.Shared.GameStates;
@@ -81,10 +80,5 @@ namespace Content.Shared.Zombies
         /// </summary>
         [DataField("beforeZombifiedSkinColor")]
         public Color BeforeZombifiedSkinColor;
-
-        [DataField("emoteId", customTypeSerializer: typeof(PrototypeIdSerializer<EmoteSoundsPrototype>))]
-        public string? EmoteSoundsId = "Zombie";
-
-        public EmoteSoundsPrototype? EmoteSounds;
     }
 }

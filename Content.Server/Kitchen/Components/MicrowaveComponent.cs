@@ -59,12 +59,10 @@ namespace Content.Server.Kitchen.Components
     public sealed class BeingMicrowavedEvent : HandledEntityEventArgs
     {
         public EntityUid Microwave;
-        public EntityUid? User;
 
-        public BeingMicrowavedEvent(EntityUid microwave, EntityUid? user)
+        public BeingMicrowavedEvent(EntityUid microwave)
         {
             Microwave = microwave;
-            User = user;
         }
     }
 }

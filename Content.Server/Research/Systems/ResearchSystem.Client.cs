@@ -10,7 +10,7 @@ public sealed partial class ResearchSystem
 {
     private void InitializeClient()
     {
-        SubscribeLocalEvent<ResearchClientComponent, MapInitEvent>(OnClientMapInit);
+        SubscribeLocalEvent<ResearchClientComponent, ComponentStartup>(OnClientStartup);
         SubscribeLocalEvent<ResearchClientComponent, ComponentShutdown>(OnClientShutdown);
         SubscribeLocalEvent<ResearchClientComponent, BoundUIOpenedEvent>(OnClientUIOpen);
         SubscribeLocalEvent<ResearchClientComponent, ConsoleServerSyncMessage>(OnConsoleSync);
@@ -26,11 +26,12 @@ public sealed partial class ResearchSystem
 
     private void OnClientSelected(EntityUid uid, ResearchClientComponent component, ResearchClientServerSelectedMessage args)
     {
-        if (!TryGetServerById(args.ServerId, out var serveruid, out var serverComponent))
+        var server = GetServerById(args.ServerId);
+        if (server == null)
             return;
 
-        UnregisterClient(uid, component);
-        RegisterClient(uid, serveruid.Value, component, serverComponent);
+        UnregisterClient(uid, clientComponent: component);
+        RegisterClient(uid, server.Owner, component, server);
     }
 
     private void OnClientDeselected(EntityUid uid, ResearchClientComponent component, ResearchClientServerDeselectedMessage args)
@@ -45,7 +46,7 @@ public sealed partial class ResearchSystem
 
     private void OnConsoleSelect(EntityUid uid, ResearchClientComponent component, ConsoleServerSelectionMessage args)
     {
-        if (!this.IsPowered(uid, EntityManager))
+        if (!HasComp<TechnologyDatabaseComponent>(uid) || !this.IsPowered(uid, EntityManager))
             return;
 
         _uiSystem.TryToggleUi(uid, ResearchClientUiKey.Key, (IPlayerSession) args.Session);
@@ -65,7 +66,7 @@ public sealed partial class ResearchSystem
         UpdateClientInterface(uid, component);
     }
 
-    private void OnClientMapInit(EntityUid uid, ResearchClientComponent component, MapInitEvent args)
+    private void OnClientStartup(EntityUid uid, ResearchClientComponent component, ComponentStartup args)
     {
         var allServers = EntityQuery<ResearchServerComponent>(true).ToArray();
         if (allServers.Length > 0)
@@ -94,7 +95,7 @@ public sealed partial class ResearchSystem
         var state = new ResearchClientBoundInterfaceState(names.Length, names,
             GetServerIds(), component.ConnectedToServer ? serverComponent.Id : -1);
 
-        _uiSystem.TrySetUiState(uid, ResearchClientUiKey.Key, state);
+        _uiSystem.TrySetUiState(component.Owner, ResearchClientUiKey.Key, state);
     }
 
     /// <summary>

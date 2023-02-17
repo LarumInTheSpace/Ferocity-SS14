@@ -1,4 +1,3 @@
-using System.Linq;
 using Content.Server.Chemistry.Components.SolutionManager;
 using Content.Server.Chemistry.EntitySystems;
 using Content.Server.DoAfter;
@@ -6,7 +5,6 @@ using Content.Server.Fluids.Components;
 using Content.Server.Popups;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.FixedPoint;
-using Content.Shared.Fluids;
 using Content.Shared.Interaction;
 using Content.Shared.Tag;
 using JetBrains.Annotations;
@@ -17,7 +15,7 @@ using Robust.Shared.Map;
 namespace Content.Server.Fluids.EntitySystems;
 
 [UsedImplicitly]
-public sealed class MoppingSystem : SharedMoppingSystem
+public sealed class MoppingSystem : EntitySystem
 {
     [Dependency] private readonly DoAfterSystem _doAfterSystem = default!;
     [Dependency] private readonly SpillableSystem _spillableSystem = default!;
@@ -32,35 +30,9 @@ public sealed class MoppingSystem : SharedMoppingSystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<AbsorbentComponent, ComponentInit>(OnAbsorbentInit);
         SubscribeLocalEvent<AbsorbentComponent, AfterInteractEvent>(OnAfterInteract);
-        SubscribeLocalEvent<AbsorbentComponent, SolutionChangedEvent>(OnAbsorbentSolutionChange);
         SubscribeLocalEvent<TransferCancelledEvent>(OnTransferCancelled);
         SubscribeLocalEvent<TransferCompleteEvent>(OnTransferComplete);
-    }
-
-    private void OnAbsorbentInit(EntityUid uid, AbsorbentComponent component, ComponentInit args)
-    {
-        // TODO: I know dirty on init but no prediction moment.
-        UpdateAbsorbent(uid, component);
-    }
-
-    private void OnAbsorbentSolutionChange(EntityUid uid, AbsorbentComponent component, SolutionChangedEvent args)
-    {
-        UpdateAbsorbent(uid, component);
-    }
-
-    private void UpdateAbsorbent(EntityUid uid, AbsorbentComponent component)
-    {
-        if (!_solutionSystem.TryGetSolution(uid, AbsorbentComponent.SolutionName, out var solution))
-            return;
-
-        var oldProgress = component.Progress;
-
-        component.Progress = (float) (solution.Volume / solution.MaxVolume);
-        if (component.Progress.Equals(oldProgress))
-            return;
-        Dirty(component);
     }
 
     private void OnAfterInteract(EntityUid uid, AbsorbentComponent component, AfterInteractEvent args)

@@ -123,38 +123,6 @@
     - id: FoodBanana
 
 - type: artifactEffect
-  id: EffectChemicalPuddle
-  targetDepth: 1
-  effectHint: artifact-effect-hint-biochemical
-  components:
-  - type: ChemicalPuddleArtifact
-    chemicalSolution:
-      maxVol: 500
-      canReact: false
-    possibleChemicals:
-    - Aluminium
-    - Carbon
-    - Chlorine
-    - Copper
-    - Ethanol
-    - Fluorine
-    - Sugar
-    - Hydrogen
-    - Iodine
-    - Iron
-    - Lithium
-    - Mercury
-    - Nitrogen
-    - Oxygen
-    - Phosphorus
-    - Potassium
-    - Radium
-    - Silicon
-    - Sodium
-    - Water
-    - Sulfur
-
-- type: artifactEffect
   id: EffectCold
   targetDepth: 1
   effectHint: artifact-effect-hint-consumption
@@ -307,37 +275,11 @@
     reagents:
     - Dermaline
     - Arithrazine
-    - Bicaridine
+    - Spaceacillin
     - Inaprovaline
     - Kelotane
     - Dexalin
     - Omnizine
-
-- type: artifactEffect
-  id: EffectChemicalPuddleRare
-  targetDepth: 2
-  effectHint: artifact-effect-hint-biochemical
-  components:
-  - type: ChemicalPuddleArtifact
-    chemicalSolution:
-      maxVol: 500
-      canReact: false
-    possibleChemicals:
-    - Dermaline
-    - Arithrazine
-    - Bicaridine
-    - Inaprovaline
-    - Kelotane
-    - Dexalin
-    - Omnizine
-    - Napalm
-    - Toxin
-    - Epinephrine
-    - Cognizine
-    - Ultravasculine
-    - Desoxyephedrine
-    - Pax
-    - Siderlac
 
 - type: artifactEffect
   id: EffectHealAll
@@ -382,26 +324,26 @@
     - shuffle-artifact-popup
 
 - type: artifactEffect
-  id: EffectT4PartsSpawn
+  id: EffectT3PartsSpawn
   targetDepth: 3
   effectHint: artifact-effect-hint-creation
   components:
   - type: SpawnArtifact
     maxSpawns: 10
     spawns:
-    - id: QuadraticCapacitorStockPart
+    - id: SuperCapacitorStockPart
       prob: 0.3
       maxAmount: 2
-    - id: TriphasicScanningModuleStockPart
+    - id: PhasicScanningModuleStockPart
       prob: 0.3
       maxAmount: 2
-    - id: FemtoManipulatorStockPart
+    - id: PicoManipulatorStockPart
       prob: 0.3
       maxAmount: 2
-    - id: QuadUltraMicroLaserStockPart
+    - id: UltraHighPowerMicroLaserStockPart
       prob: 0.3
       maxAmount: 2
-    - id: BluespaceMatterBinStockPart
+    - id: SuperMatterBinStockPart
       prob: 0.3
       maxAmount: 2
 

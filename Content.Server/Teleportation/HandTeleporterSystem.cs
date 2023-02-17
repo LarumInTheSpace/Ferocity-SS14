@@ -1,7 +1,5 @@
 ﻿using System.Threading;
-using Content.Server.Administration.Logs;
 using Content.Server.DoAfter;
-using Content.Shared.Database;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Teleportation.Components;
 using Content.Shared.Teleportation.Systems;
@@ -14,7 +12,6 @@ namespace Content.Server.Teleportation;
 /// </summary>
 public sealed class HandTeleporterSystem : EntitySystem
 {
-    [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly LinkedEntitySystem _link = default!;
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly DoAfterSystem _doafter = default!;
@@ -101,7 +98,6 @@ public sealed class HandTeleporterSystem : EntitySystem
             var timeout = EnsureComp<PortalTimeoutComponent>(user);
             timeout.EnteredPortal = null;
             component.FirstPortal = Spawn(component.FirstPortalPrototype, Transform(user).Coordinates);
-            _adminLogger.Add(LogType.EntitySpawn, LogImpact.Low, $"{ToPrettyString(user):player} opened {ToPrettyString(component.FirstPortal.Value)} at {Transform(component.FirstPortal.Value).Coordinates} using {ToPrettyString(uid)}");
             _audio.PlayPvs(component.NewPortalSound, uid);
         }
         else if (component.SecondPortal == null)
@@ -109,21 +105,11 @@ public sealed class HandTeleporterSystem : EntitySystem
             var timeout = EnsureComp<PortalTimeoutComponent>(user);
             timeout.EnteredPortal = null;
             component.SecondPortal = Spawn(component.SecondPortalPrototype, Transform(user).Coordinates);
-            _adminLogger.Add(LogType.EntitySpawn, LogImpact.Low, $"{ToPrettyString(user):player} opened {ToPrettyString(component.SecondPortal.Value)} at {Transform(component.SecondPortal.Value).Coordinates} linked to {ToPrettyString(component.FirstPortal!.Value)} using {ToPrettyString(uid)}");
             _link.TryLink(component.FirstPortal!.Value, component.SecondPortal.Value, true);
             _audio.PlayPvs(component.NewPortalSound, uid);
         }
         else
         {
-            // Logging
-            var portalStrings = "";
-            portalStrings += ToPrettyString(component.FirstPortal!.Value);
-            if (portalStrings != "")
-                portalStrings += " and ";
-            portalStrings += ToPrettyString(component.SecondPortal!.Value);
-            if (portalStrings != "")
-                _adminLogger.Add(LogType.EntityDelete, LogImpact.Low, $"{ToPrettyString(user):player} closed {portalStrings} with {ToPrettyString(uid)}");
-
             // Clear both portals
             QueueDel(component.FirstPortal!.Value);
             QueueDel(component.SecondPortal!.Value);

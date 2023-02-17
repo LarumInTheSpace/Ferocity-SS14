@@ -31,7 +31,6 @@
           doAfter: 2
 
     - node: parts
-      entity: BaseSubstationWallFrame
       edges:
       - to: electronics
         steps:

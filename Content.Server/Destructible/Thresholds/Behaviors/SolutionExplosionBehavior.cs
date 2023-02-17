@@ -16,7 +16,7 @@ namespace Content.Server.Destructible.Thresholds.Behaviors
         [DataField("solution", required: true)]
         public string Solution = default!;
 
-        public void Execute(EntityUid owner, DestructibleSystem system, EntityUid? cause = null)
+        public void Execute(EntityUid owner, DestructibleSystem system)
         {
             if (system.SolutionContainerSystem.TryGetSolution(owner, Solution, out var explodingSolution)
                 && system.EntityManager.TryGetComponent(owner, out ExplosiveComponent? explosiveComponent))
@@ -39,7 +39,7 @@ namespace Content.Server.Destructible.Thresholds.Behaviors
                 // Don't delete the object here - let other processes like physical damage from the
                 // explosion clean up the exploding object(s)
                 var explosiveTotalIntensity = explosiveComponent.TotalIntensity * explosionScaleFactor;
-                system.ExplosionSystem.TriggerExplosive(owner, explosiveComponent, false, explosiveTotalIntensity, user:cause);
+                system.ExplosionSystem.TriggerExplosive(owner, explosiveComponent, false, explosiveTotalIntensity);
             }
         }
     }

@@ -60,18 +60,6 @@
 
 - type: entity
   parent: PassengerIDCard
-  id: ResearchAssistantIDCard
-  name: research assistant ID card
-  components:
-  - type: PresetIdCard
-    job: ResearchAssistant
-  - type: Sprite
-    layers:
-    - state: default
-    - state: idintern-sci
-
-- type: entity
-  parent: PassengerIDCard
   id: SecurityCadetIDCard
   name: security cadet ID card
   components:
@@ -243,7 +231,7 @@
 - type: entity
   parent: IDCardStandard
   id: ChaplainIDCard
-  name: preacher ID card
+  name: chaplain ID card
   components:
     - type: Sprite
       layers:

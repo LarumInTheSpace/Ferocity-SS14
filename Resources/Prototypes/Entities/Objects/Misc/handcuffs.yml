@@ -16,7 +16,6 @@
     tags:
     - Handcuffs
   - type: MeleeWeapon
-    resetOnHandSelected: false
     animation: WeaponArcDisarm
     damage:
       types:

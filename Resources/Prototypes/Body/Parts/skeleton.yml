@@ -54,10 +54,8 @@
     - type: SkeletonAccent
     - type: Actions
     - type: Vocal
-      sounds:
-        Male: Skeleton
-        Female: Skeleton
-        Unsexed: Skeleton
+      maleScream: /Audio/Voice/Skeleton/skeleton_scream.ogg
+      femaleScream: /Audio/Voice/Skeleton/skeleton_scream.ogg
     - type: Emoting
     - type: Grammar
       attributes:
