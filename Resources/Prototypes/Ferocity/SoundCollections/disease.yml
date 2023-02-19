@@ -1,0 +1,6 @@
+- type: soundCollection
+  id: Electronic-Coughs
+  files:
+  - /Audio/Ferocity/Disease/ElectronicCough/electroniccough1.ogg
+  - /Audio/Ferocity/Disease/ElectronicCough/electroniccough2.ogg
+  - /Audio/Ferocity/Disease/ElectronicCough/electroniccough3.ogg
