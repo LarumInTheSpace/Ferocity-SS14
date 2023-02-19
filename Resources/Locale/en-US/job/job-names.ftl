@@ -1,4 +1,4 @@
-﻿job-name-warden = warden
+job-name-warden = warden
 job-name-security = security officer
 job-name-cadet = security cadet
 job-name-hos = head of security
