@@ -22,13 +22,13 @@ public sealed class DiseaseOutbreak : StationEventSystem
     /// </summary>
     public readonly IReadOnlyList<string> NotTooSeriousDiseases = new[]
     {
-        "SpaceCold",
-        "VanAusdallsRobovirus",
-        "VentCough",
-        "AMIV",
-        "SpaceFlu",
-        "BirdFlew",
-        "TongueTwister"
+		"VentCough",
+		"SpaceFlu",
+		"SpaceHerpes",
+		"SpaceTetter",
+		"Diarrhea",
+		"ElectronicCough",
+		"Coronavirus"
     };
 
     /// <summary>

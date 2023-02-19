@@ -1,0 +1,137 @@
+- type: disease
+  id: SpaceHerpes
+  name: disease-proto-space-herpes
+  cureResist: 0.05
+  effects:
+    - !type:DiseaseHealthChange
+      probability: 0.05
+      damage:
+        types:
+          Blunt: 1
+    - !type:DiseasePopUp
+      probability: 0.05
+      message: disease-effect-itch
+      visualType: Medium
+  cures:
+    - !type:DiseaseBedrestCure
+      maxLength: 30
+    - !type:DiseaseJustWaitCure
+      maxLength: 300
+    - !type:DiseaseReagentCure
+      reagent: Spaceacillin
+
+- type: disease
+  id: Diarrhea
+  name: disease-proto-diarrhea
+  cureResist: 0
+  effects:
+    - !type:DiseaseHealthChange
+      probability: 0.05
+      damage:
+        types:
+          Poison: 5
+    - !type:DiseasePopUp
+      probability: 0.05
+      message: disease-effect-stomach
+      visualType: Medium
+    - !type:DiseaseVomit
+      probability: 0.05
+  cures:
+    - !type:DiseaseBedrestCure
+      maxLength: 30
+    - !type:DiseaseJustWaitCure
+      maxLength: 120
+    - !type:DiseaseReagentCure
+      reagent: Ipecac
+
+- type: disease
+  id: SpaceTetter
+  name: disease-proto-space-tetter
+  cureResist: 0
+  effects:
+    - !type:DiseaseHealthChange
+      probability: 0.05
+      damage:
+        types:
+          Blunt: 5
+    - !type:DiseasePopUp
+      probability: 0.05
+      message: disease-effect-itch
+      visualType: Medium
+  cures:
+    - !type:DiseaseBedrestCure
+      maxLength: 60
+    - !type:DiseaseJustWaitCure
+      maxLength: 600
+    - !type:DiseaseReagentCure
+      reagent: Stellibinin
+
+- type: disease
+  id: ElectronicCough
+  name: disease-proto-electronic-cough
+  cureResist: 0
+  effects:
+    - !type:DiseaseAdjustReagent
+      probability: 0.05
+      reagent: Licoxide
+      amount: 1
+    - !type:DiseaseSnough
+      probability: 0.1
+      snoughMessage: disease-electronic-cough
+      snoughSound:
+        collection: Electronic-Coughs
+  cures:
+    - !type:DiseaseBedrestCure
+      maxLength: 90
+    - !type:DiseaseJustWaitCure
+      maxLength: 300
+    - !type:DiseaseReagentCure
+      reagent: WeldingFuel
+
+- type: disease
+  id: Coronavirus
+  name: disease-proto-coronavirus
+  cureResist: 0
+  effects:
+    - !type:DiseaseSnough
+      probability: 0.05
+      snoughSound:
+        collection: Coughs
+    - !type:DiseasePopUp
+      probability: 0.05
+    - !type:DiseaseHealthChange
+      probability: 0.05
+      damage:
+        types:
+          Asphyxiation: 10
+  cures:
+    - !type:DiseaseBedrestCure
+      maxLength: 90
+    - !type:DiseaseJustWaitCure
+      maxLength: 300
+    - !type:DiseaseReagentCure
+      reagent: Dexalin
+
+- type: disease
+  id: SpaceFlu
+  name: disease-proto-space-flu
+  cureResist: 0
+  effects:
+    - !type:DiseasePopUp
+      probability: 0.05
+    - !type:DiseaseSnough
+      probability: 0.05
+      snoughSound:
+        collection: Sneezes
+    - !type:DiseaseHealthChange
+      probability: 0.05
+      damage:
+        types:
+          Heat: 1
+  cures:
+    - !type:DiseaseBedrestCure
+      maxLength: 60
+    - !type:DiseaseJustWaitCure
+      maxLength: 300
+    - !type:DiseaseReagentCure
+      reagent: Inaprovaline
