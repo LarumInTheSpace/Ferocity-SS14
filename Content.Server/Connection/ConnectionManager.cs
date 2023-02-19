@@ -154,7 +154,19 @@ namespace Content.Server.Connection
                 && await _db.GetWhitelistStatusAsync(userId) == false
                 && adminData is null)
             {
-                return (ConnectionDenyReason.Whitelist, Loc.GetString(_cfg.GetCVar(CCVars.WhitelistReason)), null);
+                var min = _cfg.GetCVar(CCVars.WhitelistMinPlayers);
+                var max = _cfg.GetCVar(CCVars.WhitelistMaxPlayers);
+                var playerCountValid = _plyMgr.PlayerCount >= min && _plyMgr.PlayerCount < max;
+
+                if (playerCountValid && await _db.GetWhitelistStatusAsync(userId) == false
+                                     && adminData is null)
+                {
+                    var msg = Loc.GetString(_cfg.GetCVar(CCVars.WhitelistReason));
+                    // was the whitelist playercount changed?
+                    if (min > 0 || max < int.MaxValue)
+                        msg += "\n" + Loc.GetString("whitelist-playercount-invalid", ("min", min), ("max", max));
+                    return (ConnectionDenyReason.Whitelist, msg, null);
+                }
             }
 
             return null;
