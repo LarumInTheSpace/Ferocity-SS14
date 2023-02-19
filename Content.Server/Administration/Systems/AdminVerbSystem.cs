@@ -1,5 +1,4 @@
 using Content.Server.Administration.Commands;
-using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.UI;
 using Content.Server.Chemistry.Components.SolutionManager;
@@ -49,7 +48,6 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly ArtifactSystem _artifactSystem = default!;
         [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
         [Dependency] private readonly PrayerSystem _prayerSystem = default!;
-        [Dependency] private readonly EuiManager _eui = default!;
 
         private readonly Dictionary<IPlayerSession, EditSolutionsEui> _openSolutionUis = new();
 
@@ -119,25 +117,6 @@ namespace Content.Server.Administration.Systems
                         },
                         Impact = LogImpact.Medium,
                     });
-                }
-
-                // Admin Logs
-                if (_adminManager.HasAdminFlag(player, AdminFlags.Logs))
-                {
-                    Verb logsVerbEntity = new()
-                    {
-                        Priority = -2,
-                        Text = Loc.GetString("admin-verbs-admin-logs-entity"),
-                        Category = VerbCategory.Admin,
-                        Act = () =>
-                        {
-                            var ui = new AdminLogsEui();
-                            _eui.OpenEui(ui, player);
-                            ui.SetLogFilter(search:args.Target.GetHashCode().ToString());
-                        },
-                        Impact = LogImpact.Low
-                    };
-                    args.Verbs.Add(logsVerbEntity);
                 }
 
                 // TeleportTo
@@ -237,7 +216,7 @@ namespace Content.Server.Administration.Systems
             }
 
             // XenoArcheology
-            if (_adminManager.IsAdmin(player) && TryComp<ArtifactComponent>(args.Target, out var artifact))
+            if (TryComp<ArtifactComponent>(args.Target, out var artifact))
             {
                 // make artifact always active (by adding timer trigger)
                 args.Verbs.Add(new Verb()

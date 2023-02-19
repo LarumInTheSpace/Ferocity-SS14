@@ -21,14 +21,14 @@ namespace Content.Client.Chat.Managers
             _sawmill.Level = LogLevel.Info;
         }
 
-        public void SendMessage(string text, ChatSelectChannel channel)
+        public void SendMessage(ReadOnlyMemory<char> text, ChatSelectChannel channel)
         {
             var str = text.ToString();
             switch (channel)
             {
                 case ChatSelectChannel.Console:
                     // run locally
-                    _consoleHost.ExecuteCommand(text);
+                    _consoleHost.ExecuteCommand(text.ToString());
                     break;
 
                 case ChatSelectChannel.LOOC:
@@ -57,8 +57,10 @@ namespace Content.Client.Chat.Managers
                         _sawmill.Warning("Tried to speak on deadchat without being ghost or admin.");
                     break;
 
-                // TODO sepearate radio and say into separate commands.
                 case ChatSelectChannel.Radio:
+                    _consoleHost.ExecuteCommand($"say \";{CommandParsing.Escape(str)}\"");
+                    break;
+
                 case ChatSelectChannel.Local:
                     _consoleHost.ExecuteCommand($"say \"{CommandParsing.Escape(str)}\"");
                     break;

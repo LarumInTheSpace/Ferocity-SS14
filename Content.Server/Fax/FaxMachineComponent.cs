@@ -51,6 +51,13 @@ public sealed class FaxMachineComponent : Component
     public bool ReceiveNukeCodes { get; set; } = false;
 
     /// <summary>
+    /// Is fax was emaaged
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("emagged")]
+    public bool Emagged { get; set; } = false;
+
+    /// <summary>
     /// Sound to play when fax has been emagged
     /// </summary>
     [DataField("emagSound")]

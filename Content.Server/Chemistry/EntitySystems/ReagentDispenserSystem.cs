@@ -5,7 +5,6 @@ using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Dispenser;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Database;
-using Content.Shared.Emag.Components;
 using Content.Shared.Emag.Systems;
 using Content.Shared.FixedPoint;
 using JetBrains.Annotations;
@@ -80,7 +79,7 @@ namespace Content.Server.Chemistry.EntitySystems
                 inventory.AddRange(packPrototype.Inventory);
             }
 
-            if (HasComp<EmaggedComponent>(reagentDispenser.Owner)
+            if (reagentDispenser.IsEmagged
                 && reagentDispenser.EmagPackPrototypeId is not null
                 && _prototypeManager.TryIndex(reagentDispenser.EmagPackPrototypeId, out ReagentDispenserInventoryPrototype? emagPackPrototype))
             {
@@ -92,10 +91,12 @@ namespace Content.Server.Chemistry.EntitySystems
 
         private void OnEmagged(EntityUid uid, ReagentDispenserComponent reagentDispenser, ref GotEmaggedEvent args)
         {
-            // adding component manually to have correct state
-            EntityManager.AddComponent<EmaggedComponent>(uid);
-            UpdateUiState(reagentDispenser);
-            args.Handled = true;
+            if (!reagentDispenser.IsEmagged)
+            {
+                reagentDispenser.IsEmagged = true;
+                args.Handled = true;
+                UpdateUiState(reagentDispenser);
+            }
         }
 
         private void OnSetDispenseAmountMessage(EntityUid uid, ReagentDispenserComponent reagentDispenser, ReagentDispenserSetDispenseAmountMessage message)

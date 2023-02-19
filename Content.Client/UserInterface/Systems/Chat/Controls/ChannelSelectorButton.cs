@@ -1,4 +1,4 @@
-using Content.Shared.Chat;
+﻿using Content.Shared.Chat;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Input;
@@ -64,10 +64,12 @@ public sealed class ChannelSelectorButton : Button
 
         if (SelectedChannel == channel) return;
         SelectedChannel = channel;
+        UpdateChannelSelectButton(channel);
+
         OnChannelSelect?.Invoke(channel);
     }
 
-    public static string ChannelSelectorName(ChatSelectChannel channel)
+    public string ChannelSelectorName(ChatSelectChannel channel)
     {
         return Loc.GetString($"hud-chatbox-select-channel-{channel}");
     }
@@ -85,10 +87,10 @@ public sealed class ChannelSelectorButton : Button
         };
     }
 
-    public void UpdateChannelSelectButton(ChatSelectChannel channel, Shared.Radio.RadioChannelPrototype? radio)
+    public void UpdateChannelSelectButton(ChatSelectChannel channel)
     {
-        Text = radio != null ? Loc.GetString(radio.Name) : ChannelSelectorName(channel);
-        Modulate = radio?.Color ?? ChannelSelectColor(channel);
+        Text = ChannelSelectorName(channel);
+        Modulate = ChannelSelectColor(channel);
     }
 
     private void OnSelectorButtonToggled(ButtonToggledEventArgs args)

@@ -10,7 +10,6 @@ using Content.Shared.Bed.Sleep;
 using Content.Shared.Body.Components;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Damage;
-using Content.Shared.Emag.Components;
 using Content.Shared.Emag.Systems;
 using Content.Server.Construction;
 using Content.Shared.Mobs.Systems;
@@ -115,7 +114,7 @@ namespace Content.Server.Bed
 
         private void OnEmagged(EntityUid uid, StasisBedComponent component, ref GotEmaggedEvent args)
         {
-            args.Repeatable = true;
+            // Repeatable
             // Reset any metabolisms first so they receive the multiplier correctly
             UpdateMetabolisms(uid, component, false);
             component.Multiplier = 1 / component.Multiplier;
@@ -140,7 +139,7 @@ namespace Content.Server.Bed
         {
             var metabolismRating = args.PartRatings[component.MachinePartMetabolismModifier];
             component.Multiplier = component.BaseMultiplier * metabolismRating; //linear scaling so it's not OP
-            if (HasComp<EmaggedComponent>(uid))
+            if (component.Emagged)
                 component.Multiplier = 1f / component.Multiplier;
         }
 

@@ -1,5 +1,4 @@
 using Content.Server.Radio.EntitySystems;
-using Content.Shared.Chat;
 using Content.Shared.Radio;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
@@ -15,7 +14,7 @@ public sealed class RadioMicrophoneComponent : Component
 {
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("broadcastChannel", customTypeSerializer: typeof(PrototypeIdSerializer<RadioChannelPrototype>))]
-    public string BroadcastChannel = SharedChatSystem.CommonChannel;
+    public string BroadcastChannel = "Common";
 
     [ViewVariables, DataField("supportedChannels", customTypeSerializer: typeof(PrototypeIdListSerializer<RadioChannelPrototype>))]
     public List<string>? SupportedChannels;

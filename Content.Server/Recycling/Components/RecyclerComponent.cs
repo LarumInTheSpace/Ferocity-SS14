@@ -14,6 +14,13 @@ namespace Content.Server.Recycling.Components
         public bool Enabled;
 
         /// <summary>
+        ///     Whether or not sentient beings will be recycled
+        /// </summary>
+        [ViewVariables(VVAccess.ReadWrite)]
+        [DataField("safe")]
+        internal bool Safe = true;
+
+        /// <summary>
         ///     The percentage of material that will be recovered
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]

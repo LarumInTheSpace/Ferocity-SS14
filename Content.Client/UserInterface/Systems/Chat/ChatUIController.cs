@@ -13,7 +13,6 @@ using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Examine;
 using Content.Shared.Input;
-using Content.Shared.Radio;
 using Robust.Client.Graphics;
 using Robust.Client.Input;
 using Robust.Client.Player;
@@ -46,21 +45,30 @@ public sealed class ChatUIController : UIController
     [UISystemDependency] private readonly ExamineSystem? _examine = default;
     [UISystemDependency] private readonly GhostSystem? _ghost = default;
     [UISystemDependency] private readonly TypingIndicatorSystem? _typingIndicator = default;
-    [UISystemDependency] private readonly ChatSystem? _chatSys = default;
 
     private ISawmill _sawmill = default!;
 
+    public const char AliasLocal = '.';
+    public const char AliasConsole = '/';
+    public const char AliasDead = '\\';
+    public const char AliasLOOC = '(';
+    public const char AliasOOC = '[';
+    public const char AliasEmotes = '@';
+    public const char AliasAdmin = ']';
+    public const char AliasRadio = ';';
+    public const char AliasWhisper = ',';
+
     public static readonly Dictionary<char, ChatSelectChannel> PrefixToChannel = new()
     {
-        {SharedChatSystem.LocalPrefix, ChatSelectChannel.Local},
-        {SharedChatSystem.WhisperPrefix, ChatSelectChannel.Whisper},
-        {SharedChatSystem.ConsolePrefix, ChatSelectChannel.Console},
-        {SharedChatSystem.LOOCPrefix, ChatSelectChannel.LOOC},
-        {SharedChatSystem.OOCPrefix, ChatSelectChannel.OOC},
-        {SharedChatSystem.EmotesPrefix, ChatSelectChannel.Emotes},
-        {SharedChatSystem.AdminPrefix, ChatSelectChannel.Admin},
-        {SharedChatSystem.RadioCommonPrefix, ChatSelectChannel.Radio},
-        {SharedChatSystem.DeadPrefix, ChatSelectChannel.Dead}
+        {AliasLocal, ChatSelectChannel.Local},
+        {AliasWhisper, ChatSelectChannel.Whisper},
+        {AliasConsole, ChatSelectChannel.Console},
+        {AliasLOOC, ChatSelectChannel.LOOC},
+        {AliasOOC, ChatSelectChannel.OOC},
+        {AliasEmotes, ChatSelectChannel.Emotes},
+        {AliasAdmin, ChatSelectChannel.Admin},
+        {AliasRadio, ChatSelectChannel.Radio},
+        {AliasDead, ChatSelectChannel.Dead}
     };
 
     public static readonly Dictionary<ChatSelectChannel, char> ChannelPrefixes =
@@ -361,6 +369,11 @@ public sealed class ChatUIController : UIController
         }
     }
 
+    public static string GetChannelSelectorName(ChatSelectChannel channelSelector)
+    {
+        return channelSelector.ToString();
+    }
+
     private void UpdateChannelPermissions()
     {
         CanSendChannels = default;
@@ -579,88 +592,50 @@ public sealed class ChatUIController : UIController
         return channel;
     }
 
-    private bool TryGetRadioChannel(string text, out RadioChannelPrototype? radioChannel)
+    public (ChatSelectChannel channel, ReadOnlyMemory<char> text) SplitInputContents(string inputText)
     {
-        radioChannel = null;
-        return _player.LocalPlayer?.ControlledEntity is EntityUid { Valid: true } uid
-           && _chatSys != null
-           && _chatSys.TryProccessRadioMessage(uid, text, out _, out radioChannel, quiet: true);
-    }
-
-    public void UpdateSelectedChannel(ChatBox box)
-    {
-        var (prefixChannel, _, radioChannel) = SplitInputContents(box.ChatInput.Input.Text);
-
-        if (prefixChannel == ChatSelectChannel.None)
-            box.ChatInput.ChannelSelector.UpdateChannelSelectButton(box.SelectedChannel, null);
-        else
-            box.ChatInput.ChannelSelector.UpdateChannelSelectButton(prefixChannel, radioChannel);
-    }
-
-    public (ChatSelectChannel chatChannel, string text, RadioChannelPrototype? radioChannel) SplitInputContents(string text)
-    {
-        text = text.Trim();
+        var text = inputText.AsMemory().Trim();
         if (text.Length == 0)
-            return (ChatSelectChannel.None, text, null);
+            return default;
 
-        // We only cut off prefix only if it is not a radio or local channel, which both map to the same /say command
-        // because ????????
+        var prefixChar = text.Span[0];
+        var channel = PrefixToChannel.GetValueOrDefault(prefixChar);
 
-        ChatSelectChannel chatChannel;
-        if (TryGetRadioChannel(text, out var radioChannel))
-            chatChannel = ChatSelectChannel.Radio;
+        if ((CanSendChannels & channel) != 0)
+            // Cut off prefix if it's valid and we can use the channel in question.
+            text = text[1..];
         else
-            chatChannel = PrefixToChannel.GetValueOrDefault(text[0]);
+            channel = 0;
 
-        if ((CanSendChannels & chatChannel) == 0)
-            return (ChatSelectChannel.None, text, null);
+        channel = MapLocalIfGhost(channel);
 
-        if (chatChannel == ChatSelectChannel.Radio)
-            return (chatChannel, text, radioChannel);
-
-        if (chatChannel == ChatSelectChannel.Local)
-        {
-            if (_ghost?.IsGhost != true)
-                return (chatChannel, text, null);
-            else
-                chatChannel = ChatSelectChannel.Dead;
-        }
-
-        return (chatChannel, text[1..].TrimStart(), null);
+        // Trim from start again to cut out any whitespace between the prefix and message, if any.
+        return (channel, text.TrimStart());
     }
 
     public void SendMessage(ChatBox box, ChatSelectChannel channel)
     {
         _typingIndicator?.ClientSubmittedChatText();
 
-        var text = box.ChatInput.Input.Text;
+        if (!string.IsNullOrWhiteSpace(box.ChatInput.Input.Text))
+        {
+            var (prefixChannel, text) = SplitInputContents(box.ChatInput.Input.Text);
+
+            // Check if message is longer than the character limit
+            if (text.Length > MaxMessageLength)
+            {
+                var locWarning = Loc.GetString("chat-manager-max-message-length",
+                    ("maxMessageLength", MaxMessageLength));
+                box.AddLine(locWarning, Color.Orange);
+                return;
+            }
+
+            _manager.SendMessage(text, prefixChannel == 0 ? channel : prefixChannel);
+        }
+
         box.ChatInput.Input.Clear();
+        box.UpdateSelectedChannel();
         box.ChatInput.Input.ReleaseKeyboardFocus();
-        UpdateSelectedChannel(box);
-
-        if (string.IsNullOrWhiteSpace(text))
-            return;
-
-        (var prefixChannel, text, var _) = SplitInputContents(text);
-
-        // Check if message is longer than the character limit
-        if (text.Length > MaxMessageLength)
-        {
-            var locWarning = Loc.GetString("chat-manager-max-message-length",
-                ("maxMessageLength", MaxMessageLength));
-            box.AddLine(locWarning, Color.Orange);
-            return;
-        }
-
-        if (prefixChannel != ChatSelectChannel.None)
-            channel = prefixChannel;
-        else if (channel == ChatSelectChannel.Radio)
-        {
-            // radio must have prefix as it goes through the say command.
-            text = $";{text}";
-        }
-
-        _manager.SendMessage(text, prefixChannel == 0 ? channel : prefixChannel);
     }
 
     private void OnChatMessage(MsgChatMessage message) => ProcessChatMessage(message.Message);
@@ -710,6 +685,11 @@ public sealed class ChatUIController : UIController
                 AddSpeechBubble(msg, SpeechBubble.SpeechType.Emote);
                 break;
         }
+    }
+
+    public char GetPrefixFromChannel(ChatSelectChannel channel)
+    {
+        return ChannelPrefixes.GetValueOrDefault(channel);
     }
 
     public void RegisterChat(ChatBox chat)

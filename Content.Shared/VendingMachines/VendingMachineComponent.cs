@@ -40,6 +40,7 @@ namespace Content.Shared.VendingMachines
         [ViewVariables]
         public Dictionary<string, VendingMachineInventoryEntry> ContrabandInventory = new();
 
+        public bool Emagged;
         public bool Contraband;
 
         public bool Ejecting;

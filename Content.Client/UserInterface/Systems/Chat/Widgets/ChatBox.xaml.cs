@@ -1,4 +1,4 @@
-using Content.Client.Chat;
+﻿using Content.Client.Chat;
 using Content.Client.Chat.TypingIndicator;
 using Content.Client.UserInterface.Systems.Chat.Controls;
 using Content.Shared.Chat;
@@ -11,7 +11,6 @@ using Robust.Shared.Audio;
 using Robust.Shared.Input;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
-using TerraFX.Interop.Windows;
 using static Robust.Client.UserInterface.Controls.LineEdit;
 
 namespace Content.Client.UserInterface.Systems.Chat.Widgets;
@@ -69,7 +68,7 @@ public partial class ChatBox : UIWidget
 
     private void OnChannelSelect(ChatSelectChannel channel)
     {
-        _controller.UpdateSelectedChannel(this);
+        UpdateSelectedChannel();
     }
 
     public void Repopulate()
@@ -106,13 +105,49 @@ public partial class ChatBox : UIWidget
         Contents.AddMessage(formatted);
     }
 
+    public void UpdateSelectedChannel()
+    {
+        var (prefixChannel, _) = _controller.SplitInputContents(ChatInput.Input.Text);
+        var channel = prefixChannel == 0 ? SelectedChannel : prefixChannel;
+
+        ChatInput.ChannelSelector.UpdateChannelSelectButton(channel);
+    }
+
     public void Focus(ChatSelectChannel? channel = null)
     {
         var input = ChatInput.Input;
         var selectStart = Index.End;
 
         if (channel != null)
+        {
+            channel = _controller.MapLocalIfGhost(channel.Value);
+
+            // Channel not selectable, just do NOTHING (not even focus).
+            if ((_controller.SelectableChannels & channel.Value) == 0)
+                return;
+
+            var (_, text) = _controller.SplitInputContents(input.Text);
+
+            var newPrefix = _controller.GetPrefixFromChannel(channel.Value);
+            DebugTools.Assert(newPrefix != default, "Focus channel must have prefix!");
+
+            if (channel == SelectedChannel)
+            {
+                // New selected channel is just the selected channel,
+                // just remove prefix (if any) and leave text unchanged.
+
+                input.Text = text.ToString();
+                selectStart = Index.Start;
+            }
+            else
+            {
+                // Change prefix to new focused channel prefix and leave text unchanged.
+                input.Text = string.Concat(newPrefix.ToString(), " ", text.Span);
+                selectStart = Index.FromStart(2);
+            }
+
             ChatInput.ChannelSelector.Select(channel.Value);
+        }
 
         input.IgnoreNext = true;
         input.GrabKeyboardFocus();
@@ -170,7 +205,7 @@ public partial class ChatBox : UIWidget
     private void OnTextChanged(LineEditEventArgs args)
     {
         // Update channel select button to correct channel if we have a prefix.
-        _controller.UpdateSelectedChannel(this);
+        UpdateSelectedChannel();
 
         // Warn typing indicator about change
         _controller.NotifyChatTextChange();

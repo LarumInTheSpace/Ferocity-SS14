@@ -10,7 +10,6 @@ using Content.Shared.Actions;
 using Content.Shared.Actions.ActionTypes;
 using Content.Shared.Damage;
 using Content.Shared.Destructible;
-using Content.Shared.Emag.Components;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Throwing;
@@ -134,8 +133,11 @@ namespace Content.Server.VendingMachines
 
         private void OnEmagged(EntityUid uid, VendingMachineComponent component, ref GotEmaggedEvent args)
         {
-            // only emag if there are emag-only items
-            args.Handled = component.EmaggedInventory.Count > 0;
+            if (component.Emagged || component.EmaggedInventory.Count == 0 )
+                return;
+
+            component.Emagged = true;
+            args.Handled = true;
         }
 
         private void OnDamage(EntityUid uid, VendingMachineComponent component, DamageChangedEvent args)
@@ -222,7 +224,7 @@ namespace Content.Server.VendingMachines
 
             if (TryComp<AccessReaderComponent?>(vendComponent.Owner, out var accessReader))
             {
-                if (!_accessReader.IsAllowed(sender.Value, accessReader) && !HasComp<EmaggedComponent>(uid))
+                if (!_accessReader.IsAllowed(sender.Value, accessReader) && !vendComponent.Emagged)
                 {
                     _popupSystem.PopupEntity(Loc.GetString("vending-machine-component-try-eject-access-denied"), uid);
                     Deny(uid, vendComponent);
@@ -389,7 +391,7 @@ namespace Content.Server.VendingMachines
 
         private VendingMachineInventoryEntry? GetEntry(string entryId, InventoryType type, VendingMachineComponent component)
         {
-            if (type == InventoryType.Emagged && HasComp<EmaggedComponent>(component.Owner))
+            if (type == InventoryType.Emagged && component.Emagged)
                 return component.EmaggedInventory.GetValueOrDefault(entryId);
 
             if (type == InventoryType.Contraband && component.Contraband)

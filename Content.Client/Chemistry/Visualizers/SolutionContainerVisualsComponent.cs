@@ -6,7 +6,6 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
 using Robust.Shared.Maths;
 using Robust.Shared.Serialization.Manager.Attributes;
-using Robust.Shared.Utility;
 
 namespace Content.Client.Chemistry.Visualizers
 {
@@ -18,25 +17,12 @@ namespace Content.Client.Chemistry.Visualizers
         [DataField("fillBaseName")]
         public string? FillBaseName = null;
         [DataField("layer")]
-        public SolutionContainerLayers FillLayer = SolutionContainerLayers.Fill;
-        [DataField("baseLayer")]
-        public SolutionContainerLayers BaseLayer = SolutionContainerLayers.Base;
-        [DataField("overlayLayer")]
-        public SolutionContainerLayers OverlayLayer = SolutionContainerLayers.Overlay;
+        public SolutionContainerLayers Layer = SolutionContainerLayers.Fill;
         [DataField("changeColor")]
         public bool ChangeColor = true;
         [DataField("emptySpriteName")]
         public string? EmptySpriteName = null;
         [DataField("emptySpriteColor")]
         public Color EmptySpriteColor = Color.White;
-        [DataField("metamorphic")]
-        public bool Metamorphic = false;
-        [DataField("metamorphicDefaultSprite")]
-        public SpriteSpecifier MetamorphicDefaultSprite = SpriteSpecifier.Invalid;
-        [DataField("metamorphicNameFull")]
-        public string MetamorphicNameFull = "transformable-container-component-glass";
-
-        public string InitialName = string.Empty;
-        public string InitialDescription = string.Empty;
     }
 }

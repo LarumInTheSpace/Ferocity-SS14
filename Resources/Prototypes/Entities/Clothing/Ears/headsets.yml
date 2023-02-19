@@ -6,7 +6,6 @@
   description: An updated, modular intercom that fits over the head. Takes encryption keys.
   components:
   - type: Headset
-  - type: EncryptionKeyHolder
   - type: Sprite
     state: icon
   - type: Clothing

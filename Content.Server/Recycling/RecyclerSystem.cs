@@ -8,7 +8,6 @@ using Content.Server.Power.EntitySystems;
 using Content.Server.Recycling.Components;
 using Content.Shared.Audio;
 using Content.Shared.Body.Components;
-using Content.Shared.Emag.Components;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
@@ -132,7 +131,7 @@ namespace Content.Server.Recycling
 
             // Can only recycle things that are tagged trash or recyclable... And also check the safety of the thing to recycle.
             if (!_tags.HasAnyTag(entity, "Trash", "Recyclable") &&
-                (!TryComp(entity, out recyclable) || !recyclable.Safe && !HasComp<EmaggedComponent>(component.Owner)))
+                (!TryComp(entity, out recyclable) || !recyclable.Safe && component.Safe))
             {
                 return;
             }
@@ -163,7 +162,7 @@ namespace Content.Server.Recycling
 
         private bool CanGib(RecyclerComponent component, EntityUid entity)
         {
-            return HasComp<BodyComponent>(entity) && HasComp<EmaggedComponent>(component.Owner) &&
+            return HasComp<BodyComponent>(entity) && !component.Safe &&
                    this.IsPowered(component.Owner, EntityManager);
         }
 
@@ -192,7 +191,8 @@ namespace Content.Server.Recycling
 
         private void OnEmagged(EntityUid uid, RecyclerComponent component, ref GotEmaggedEvent args)
         {
-            // no fancy conditions
+            if (!component.Safe) return;
+            component.Safe = false;
             args.Handled = true;
         }
     }
