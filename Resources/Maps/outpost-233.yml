@@ -2,7 +2,7 @@ meta:
   format: 3
   name: DemoStation
   author: Space-Wizards
-  postmapinit: true
+  postmapinit: false
 tilemap:
   0: Space
   1: FloorArcadeBlue
@@ -119618,3 +119618,4 @@ entities:
     pos: 56.5,-33.5
     parent: 0
     type: Transform
+...
