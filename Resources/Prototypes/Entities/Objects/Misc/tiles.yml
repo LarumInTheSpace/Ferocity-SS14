@@ -47,6 +47,25 @@
   - type: FloorTile
     outputs:
       - Plating
+      - FloorSteelAsteroid
+  - type: Stack
+    stackType: FloorTileSteel
+  - type: Construction
+    graph: TileSteel
+    node: steeltile
+    
+- type: entity
+  name: asteroid steel tile
+  parent: FloorTileItemBase
+  id: FloorTileItemSteelAsteroid
+  components:
+  - type: Sprite
+    state: steel
+  - type: Item
+    heldPrefix: steel
+  - type: FloorTile
+    outputs:
+      - PlatingAsteroid
       - FloorSteel
   - type: Stack
     stackType: FloorTileSteel

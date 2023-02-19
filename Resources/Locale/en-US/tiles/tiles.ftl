@@ -1,5 +1,6 @@
 tiles-space = space
 tiles-plating = plating
+tiles-plating-asteroid = asteroid plating
 tiles-lattice = lattice
 tiles-steel-floor = steel tile
 tiles-steel-floor-mini = steel mini-tile
@@ -10,6 +11,7 @@ tiles-steel-floor-mono = steel mono tile
 tiles-steel-floor-pavement-vertical = steel vertical pavement
 tiles-steel-floor-herringbone = steel herringbone
 tiles-steel-floor-diagonal-mini = steel diagonal mini-tile
+tiles-steel-floor-asteroid = asteroid steel tile
 tiles-plastic-floor = plastic tile
 tiles-wood = wood
 tiles-white-floor = white steel tile

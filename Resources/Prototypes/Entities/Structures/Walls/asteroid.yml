@@ -242,3 +242,19 @@
         - map: [ "enum.EdgeLayer.West" ]
           state: rock_west
         - state: rock_uranium
+
+- type: entity
+  id: AsteroidRockInvincible
+  parent: AsteroidRock
+  name: asteroid rock
+  suffix: invincible
+  description: An asteroid.
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100000 #Kinda shit, but i am lazy
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]

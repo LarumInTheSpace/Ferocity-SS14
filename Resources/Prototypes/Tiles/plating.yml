@@ -12,6 +12,19 @@
   heatCapacity: 10000
 
 - type: tile
+  id: PlatingAsteroid
+  name: tiles-plating-asteroid
+  sprite: /Textures/Tiles/plating.png
+  baseTurfs:
+  - FloorAsteroidIronsand2
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.5
+  thermalConductivity: 0.04
+  heatCapacity: 10000
+
+- type: tile
   id: Lattice
   name: tiles-lattice
   sprite: /Textures/Tiles/lattice.png
