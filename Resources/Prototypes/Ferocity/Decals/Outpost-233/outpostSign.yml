@@ -1,0 +1,34 @@
+- type: decal
+  id: Outpost1
+  tags: ["station"]
+  sprite:
+    sprite: Ferocity/Stations/outpost-233.rsi
+    state: 1outpost
+
+- type: decal
+  id: Outpost2
+  tags: ["station"]
+  sprite:
+    sprite: Ferocity/Stations/outpost-233.rsi
+    state: 2outpost
+
+- type: decal
+  id: Outpost3
+  tags: ["station"]
+  sprite:
+    sprite: Ferocity/Stations/outpost-233.rsi
+    state: 3outpost
+
+- type: decal
+  id: Outpost4
+  tags: ["station"]
+  sprite:
+    sprite: Ferocity/Stations/outpost-233.rsi
+    state: 4outpost
+
+- type: decal
+  id: Outpost5
+  tags: ["station"]
+  sprite:
+    sprite: Ferocity/Stations/outpost-233.rsi
+    state: 5outpost
