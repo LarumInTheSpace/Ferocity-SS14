@@ -278,6 +278,16 @@
     access: [["Armory"]]
   - type: Wires
     LayoutId: AirlockArmory
+    
+- type: entity
+  parent: AirlockSecurity
+  id: AirlockDetectiveLocked
+  suffix: Detective, Locked
+  components:
+  - type: AccessReader
+    access: [["Detective"]]
+  - type: Wires
+    LayoutId: AirlockSecurity
 
 - type: entity
   parent: AirlockSecurity

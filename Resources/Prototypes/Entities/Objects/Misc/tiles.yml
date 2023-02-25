@@ -166,6 +166,22 @@
     stackType: FloorTileTechmaint
 
 - type: entity
+  name: asteroid techmaint floor
+  parent: FloorTileItemBase
+  id: FloorTileItemTechmaintAsteroid
+  components:
+  - type: Sprite
+    state: techfloor
+  - type: Item
+    heldPrefix: dark
+  - type: FloorTile
+    outputs:
+      - AsteroidPlating
+      - FloorTileItemTechmaintAsteroid
+  - type: Stack
+    stackType: FloorTileTechmaint
+
+- type: entity
   name: reinforced tile
   parent: FloorTileItemBase
   id: FloorTileItemReinforced

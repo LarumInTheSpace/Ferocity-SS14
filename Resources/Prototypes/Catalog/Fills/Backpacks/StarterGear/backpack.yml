@@ -208,10 +208,7 @@
         - id: BoxSurvival
         - id: trayScanner
         - id: WeaponPulseCarbine
-        - id: RCD
-        - id: RCDAmmo
-        - id: RCDAmmo
-        - id: RCDAmmo
+        - id: WeaponPulseCarbine
 
 - type: entity
   noSpawn: true

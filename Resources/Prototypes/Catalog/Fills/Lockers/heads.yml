@@ -76,7 +76,8 @@
       - id: BoxID
       - id: BoxHeadset
       - id: IDComputerCircuitboard
-      - id: WeaponDisabler
+      - id: WeaponPistolMk58
+      - id: MagazinePistolRubber
       - id: ClothingShoesColorBlack
         prob: 0.7
       - id: PlushieLizard
@@ -167,7 +168,8 @@
   components:
   - type: StorageFill
     contents:
-      - id: WeaponDisabler
+      - id: WeaponPistolMk58
+      - id: MagazinePistolRubber
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatHoshat
       - id: ClothingNeckCloakHos
