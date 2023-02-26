@@ -6,8 +6,8 @@
   - type: StorageFill
     contents:
       - id: FlashlightSeclite
-      - id: WeaponDisabler
-        prob: 0.3
+      - id: WeaponPistolMk58
+      - id: MagazinePistolRubber
       - id: ClothingHeadHatWarden
       - id: ClothingHeadHatBeretWarden
       - id: ClothingBeltSecurityFilled
