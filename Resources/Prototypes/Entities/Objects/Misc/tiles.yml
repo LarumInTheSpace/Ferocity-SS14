@@ -176,7 +176,7 @@
     heldPrefix: dark
   - type: FloorTile
     outputs:
-      - AsteroidPlating
+      - PlatingAsteroid
       - FloorTechMaintAsteroid
   - type: Stack
     stackType: FloorTileTechmaint

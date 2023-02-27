@@ -564,7 +564,7 @@
   name: tiles-techmaint-floor-asteroid
   sprite: /Textures/Tiles/tech_maint.png
   baseTurfs:
-  - AsteroidPlating
+  - PlatingAsteroid
   isSubfloor: false
   canCrowbar: true
   footstepSounds:
