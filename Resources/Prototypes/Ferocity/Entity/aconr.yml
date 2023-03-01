@@ -1,0 +1,15 @@
+- type: entity
+  name: ACoNR
+  parent: BaseItem
+  id: ACoNR
+  description: ACoNR is written on its top face, just below a white symbol most resembling a diagonally placed egg whose upper half is enclosed by a semicircle with a bent stalk at the very top. It appears to be a container of some kind, one that seems to open horizontally in the middle; you are, however, unable to find the means by which to do so - there are no handles, no locks, no buttons, touchscreens or visible sensors. Additionally, the robust casing easily discourages brute force, at least by more conventional means. Whatever is inside, it is likely invaluable.
+  components:
+  - type: Item
+    size: 50
+  - type: StaticPrice
+    price: 5000
+  - type: Sprite
+    sprite: Ferocity/Entity/aconr.rsi
+    netsync: false
+    layers:
+    - state: icon
