@@ -1,0 +1,13 @@
+- type: entity
+  name: Urist McSilicon
+  parent: BaseMobSilicon
+  id: BaseMobAndroid
+  abstract: true
+  components:
+  - type: Perishable
+  
+- type: entity
+  name: Urist McSilicon
+  id: MobAndroidDummy
+  parent: BaseMobSiliconDummy
+  noSpawn: true

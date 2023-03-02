@@ -300,6 +300,268 @@
   - type: MobPrice
     price: 1500 # Kidnapping a living person and selling them for cred is a good move.
     deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
+    
+- type: entity
+  save: false
+  name: Urist McSilicon
+  id: BaseMobSilicon #NOT inorganic
+  noSpawn: true
+  components:
+  - type: LagCompensation
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MetalLaserImpact
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+  - type: Reactive
+    groups:
+      Acidic: [Touch]
+    reactions:
+    - reagents: [Water, SpaceCleaner]
+      methods: [Touch]
+      effects:
+      - !type:WashCreamPieReaction
+  - type: Flashable
+  - type: Polymorphable
+  - type: Identity
+  - type: Hands
+  - type: MovementSpeedModifier
+  - type: MovedByPressure
+  - type: Barotrauma
+    damage:
+      types:
+        Heat: 0.2 #per second, scales with pressure and other constants.
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 10
+    soundHit:
+      path: /Audio/Effects/hit_kick.ogg
+  # Organs
+  - type: IdExaminable
+  - type: HealthExaminable
+    examinableTypes:
+      - Blunt
+      - Slash
+      - Piercing
+      - Heat
+      - Shock
+  - type: Bloodstream
+    bloodReagent: Oil
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          1
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -0.25
+  - type: DrawableSolution
+    solution: bloodstream
+  - type: Stamina
+  - type: StatusEffects
+    allowed:
+      - Stun
+      - KnockedDown
+      - SlowedDown
+      - Stutter
+      - Electrocution
+      - PressureImmunity
+      - Muted
+      - TemporaryBlindness
+      - Pacified
+  - type: Blindable
+  # Other
+  - type: Inventory
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Icon
+    sprite: Mobs/Species/Android/parts.rsi
+    state: full
+  - type: Sprite
+    netsync: false
+    noRot: true
+    drawdepth: Mobs
+    layers:
+      - map: [ "enum.HumanoidVisualLayers.Chest" ]
+      - map: [ "enum.HumanoidVisualLayers.Head" ]
+      - map: [ "enum.HumanoidVisualLayers.Snout" ]
+      - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+      - map: [ "enum.HumanoidVisualLayers.RArm" ]
+      - map: [ "enum.HumanoidVisualLayers.LArm" ]
+      - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - shader: StencilClear
+        sprite: Mobs/Species/Android/parts.rsi #PJB on stencil clear being on the left leg: "...this is 'fine'" -https://github.com/space-wizards/space-station-14/pull/12217#issuecomment-1291677115
+        # its fine, but its still very stupid that it has to be done like this instead of allowing sprites to just directly insert a stencil clear.
+        # sprite refactor when
+        state: l_leg
+      - shader: StencilMask
+        map: [ "enum.HumanoidVisualLayers.StencilMask" ]
+        sprite: Mobs/Customization/masking_helpers.rsi
+        state: female_full
+        visible: false
+      - map: [ "jumpsuit" ]
+      - map: [ "enum.HumanoidVisualLayers.LHand" ]
+      - map: [ "enum.HumanoidVisualLayers.RHand" ]
+      - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+      - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+      - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+        color: "#ffffff"
+        sprite: Objects/Misc/handcuffs.rsi
+        state: body-overlay-2
+        visible: false
+      - map: [ "id" ]
+      - map: [ "gloves" ]
+      - map: [ "shoes" ]
+      - map: [ "ears" ]
+      - map: [ "outerClothing" ]
+      - map: [ "eyes" ]
+      - map: [ "belt" ]
+      - map: [ "neck" ]
+      - map: [ "back" ]
+      - map: [ "mask" ]
+      - map: [ "head" ]
+      - map: [ "pocket1" ]
+      - map: [ "pocket2" ]
+      - map: [ "clownedon" ] # Dynamically generated
+        sprite: "Effects/creampie.rsi"
+        state: "creampie_human"
+        visible: false
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures: # TODO: This needs a second fixture just for mob collisions.
+      - shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 185
+        restitution: 0.0
+        mask:
+          - MobMask
+        layer:
+          - MobLayer
+  - type: AtmosExposed
+  - type: Temperature
+    heatDamageThreshold: 400
+    coldDamageThreshold: 200
+    currentTemperature: 320.15
+    specificHeat: 42
+    coldDamage:
+      types:
+        Cold: 0.1 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat: 0.1 #per second, scales with temperature & other constants
+  - type: HumanoidAppearance
+    species: Human
+  - type: Body
+    prototype: Human
+    requiredLegs: 2
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Repairable
+    fuelcost: 15
+    doAfterDelay: 15
+  - type: RadiationReceiver
+  - type: ThermalRegulator
+    metabolismHeat: 800
+    radiatedHeat: 100
+    implicitHeatRegulation: 500
+    sweatHeatRegulation: 2000
+    shiveringHeatRegulation: 2000
+    normalBodyTemperature: 310.15
+    thermalRegulationTemperatureThreshold: 25
+  - type: Internals
+  - type: MobState
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTypeTrigger
+          damageType: Blunt
+          damage: 400
+        behaviors:
+          - !type:GibBehavior { }
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.7
+      80: 0.5
+  - type: HeatResistance
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.CreamPiedVisuals.Creamed:
+        clownedon: # Not 'creampied' bc I can already see Skyrat complaining about conflicts.
+          True: {visible: true}
+          False: {visible: false}
+  - type: RotationVisuals
+  - type: FloatingVisuals
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
+    alternateState: Standing
+    fireStackAlternateState: 3
+  - type: CombatMode
+    canDisarm: true
+  - type: Climbing
+  - type: Cuffable
+  - type: Ensnareable
+    sprite: Objects/Misc/ensnare.rsi
+    state: icon
+  - type: AnimationPlayer
+  - type: Buckle
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 0.6
+    damage:
+      types:
+        Blunt: 10
+  - type: Pullable
+  - type: DoAfter
+  - type: CreamPied
+  - type: Stripping
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+      - key: enum.VoiceMaskUIKey.Key
+        type: VoiceMaskBoundUserInterface
+      - key: enum.HumanoidMarkingModifierKey.Key
+        type: HumanoidMarkingModifierBoundUserInterface
+      - key: enum.StrippingUiKey.Key
+        type: StrippableBoundUserInterface
+  - type: Puller
+  #  - type: Recyclable Turns out turning off recycler safeties without considering the instagib is a bad idea
+  #    safe: false
+  - type: Speech
+    speechSounds: Alto
+  - type: Emoting
+  - type: BodyEmotes
+    soundsId: GeneralBodyEmotes
+  - type: Grammar
+    attributes:
+      proper: true
+  - type: StandingState
+  - type: MobPrice
+    price: 2500 # Kidnapping a living person and selling them for cred is a good move.
+    deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
 
 - type: entity
   save: false
@@ -385,6 +647,96 @@
     - type: Appearance
     - type: Damageable
       damageContainer: Biological
+    - type: MobState
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        100: Critical
+        200: Dead
+    - type: UserInterface
+      interfaces:
+        - key: enum.HumanoidMarkingModifierKey.Key # sure, this can go here too
+          type: HumanoidMarkingModifierBoundUserInterface
+
+- type: entity
+  save: false
+  name: Urist McSilicon
+  id: BaseMobSiliconDummy
+  abstract: true
+  description: A dummy human meant to be used in character setup.
+  components:
+    - type: Hands
+    - type: Inventory
+    - type: ContainerContainer
+    - type: Icon
+      sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - type: Sprite
+      netsync: false
+      drawdepth: Mobs
+      noRot: true
+      # TODO BODY Turn these into individual body parts?
+      layers:
+        - map: [ "enum.HumanoidVisualLayers.Chest" ]
+        - map: [ "enum.HumanoidVisualLayers.Head" ]
+        - map: [ "enum.HumanoidVisualLayers.Snout" ]
+        - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+        - map: [ "enum.HumanoidVisualLayers.RArm" ]
+        - map: [ "enum.HumanoidVisualLayers.LArm" ]
+        - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+        - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+        - shader: StencilClear
+          sprite: Mobs/Species/Android/parts.rsi
+          state: l_leg
+        - shader: StencilMask
+          map: [ "enum.HumanoidVisualLayers.StencilMask" ]
+          sprite: Mobs/Customization/masking_helpers.rsi
+          state: female_full
+          visible: false
+        - map: [ "jumpsuit" ]
+        - map: [ "enum.HumanoidVisualLayers.LHand" ]
+        - map: [ "enum.HumanoidVisualLayers.RHand" ]
+        - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+        - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+        - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+          color: "#ffffff"
+          sprite: Objects/Misc/handcuffs.rsi
+          state: body-overlay-2
+          visible: false
+        - map: [ "id" ]
+        - map: [ "gloves" ]
+        - map: [ "shoes" ]
+        - map: [ "ears" ]
+        - map: [ "outerClothing" ]
+        - map: [ "eyes" ]
+        - map: [ "belt" ]
+        - map: [ "neck" ]
+        - map: [ "back" ]
+        - map: [ "mask" ]
+        - map: [ "head" ]
+        - map: [ "pocket1" ]
+        - map: [ "pocket2" ]
+    - type: Physics
+      bodyType: Dynamic
+    - type: Fixtures
+      fixtures:
+      - shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.35,0.35,0.35"
+        density: 185
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+    - type: HumanoidAppearance
+      species: Human
+    - type: Body
+      prototype: Human
+      requiredLegs: 2
+    - type: Appearance
+    - type: Damageable
+      damageContainer: Inorganic
     - type: MobState
     - type: MobThresholds
       thresholds:
