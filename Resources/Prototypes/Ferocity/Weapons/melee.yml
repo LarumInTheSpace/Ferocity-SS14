@@ -1,0 +1,19 @@
+- type: entity
+  name: Lead pipe
+  parent: BaseItem
+  id: LeadPipe
+  description: Lead pipe with cool sound.
+  components:
+  - type: Sprite
+    sprite: Ferocity/Weapons/leadpipe.rsi
+    state: leadpipe
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      path: /Audio/Ferocity/shonk.wav
+  - type: Item
+    size: 30
+    sprite: Ferocity/Weapons/leadpipe.rsi

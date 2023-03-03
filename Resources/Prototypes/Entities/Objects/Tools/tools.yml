@@ -127,7 +127,7 @@
     netsync: false
   - type: Item
     sprite: Objects/Tools/crowbar.rsi
-    size: 10
+    size: 30
   - type: ItemCooldown
   - type: MeleeWeapon
     damage:
