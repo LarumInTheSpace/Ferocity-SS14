@@ -1,0 +1,71 @@
+- type: entity
+  id: JunkBase
+  parent: BaseStructure
+  name: junk
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Tag
+    tags:
+      - ForceFixRotations
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+    - shape:
+        !type:PhysShapeAabb {}
+      mask:
+      - FullTileMask
+      layer:
+      - GlassLayer
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150 #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Appearance
+
+- type: entity
+  id: JunkBox
+  parent: JunkBase
+  name: box
+  components:
+  - type: Sprite
+    netsync: false
+    drawdepth: WallTops
+    sprite: Ferocity/Entity/junk.rsi
+    state: box
+  - type: Icon
+    sprite: Ferocity/Entity/junk.rsi
+    state: box
+
+- type: entity
+  id: JunkBarrel
+  parent: JunkBase
+  name: barrel
+  components:
+  - type: Sprite
+    netsync: false
+    drawdepth: WallTops
+    sprite: Ferocity/Entity/junk.rsi
+    state: barrel
+  - type: Icon
+    sprite: Ferocity/Entity/junk.rsi
+    state: barrel

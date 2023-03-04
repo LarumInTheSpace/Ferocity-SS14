@@ -47,7 +47,7 @@
   - type: FloorTile
     outputs:
       - Plating
-      - FloorSteelAsteroid
+      - FloorSteel
   - type: Stack
     stackType: FloorTileSteel
   - type: Construction
@@ -66,9 +66,9 @@
   - type: FloorTile
     outputs:
       - PlatingAsteroid
-      - FloorSteel
+      - FloorSteelAsteroid
   - type: Stack
-    stackType: FloorTileSteel
+    stackType: FloorTileAsteroidSteel
   - type: Construction
     graph: TileSteel
     node: steeltile

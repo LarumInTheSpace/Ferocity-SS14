@@ -1,0 +1,59 @@
+- type: tile
+  id: OldFloorSteel
+  name: old steel tile
+  sprite: /Textures/Ferocity/tiles.rsi/oldfloor.png
+  baseTurfs:
+  - Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepFloor
+  friction: 0.30
+  itemDrop: FloorTileItemOldSteel
+  thermalConductivity: 0.04
+  heatCapacity: 10000
+  
+- type: tile
+  id: OldFloorSteelAsteroid
+  name: asteroid old steel tile
+  sprite: /Textures/Ferocity/tiles.rsi/oldfloor.png
+  baseTurfs:
+  - PlatingAsteroid
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepFloor
+  friction: 0.30
+  itemDrop: FloorTileItemOldSteelAsteroid
+  thermalConductivity: 0.04
+  heatCapacity: 10000
+  
+- type: tile
+  id: OldFloorMetal
+  name: old metal tile
+  sprite: /Textures/Ferocity/tiles.rsi/oldfloormetal.png
+  baseTurfs:
+  - Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepFloor
+  friction: 0.30
+  itemDrop: FloorTileItemOldMetal
+  thermalConductivity: 0.04
+  heatCapacity: 10000
+  
+- type: tile
+  id: OldFloorMetalAsteroid
+  name: asteroid old metal tile
+  sprite: /Textures/Ferocity/tiles.rsi/oldfloormetal.png
+  baseTurfs:
+  - PlatingAsteroid
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepFloor
+  friction: 0.30
+  itemDrop: FloorTileItemOldMetalAsteroid
+  thermalConductivity: 0.04
+  heatCapacity: 10000

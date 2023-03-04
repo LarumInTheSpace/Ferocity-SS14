@@ -1,0 +1,67 @@
+- type: entity
+  name: old steel tile
+  parent: FloorTileItemBase
+  id: FloorTileItemOldSteel
+  components:
+  - type: Sprite
+    sprite: Ferocity/floor.rsi
+    state: oldsteel
+  - type: Item
+    heldPrefix: old steel
+  - type: FloorTile
+    outputs:
+      - Plating
+      - OldFloorSteel
+  - type: Stack
+    stackType: FloorTileOldSteel
+
+- type: entity
+  name: asteroid old steel tile
+  parent: FloorTileItemBase
+  id: FloorTileItemOldSteelAsteroid
+  components:
+  - type: Sprite
+    sprite: Ferocity/floor.rsi
+    state: oldsteel
+  - type: Item
+    heldPrefix: old steel
+  - type: FloorTile
+    outputs:
+      - PlatingAsteroid
+      - OldFloorSteelAsteroid
+  - type: Stack
+    stackType: FloorTileOldAsteroidSteel
+    
+- type: entity
+  name: old metal tile
+  parent: FloorTileItemBase
+  id: FloorTileItemOldMetal
+  components:
+  - type: Sprite
+    sprite: Ferocity/floor.rsi
+    state: oldmetal
+  - type: Item
+    heldPrefix: old metal
+  - type: FloorTile
+    outputs:
+      - Plating
+      - OldFloorMetal
+  - type: Stack
+    stackType: FloorTileItemOldMetal
+
+- type: entity
+  name: asteroid old metal tile
+  parent: FloorTileItemBase
+  id: FloorTileItemOldMetalAsteroid
+  components:
+  - type: Sprite
+    sprite: Ferocity/floor.rsi
+    state: oldmetal
+  - type: Item
+    heldPrefix: old metal
+  - type: FloorTile
+    outputs:
+      - PlatingAsteroid
+      - OldFloorSteelAsteroid
+  - type: Stack
+    stackType: FloorTileItemOldMetalAsteroid
