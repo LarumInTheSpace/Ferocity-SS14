@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCadet
+  name: Cadet jumpsuit
+  description: Uniform for security cadets.
+  components:
+  - type: Sprite
+    sprite: Ferocity/Entity/uniform/cadet.rsi
+  - type: Clothing
+    sprite: Ferocity/Entity/uniform/cadet.rsi
