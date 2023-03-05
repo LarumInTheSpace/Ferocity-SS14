@@ -1,11 +1,11 @@
 - type: entity
-  name: SOS-21
+  name: SPS-21
   parent: BaseWeaponShotgun
   id: WeaponShotgunSos
-  description: A next-generation Frozen Star shotgun. Uses .50 shotgun shells.
+  description: A shotgun. Uses .50 shotgun shells.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/sos-21.rsi
+    sprite: Ferocity/Weapons/sps-21.rsi
   - type: Clothing
-    sprite: Ferocity/Weapons/sos-21.rsi
+    sprite: Ferocity/Weapons/sps-21.rsi
   - type: BallisticAmmoProvider
