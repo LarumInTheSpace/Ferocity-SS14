@@ -1,5 +1,9 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Box
-  #Add here our Outpost when it's done, and delete box.
+  - MooseFe
+  - ClusterFe
+  - MetaFe
+  - BarratryFe
+  - OmegaFe
+  #Add here our Outpost when it's done.
