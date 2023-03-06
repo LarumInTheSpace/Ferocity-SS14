@@ -10,9 +10,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
   
 - type: tile
@@ -44,9 +42,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -61,9 +57,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -78,9 +72,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -95,9 +87,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -114,7 +104,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -131,7 +120,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -148,7 +136,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -165,7 +152,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -180,9 +166,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemSteel
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -199,9 +183,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  friction: 0.30
   itemDrop: FloorTileItemWood
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -218,7 +200,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -235,7 +216,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -252,7 +232,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -269,7 +248,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -286,7 +264,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -303,7 +280,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -320,7 +296,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -337,7 +312,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -354,7 +328,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -371,7 +344,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -386,9 +358,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -403,9 +373,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -420,9 +388,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -437,9 +403,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -456,7 +420,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -473,7 +436,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -490,7 +452,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -507,7 +468,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -524,7 +484,6 @@
     collection: FootstepTile
   friction: 0.25
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -539,9 +498,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemDark
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -554,9 +511,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepHull
-  friction: 0.30
   itemDrop: FloorTileItemTechmaint
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -584,9 +539,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepHull
-  friction: 0.30
   itemDrop: FloorTileItemReinforced
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -599,9 +552,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemMono
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -614,9 +565,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemLino
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -629,9 +578,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepPlating
-  friction: 0.30
   itemDrop: FloorTileItemDirty
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -644,9 +591,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepHull
-  friction: 0.30
   itemDrop: FloorTileItemElevatorShaft
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -659,9 +604,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepHull
-  friction: 0.30
   itemDrop: FloorTileItemMetalDiamond
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -674,9 +617,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
   itemDrop: FloorTileItemRockVault
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -689,9 +630,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemBlue
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 # Departamental
@@ -705,9 +644,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepHull
-  friction: 0.30
   itemDrop: FloorTileItemFreezer
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -720,9 +657,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemShowroom
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -735,9 +670,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemHydro
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -752,9 +685,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemBar
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -767,9 +698,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemClown
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -782,9 +711,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemMime
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -797,9 +724,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemKitchen
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -812,9 +737,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemLaundry
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 # Carpets (non smoothing)
@@ -832,7 +755,6 @@
     collection: BarestepCarpet
   friction: 0.40
   itemDrop: FloorTileItemArcadeBlue
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -849,7 +771,6 @@
     collection: BarestepCarpet
   friction: 0.40
   itemDrop: FloorTileItemArcadeBlue2
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -866,7 +787,6 @@
     collection: BarestepCarpet
   friction: 0.40
   itemDrop: FloorTileItemArcadeRed
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -883,7 +803,6 @@
     collection: BarestepCarpet
   friction: 0.40
   itemDrop: FloorTileItemEighties
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -900,7 +819,6 @@
     collection: BarestepCarpet
   friction: 0.40
   itemDrop: FloorTileItemCarpetClown
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -917,7 +835,6 @@
     collection: BarestepCarpet
   friction: 0.40
   itemDrop: FloorTileItemCarpetOffice
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -934,7 +851,6 @@
     collection: FootstepFloor
   friction: 0.40
   itemDrop: FloorTileItemBoxing
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -951,7 +867,6 @@
     collection: FootstepFloor
   friction: 0.40
   itemDrop: FloorTileItemGym
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 # Shuttle
@@ -965,9 +880,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemShuttleWhite
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -980,9 +893,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemShuttleBlue
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -995,9 +906,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemShuttleOrange
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1010,9 +919,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemShuttlePurple
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1025,9 +932,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
-  friction: 0.30
   itemDrop: FloorTileItemShuttleRed
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 
@@ -1042,9 +947,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemGold
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1057,9 +960,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: FloorTileItemSilver
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1072,9 +973,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: SheetGlass1
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1087,9 +986,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepTile
-  friction: 0.30
   itemDrop: SheetRGlass1
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 # Circuits
@@ -1103,9 +1000,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepHull
-  friction: 0.30
   itemDrop: FloorTileItemGCircuit
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1118,9 +1013,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepHull
-  friction: 0.30
   itemDrop: FloorTileItemBCircuit
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 # Terrain
@@ -1134,9 +1027,7 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepGrass
-  friction: 0.30
   itemDrop: FloorTileItemGrass
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1150,9 +1041,7 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepGrass
-  friction: 0.30
   itemDrop: FloorTileItemGrassJungle
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1168,8 +1057,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepGrass
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1185,8 +1072,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepGrass
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1202,8 +1087,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1218,8 +1101,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1233,8 +1114,6 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1250,8 +1129,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1277,8 +1154,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1292,8 +1167,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1307,8 +1180,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1322,8 +1193,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1337,8 +1206,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
   weather: true
 
@@ -1355,8 +1222,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1371,8 +1236,6 @@
   canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
-  friction: 0.30
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1388,7 +1251,6 @@
   footstepSounds:
     collection: BarestepCarpet
   friction: 0.20 #slippy
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1401,9 +1263,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepHull
-  friction: 0.30
   itemDrop: FloorTileItemSteelMaint
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1418,9 +1278,7 @@
   canCrowbar: true
   footstepSounds:
     collection: FootstepHull
-  friction: 0.30
   itemDrop: FloorTileItemGratingMaint
-  thermalConductivity: 0.04
   heatCapacity: 10000
 
 - type: tile
@@ -1437,7 +1295,5 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  friction: 0.30
   itemDrop: FloorTileItemWoodPattern
-  thermalConductivity: 0.04
   heatCapacity: 10000
