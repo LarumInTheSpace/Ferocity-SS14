@@ -1,7 +1,7 @@
 - type: entity
   name: SPS-Piligrim
   parent: BaseWeaponShotgun
-  id: WeaponShotgunSos
+  id: WeaponShotgunPiligrim
   description: A shotgun. Uses .50 shotgun shells.
   components:
   - type: Sprite
@@ -17,7 +17,7 @@
 - type: entity
   name: SACS-Despot
   parent: BaseWeaponShotgun
-  id: WeaponShotgunSacs
+  id: WeaponShotgunDespot
   description: A shotgun with a big magazine. Uses .50 shotgun shells.
   components:
   - type: Sprite

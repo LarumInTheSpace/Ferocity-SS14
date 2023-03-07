@@ -45,9 +45,9 @@
   - type: Appearance
 
 - type: entity
-  name: Hornet
+  name: Autocrat
   parent: BaseWeaponRifle
-  id: WeaponRifleHornet
+  id: WeaponRifleAutocrat
   description: Standart weapon for that caliber. Uses .20 rifle ammo.
   components:
   - type: Sprite
