@@ -1,5 +1,5 @@
 - type: entity
-  name: SPS-21
+  name: SPS-Piligrim
   parent: BaseWeaponShotgun
   id: WeaponShotgunSos
   description: A shotgun. Uses .50 shotgun shells.
@@ -9,3 +9,31 @@
   - type: Clothing
     sprite: Ferocity/Weapons/sps-21.rsi
   - type: BallisticAmmoProvider
+  - type: Gun
+    fireRate: 2
+    soundGunshot:
+      path: /Audio/Ferocity/shot3.ogg
+  
+- type: entity
+  name: SACS-Despot
+  parent: BaseWeaponShotgun
+  id: WeaponShotgunSacs
+  description: A shotgun with a big magazine. Uses .50 shotgun shells.
+  components:
+  - type: Sprite
+    sprite: Ferocity/Weapons/sacs-despot.rsi
+  - type: Clothing
+    sprite: Ferocity/Weapons/sacs-despot.rsi
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+      - ShellShotgun
+    capacity: 12
+    proto: ShellShotgun
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
+  - type: Gun
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/Ferocity/shot2.ogg
