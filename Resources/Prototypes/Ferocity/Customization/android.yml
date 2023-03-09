@@ -1,0 +1,51 @@
+- type: marking
+  id: AndroidTubbyHead
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Android]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
+  sprites:
+  - sprite: Ferocity/Customization/android.rsi
+    state: ermachualy
+
+- type: marking
+  id: AndroidSyndieHead
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Android]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
+  sprites:
+  - sprite: Ferocity/Customization/android.rsi
+    state: ronin
+
+- type: marking
+  id: AndroidRadioHead
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Android]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
+  sprites:
+  - sprite: Ferocity/Customization/android.rsi
+    state: farsight
+
+- type: marking
+  id: AndroidBulkHead
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Android]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
+  sprites:
+  - sprite: Ferocity/Customization/android.rsi
+    state: oldone

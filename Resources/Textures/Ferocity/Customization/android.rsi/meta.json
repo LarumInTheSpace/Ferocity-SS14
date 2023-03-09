@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-4.0",
+  "copyright": "By bob",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ermachualy",
+      "directions": 4
+    },
+    {
+      "name": "ronin",
+      "directions": 4
+    },
+	{
+      "name": "farsight",
+      "directions": 4
+    },
+	{
+      "name": "oldone",
+      "directions": 4
+    }
+  ]
+}
