@@ -6,7 +6,7 @@
   - type: StorageFill
     contents:
       - id: FlashlightSeclite
-      - id: WeaponPistolMk58
+      - id: WeaponPistolSting
       - id: MagazinePistolRubber
       - id: ClothingHeadHatWarden
       - id: ClothingHeadHatBeretWarden
