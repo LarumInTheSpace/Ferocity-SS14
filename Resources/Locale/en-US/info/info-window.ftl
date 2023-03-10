@@ -15,5 +15,6 @@ ui-info-header-sandbox = Sandbox Spawner
 ui-info-subheader-entityoptions = Entity spawn panel options:
 ui-info-subheader-gridoptions = Grid aligned options:
 ui-info-header-feedback = Feedback
+ui-info-header-rp-advice = Roleplay Advice
 
 ui-info-button-controls = Options Menu

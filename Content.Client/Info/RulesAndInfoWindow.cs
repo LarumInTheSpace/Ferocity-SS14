@@ -41,6 +41,7 @@ namespace Content.Client.Info
         private void PopulateTutorial(Info tutorialList)
         {
             AddSection(tutorialList, Loc.GetString("ui-info-header-intro"), "Intro.txt");
+			AddSection(tutorialList, Loc.GetString("ui-info-header-rp-advice"), "RP_Rules.txt");
             var infoControlSection = new InfoControlsSection();
             tutorialList.InfoContainer.AddChild(infoControlSection);
 

@@ -11,6 +11,7 @@ job-name-doctor = medical doctor
 job-name-cmo = chief medical officer
 job-name-chemist = chemist
 job-name-technical-assistant = technical assistant
+job-name-research-assistant = research assistant
 job-name-engineer = station engineer
 job-name-atmostech = atmospheric technician
 job-name-hop = head of personnel
