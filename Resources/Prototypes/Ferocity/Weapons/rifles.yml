@@ -51,7 +51,7 @@
   description: Standart weapon for that caliber. Uses .20 rifle ammo.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/hornet.rsi
+    sprite: Ferocity/Weapons/autocrat.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]

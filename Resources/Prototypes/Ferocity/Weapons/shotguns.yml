@@ -5,9 +5,9 @@
   description: A shotgun. Uses .50 shotgun shells.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/sps-21.rsi
+    sprite: Ferocity/Weapons/piligrim.rsi
   - type: Clothing
-    sprite: Ferocity/Weapons/sps-21.rsi
+    sprite: Ferocity/Weapons/piligrim.rsi
   - type: BallisticAmmoProvider
   - type: Gun
     fireRate: 2
