@@ -40,4 +40,4 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
+        Blunt: 10
