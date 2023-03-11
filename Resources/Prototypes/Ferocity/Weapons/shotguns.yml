@@ -21,9 +21,9 @@
   description: A shotgun with a big magazine. Uses .50 shotgun shells.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/sacs-despot.rsi
+    sprite: Ferocity/Weapons/despot.rsi
   - type: Clothing
-    sprite: Ferocity/Weapons/sacs-despot.rsi
+    sprite: Ferocity/Weapons/despot.rsi
   - type: BallisticAmmoProvider
     autoCycle: true
     whitelist:

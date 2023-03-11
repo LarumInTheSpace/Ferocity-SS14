@@ -1,0 +1,51 @@
+- type: entity
+  name: Commander
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverCommander
+  description: The iconic sidearm of HOS. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Ferocity/Weapons/commander.rsi
+  - type: Clothing
+    sprite: Ferocity/Weapons/commander.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
+
+- type: entity
+  name: Bloodhound
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverBloodhound
+  description: Sidearm used by detective. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Ferocity/Weapons/bloodhound.rsi
+  - type: Clothing
+    sprite: Ferocity/Weapons/bloodhound.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgePistol
+    proto: CartridgeMagnum
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+- type: entity
+  name: PMR Striker
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverStriker
+  description: Standart revolver. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Ferocity/Weapons/striker.rsi
+  - type: Clothing
+    sprite: Ferocity/Weapons/striker.rsi
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgePistol
+    proto: CartridgeMagnum
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
