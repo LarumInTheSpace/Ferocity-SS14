@@ -5,7 +5,7 @@
   description: Lead pipe with cool sound.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/leadpipe.rsi
+    sprite: Ferocity/Weapons/Melee/leadpipe.rsi
     state: leadpipe
   - type: ItemCooldown
   - type: MeleeWeapon
@@ -16,4 +16,4 @@
       path: /Audio/Ferocity/shonk.wav
   - type: Item
     size: 30
-    sprite: Ferocity/Weapons/leadpipe.rsi
+    sprite: Ferocity/Weapons/Melee/leadpipe.rsi

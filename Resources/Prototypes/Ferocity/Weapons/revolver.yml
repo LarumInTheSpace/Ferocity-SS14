@@ -5,9 +5,9 @@
   description: The iconic sidearm of HOS. Uses .45 magnum ammo.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/commander.rsi
+    sprite: Ferocity/Weapons/Revolvers/commander.rsi
   - type: Clothing
-    sprite: Ferocity/Weapons/commander.rsi
+    sprite: Ferocity/Weapons/Revolvers/commander.rsi
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
@@ -19,9 +19,9 @@
   description: Sidearm used by detective. Uses .35 auto ammo.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/bloodhound.rsi
+    sprite: Ferocity/Weapons/Revolvers/bloodhound.rsi
   - type: Clothing
-    sprite: Ferocity/Weapons/bloodhound.rsi
+    sprite: Ferocity/Weapons/Revolvers/bloodhound.rsi
   - type: RevolverAmmoProvider
     whitelist:
       tags:
@@ -38,9 +38,9 @@
   description: Standart revolver. Uses .35 auto ammo.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/striker.rsi
+    sprite: Ferocity/Weapons/Revolvers/striker.rsi
   - type: Clothing
-    sprite: Ferocity/Weapons/striker.rsi
+    sprite: Ferocity/Weapons/Revolvers/striker.rsi
   - type: RevolverAmmoProvider
     whitelist:
       tags:

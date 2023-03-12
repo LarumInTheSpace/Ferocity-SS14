@@ -5,7 +5,7 @@
   description: A cheap, ubiquitous sidearm. Uses .35 auto ammo.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/sting.rsi
+    sprite: Ferocity/Weapons/Pistols/sting.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -43,7 +43,7 @@
   description: A sidearm. Uses .35 auto ammo.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/claw.rsi
+    sprite: Ferocity/Weapons/Pistols/claw.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

@@ -5,7 +5,7 @@
   description: Pla-ket-ket-ket-ket! Uses .35 auto ammo.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/styx.rsi
+    sprite: Ferocity/Weapons/SMGs/styx.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -28,7 +28,7 @@
   description: Pla-ket-ket-ket-ket! Uses .35 auto ammo.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/pegasus.rsi
+    sprite: Ferocity/Weapons/SMGs/pegasus.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

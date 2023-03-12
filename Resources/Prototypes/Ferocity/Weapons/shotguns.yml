@@ -5,9 +5,9 @@
   description: A shotgun. Uses .50 shotgun shells.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/piligrim.rsi
+    sprite: Ferocity/Weapons/Shotguns/piligrim.rsi
   - type: Clothing
-    sprite: Ferocity/Weapons/piligrim.rsi
+    sprite: Ferocity/Weapons/Shotguns/piligrim.rsi
   - type: BallisticAmmoProvider
   - type: Gun
     fireRate: 2
@@ -21,9 +21,9 @@
   description: A shotgun with a big magazine. Uses .50 shotgun shells.
   components:
   - type: Sprite
-    sprite: Ferocity/Weapons/despot.rsi
+    sprite: Ferocity/Weapons/Shotguns/despot.rsi
   - type: Clothing
-    sprite: Ferocity/Weapons/despot.rsi
+    sprite: Ferocity/Weapons/Shotguns/despot.rsi
   - type: BallisticAmmoProvider
     autoCycle: true
     whitelist:
