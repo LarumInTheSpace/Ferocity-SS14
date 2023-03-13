@@ -26,7 +26,7 @@
     whitelist:
       tags:
         - CartridgePistol
-    proto: CartridgeMagnum
+    proto: CartridgePistol
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]
@@ -45,7 +45,7 @@
     whitelist:
       tags:
         - CartridgePistol
-    proto: CartridgeMagnum
+    proto: CartridgePistol
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]
