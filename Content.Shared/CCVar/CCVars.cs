@@ -353,10 +353,10 @@ namespace Content.Shared.CCVar
             CVarDef.Create("traitor.max_picks", 20);
 
         public static readonly CVarDef<float> TraitorStartDelay =
-            CVarDef.Create("traitor.start_delay", 4f * 60f);
+            CVarDef.Create("traitor.start_delay", 10f);
 
         public static readonly CVarDef<float> TraitorStartDelayVariance =
-            CVarDef.Create("traitor.start_delay_variance", 3f * 60f);
+            CVarDef.Create("traitor.start_delay_variance", 10f);
 
         /*
          * TraitorDeathMatch
@@ -902,7 +902,7 @@ namespace Content.Shared.CCVar
         /// Whether or not OOC chat should be enabled during a round.
         /// </summary>
         public static readonly CVarDef<bool> OocEnableDuringRound =
-            CVarDef.Create("ooc.enable_during_round", false, CVar.NOTIFY | CVar.REPLICATED |CVar.SERVER);
+            CVarDef.Create("ooc.enable_during_round", true, CVar.NOTIFY | CVar.REPLICATED |CVar.SERVER);
 
         /*
          * LOOC
@@ -1329,7 +1329,7 @@ namespace Content.Shared.CCVar
         /// Time that players have to wait before rules can be accepted.
         /// </summary>
         public static readonly CVarDef<float> RulesWaitTime =
-            CVarDef.Create("rules.time", 45f, CVar.SERVER | CVar.REPLICATED);
+            CVarDef.Create("rules.time", 10f, CVar.SERVER | CVar.REPLICATED);
 
         /// <summary>
         /// Don't show rules to localhost/loopback interface.

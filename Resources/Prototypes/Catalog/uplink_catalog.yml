@@ -50,7 +50,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword.rsi, state: icon }
   productEntity: EnergySword
   cost:
-    Telecrystal: 6
+    Telecrystal: 7
   categories:
   - UplinkWeapons
 
@@ -128,7 +128,7 @@
   description: uplink-c4-desc
   productEntity: C4
   cost:
-    Telecrystal: 2
+    Telecrystal: 1
   categories:
   - UplinkExplosives
 
@@ -138,7 +138,7 @@
   description: uplink-c4-bundle-desc
   productEntity: ClothingBackpackDuffelSyndicateC4tBundle
   cost:
-    Telecrystal: 12
+    Telecrystal: 6
   categories:
   - UplinkExplosives
 
@@ -361,7 +361,7 @@
   icon: { sprite: /Textures/Actions/Implants/implants.rsi, state: explosive }
   productEntity: MacroBombImplanter
   cost:
-    Telecrystal: 25
+    Telecrystal: 20
   categories:
     - UplinkImplants
   conditions:
@@ -747,7 +747,7 @@
   description: uplink-stimpack-desc
   productEntity: Stimpack
   cost:
-    Telecrystal: 8
+    Telecrystal: 6
   categories:
   - UplinkMisc
   
@@ -811,16 +811,6 @@
   productEntity: RubberStampSyndicate
   cost:
     Telecrystal: 2
-  categories:
-  - UplinkPointless
-
-- type: listing
-  id: UplinkCatEars
-  name: uplink-cat-ears-name
-  description: uplink-cat-ears-desc
-  productEntity: ClothingHeadHatCatEars
-  cost:
-    Telecrystal: 26
   categories:
   - UplinkPointless
 
