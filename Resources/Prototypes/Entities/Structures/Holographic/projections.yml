@@ -14,8 +14,6 @@
     sprite: Structures/Holo/wetfloor.rsi
     state: icon
     netsync: false
-  - type: TimedDespawn
-    lifetime: 30
 
 - type: entity
   id: HoloFan
