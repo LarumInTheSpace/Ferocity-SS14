@@ -49,12 +49,6 @@
     id: TraitorDeathMatch
 
 - type: gameRule
-  id: Sandbox
-  config:
-    !type:GenericGameRuleConfiguration
-    id: Sandbox
-
-- type: gameRule
   id: Secret
   config:
     !type:GenericGameRuleConfiguration
