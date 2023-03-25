@@ -27,7 +27,7 @@
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolRubber
+            - MagazinePistol
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistolRubber
@@ -50,7 +50,7 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: Ferocity/Weapons/sting.rsi
+    sprite: Ferocity/Weapons/Pistols/claw.rsi
   - type: Gun
     fireRate: 5
     soundGunshot:
@@ -65,7 +65,7 @@
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolRubber
+            - MagazinePistol
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistolRubber
